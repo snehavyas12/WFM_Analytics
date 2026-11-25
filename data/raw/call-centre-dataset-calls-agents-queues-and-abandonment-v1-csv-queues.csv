@@ -1,0 +1,6 @@
+id,queue_set,queue_name,sla_seconds,wait_factor,handle_factor
+1,1,Billing,30,0.6,0.7
+2,1,Account changes,30,0.9,0.9
+3,1,Sales,30,1.2,1.1
+4,1,Technical support,30,1.5,1.3
+5,1,Complaints,30,1.8,1.5

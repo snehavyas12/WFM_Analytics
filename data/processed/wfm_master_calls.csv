@@ -1,0 +1,801 @@
+call_id,queue_id,caller_id,started_at,status,base_wait_seconds,wait_seconds,abandon_after_seconds,agent_id,base_handle_seconds,queue_handle_seconds,handle_seconds,resolved_first_contact,queue_key,queue_set,queue,sla_seconds,wait_factor,handle_factor,agent_key,agent_first_name,agent_last_name,team,agent_tenure_months,agent_speed_factor,caller_key,caller_ref,account_type,region,call_date,call_hour,day_of_week,day_of_week_num,answered_flag,abandoned_flag,sla_met
+1,3,104,2025-02-27 11:33:00,answered,16.0,19.0,,27.0,143.0,157.0,157.0,True,3,1,Sales,30,1.2,1.1,27.0,Michale,Grimes,Team East,82.0,1.0,104,CL-960645,consumer,North,2025-02-27,11,Thursday,3,1,0,1.0
+2,1,1,2025-02-05 19:44:00,answered,13.0,8.0,,10.0,151.0,106.0,112.0,True,1,1,Billing,30,0.6,0.7,10.0,Darryl,Becker,Team South,15.0,1.06,1,CL-696409,consumer,West,2025-02-05,19,Wednesday,2,1,0,1.0
+3,3,88,2025-02-05 19:44:00,answered,26.0,31.0,,19.0,121.0,133.0,145.0,True,3,1,Sales,30,1.2,1.1,19.0,Manuel,Weissnat,Team East,7.0,1.09,88,CL-799007,consumer,East,2025-02-05,19,Wednesday,2,1,0,0.0
+4,2,141,2025-02-03 09:01:00,answered,24.0,22.0,,12.0,143.0,129.0,125.0,True,2,1,Account changes,30,0.9,0.9,12.0,Valerie,Auer,Team North,58.0,0.97,141,CL-959730,small_business,South,2025-02-03,9,Monday,0,1,0,1.0
+5,4,73,2025-02-11 12:04:00,answered,10.0,15.0,,27.0,166.0,216.0,216.0,True,4,1,Technical support,30,1.5,1.3,27.0,Michale,Grimes,Team East,82.0,1.0,73,CL-054765,consumer,North,2025-02-11,12,Tuesday,1,1,0,1.0
+6,4,192,2025-02-19 15:50:00,answered,8.0,12.0,,4.0,294.0,382.0,367.0,False,4,1,Technical support,30,1.5,1.3,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,192,CL-983506,consumer,South,2025-02-19,15,Wednesday,2,1,0,1.0
+7,4,185,2025-02-05 10:56:00,answered,18.0,27.0,,18.0,186.0,242.0,254.0,True,4,1,Technical support,30,1.5,1.3,18.0,Aaron,Tillman,Team South,65.0,1.05,185,CL-696277,consumer,East,2025-02-05,10,Wednesday,2,1,0,1.0
+8,4,45,2025-02-23 16:02:00,answered,30.0,45.0,,7.0,414.0,538.0,522.0,False,4,1,Technical support,30,1.5,1.3,7.0,Travon,Mann,Team East,2.0,0.97,45,CL-850392,consumer,West,2025-02-23,16,Sunday,6,1,0,0.0
+9,1,29,2025-02-24 12:45:00,answered,18.0,11.0,,20.0,204.0,143.0,127.0,True,1,1,Billing,30,0.6,0.7,20.0,Arvid,Ondricka,Team South,81.0,0.89,29,CL-153345,consumer,East,2025-02-24,12,Monday,0,1,0,1.0
+10,2,190,2025-02-18 05:56:00,answered,16.0,14.0,,14.0,156.0,140.0,147.0,True,2,1,Account changes,30,0.9,0.9,14.0,Polly,Purdy,Team South,2.0,1.05,190,CL-285000,consumer,East,2025-02-18,5,Tuesday,1,1,0,1.0
+11,4,185,2025-02-20 14:49:00,answered,17.0,26.0,,21.0,106.0,138.0,141.0,True,4,1,Technical support,30,1.5,1.3,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,185,CL-696277,consumer,East,2025-02-20,14,Thursday,3,1,0,1.0
+12,1,53,2025-02-19 16:46:00,answered,17.0,10.0,,3.0,201.0,141.0,168.0,True,1,1,Billing,30,0.6,0.7,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,53,CL-940066,small_business,East,2025-02-19,16,Wednesday,2,1,0,1.0
+13,2,139,2025-02-20 13:33:00,abandoned,,,5.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,139,CL-904932,consumer,West,2025-02-20,13,Thursday,3,0,1,
+14,1,192,2025-02-07 15:49:00,abandoned,,,4.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,192,CL-983506,consumer,South,2025-02-07,15,Friday,4,0,1,
+15,4,15,2025-02-04 19:22:00,abandoned,,,51.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,15,CL-898287,small_business,North,2025-02-04,19,Tuesday,1,0,1,
+16,5,189,2025-02-04 09:35:00,answered,14.0,25.0,,21.0,102.0,153.0,156.0,True,5,1,Complaints,30,1.8,1.5,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,189,CL-163610,small_business,North,2025-02-04,9,Tuesday,1,1,0,1.0
+17,4,6,2025-02-17 07:01:00,answered,15.0,23.0,,12.0,141.0,183.0,178.0,False,4,1,Technical support,30,1.5,1.3,12.0,Valerie,Auer,Team North,58.0,0.97,6,CL-907931,consumer,North,2025-02-17,7,Monday,0,1,0,1.0
+18,4,59,2025-02-25 15:05:00,answered,10.0,15.0,,9.0,207.0,269.0,280.0,True,4,1,Technical support,30,1.5,1.3,9.0,Abraham,Ortiz,Team South,88.0,1.04,59,CL-763270,consumer,West,2025-02-25,15,Tuesday,1,1,0,1.0
+19,2,4,2025-02-04 08:16:00,answered,31.0,28.0,,8.0,168.0,151.0,168.0,True,2,1,Account changes,30,0.9,0.9,8.0,Benjamin,Kassulke,Team South,83.0,1.11,4,CL-726161,consumer,East,2025-02-04,8,Tuesday,1,1,0,1.0
+20,3,107,2025-02-04 13:21:00,answered,18.0,22.0,,29.0,134.0,147.0,135.0,True,3,1,Sales,30,1.2,1.1,29.0,Alexie,Lehner,Team North,70.0,0.92,107,CL-912356,small_business,South,2025-02-04,13,Tuesday,1,1,0,1.0
+21,5,36,2025-02-04 13:00:00,answered,22.0,40.0,,27.0,133.0,200.0,200.0,True,5,1,Complaints,30,1.8,1.5,27.0,Michale,Grimes,Team East,82.0,1.0,36,CL-515567,small_business,South,2025-02-04,13,Tuesday,1,1,0,0.0
+22,4,3,2025-02-28 21:56:00,answered,35.0,53.0,,2.0,175.0,228.0,249.0,True,4,1,Technical support,30,1.5,1.3,2.0,Edyth,Lockman,Team North,31.0,1.09,3,CL-501041,consumer,South,2025-02-28,21,Friday,4,1,0,0.0
+23,3,29,2025-02-21 15:48:00,answered,6.0,7.0,,1.0,177.0,195.0,197.0,True,3,1,Sales,30,1.2,1.1,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,29,CL-153345,consumer,East,2025-02-21,15,Friday,4,1,0,1.0
+24,3,29,2025-02-19 17:17:00,answered,16.0,19.0,,5.0,224.0,246.0,236.0,False,3,1,Sales,30,1.2,1.1,5.0,Earnest,Bednar,Team North,63.0,0.96,29,CL-153345,consumer,East,2025-02-19,17,Wednesday,2,1,0,1.0
+25,4,210,2025-02-03 00:05:00,answered,10.0,15.0,,8.0,273.0,355.0,394.0,True,4,1,Technical support,30,1.5,1.3,8.0,Benjamin,Kassulke,Team South,83.0,1.11,210,CL-116882,consumer,South,2025-02-03,0,Monday,0,1,0,1.0
+26,4,175,2025-02-13 08:01:00,answered,33.0,50.0,,17.0,359.0,467.0,439.0,True,4,1,Technical support,30,1.5,1.3,17.0,Lesly,Huels,Team North,16.0,0.94,175,CL-353404,consumer,West,2025-02-13,8,Thursday,3,1,0,0.0
+27,1,169,2025-02-20 14:22:00,abandoned,,,48.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,169,CL-706004,consumer,North,2025-02-20,14,Thursday,3,0,1,
+28,1,65,2025-02-26 16:13:00,answered,30.0,18.0,,26.0,189.0,132.0,145.0,True,1,1,Billing,30,0.6,0.7,26.0,Brain,Dooley,Team East,73.0,1.1,65,CL-869624,consumer,South,2025-02-26,16,Wednesday,2,1,0,1.0
+29,2,1,2025-02-20 13:37:00,answered,28.0,25.0,,28.0,158.0,142.0,132.0,True,2,1,Account changes,30,0.9,0.9,28.0,Richard,Gislason,Team East,3.0,0.93,1,CL-696409,consumer,West,2025-02-20,13,Thursday,3,1,0,1.0
+30,5,5,2025-02-28 09:29:00,answered,33.0,59.0,,5.0,146.0,219.0,210.0,False,5,1,Complaints,30,1.8,1.5,5.0,Earnest,Bednar,Team North,63.0,0.96,5,CL-669474,small_business,South,2025-02-28,9,Friday,4,1,0,0.0
+31,2,47,2025-02-07 14:34:00,answered,24.0,22.0,,22.0,201.0,181.0,186.0,False,2,1,Account changes,30,0.9,0.9,22.0,Dan,Heaney,Team East,45.0,1.03,47,CL-055365,consumer,South,2025-02-07,14,Friday,4,1,0,1.0
+32,5,141,2025-02-07 10:13:00,answered,10.0,18.0,,14.0,250.0,375.0,394.0,True,5,1,Complaints,30,1.8,1.5,14.0,Polly,Purdy,Team South,2.0,1.05,141,CL-959730,small_business,South,2025-02-07,10,Friday,4,1,0,1.0
+33,2,194,2025-02-20 13:03:00,abandoned,,,97.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,194,CL-236575,consumer,West,2025-02-20,13,Thursday,3,0,1,
+34,4,31,2025-02-25 11:46:00,answered,9.0,14.0,,16.0,118.0,153.0,148.0,True,4,1,Technical support,30,1.5,1.3,16.0,Dusty,Wunsch,Team South,19.0,0.97,31,CL-089861,small_business,West,2025-02-25,11,Tuesday,1,1,0,1.0
+35,4,11,2025-02-15 11:47:00,abandoned,,,102.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,11,CL-077793,consumer,East,2025-02-15,11,Saturday,5,0,1,
+36,1,1,2025-02-13 14:16:00,answered,25.0,15.0,,14.0,138.0,97.0,102.0,True,1,1,Billing,30,0.6,0.7,14.0,Polly,Purdy,Team South,2.0,1.05,1,CL-696409,consumer,West,2025-02-13,14,Thursday,3,1,0,1.0
+37,1,179,2025-02-19 14:15:00,answered,15.0,9.0,,22.0,112.0,78.0,80.0,False,1,1,Billing,30,0.6,0.7,22.0,Dan,Heaney,Team East,45.0,1.03,179,CL-069433,small_business,North,2025-02-19,14,Wednesday,2,1,0,1.0
+38,1,157,2025-02-13 12:38:00,answered,17.0,10.0,,10.0,207.0,145.0,154.0,True,1,1,Billing,30,0.6,0.7,10.0,Darryl,Becker,Team South,15.0,1.06,157,CL-014212,small_business,West,2025-02-13,12,Thursday,3,1,0,1.0
+39,3,203,2025-02-14 07:39:00,abandoned,,,49.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,203,CL-121900,consumer,South,2025-02-14,7,Friday,4,0,1,
+40,4,1,2025-02-11 15:13:00,answered,28.0,42.0,,24.0,145.0,189.0,193.0,True,4,1,Technical support,30,1.5,1.3,24.0,Graciela,Luettgen,Team South,2.0,1.02,1,CL-696409,consumer,West,2025-02-11,15,Tuesday,1,1,0,0.0
+41,3,200,2025-02-05 19:47:00,answered,36.0,43.0,,10.0,161.0,177.0,188.0,True,3,1,Sales,30,1.2,1.1,10.0,Darryl,Becker,Team South,15.0,1.06,200,CL-861526,consumer,West,2025-02-05,19,Wednesday,2,1,0,0.0
+42,5,27,2025-02-24 14:28:00,answered,57.0,103.0,,21.0,206.0,309.0,315.0,False,5,1,Complaints,30,1.8,1.5,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,27,CL-625844,consumer,North,2025-02-24,14,Monday,0,1,0,0.0
+43,3,76,2025-02-28 13:27:00,answered,15.0,18.0,,11.0,200.0,220.0,218.0,True,3,1,Sales,30,1.2,1.1,11.0,Zakary,Sawayn,Team South,40.0,0.99,76,CL-870786,consumer,West,2025-02-28,13,Friday,4,1,0,1.0
+44,2,115,2025-02-20 16:10:00,answered,48.0,43.0,,14.0,326.0,293.0,308.0,True,2,1,Account changes,30,0.9,0.9,14.0,Polly,Purdy,Team South,2.0,1.05,115,CL-872851,consumer,South,2025-02-20,16,Thursday,3,1,0,0.0
+45,4,133,2025-02-04 16:56:00,answered,14.0,21.0,,27.0,214.0,278.0,278.0,True,4,1,Technical support,30,1.5,1.3,27.0,Michale,Grimes,Team East,82.0,1.0,133,CL-835657,consumer,North,2025-02-04,16,Tuesday,1,1,0,1.0
+46,2,4,2025-02-17 14:49:00,answered,45.0,41.0,,5.0,406.0,365.0,350.0,True,2,1,Account changes,30,0.9,0.9,5.0,Earnest,Bednar,Team North,63.0,0.96,4,CL-726161,consumer,East,2025-02-17,14,Monday,0,1,0,0.0
+47,4,1,2025-02-28 08:32:00,answered,15.0,23.0,,9.0,198.0,257.0,267.0,False,4,1,Technical support,30,1.5,1.3,9.0,Abraham,Ortiz,Team South,88.0,1.04,1,CL-696409,consumer,West,2025-02-28,8,Friday,4,1,0,1.0
+48,4,87,2025-02-09 12:35:00,answered,18.0,27.0,,20.0,176.0,229.0,204.0,True,4,1,Technical support,30,1.5,1.3,20.0,Arvid,Ondricka,Team South,81.0,0.89,87,CL-209015,small_business,South,2025-02-09,12,Sunday,6,1,0,1.0
+49,1,11,2025-02-18 18:26:00,answered,26.0,16.0,,16.0,242.0,169.0,164.0,True,1,1,Billing,30,0.6,0.7,16.0,Dusty,Wunsch,Team South,19.0,0.97,11,CL-077793,consumer,East,2025-02-18,18,Tuesday,1,1,0,1.0
+50,4,19,2025-02-26 08:34:00,answered,16.0,24.0,,9.0,201.0,261.0,271.0,True,4,1,Technical support,30,1.5,1.3,9.0,Abraham,Ortiz,Team South,88.0,1.04,19,CL-830412,consumer,West,2025-02-26,8,Wednesday,2,1,0,1.0
+51,1,10,2025-02-05 16:09:00,answered,69.0,41.0,,11.0,145.0,102.0,101.0,False,1,1,Billing,30,0.6,0.7,11.0,Zakary,Sawayn,Team South,40.0,0.99,10,CL-613207,small_business,North,2025-02-05,16,Wednesday,2,1,0,0.0
+52,2,58,2025-02-28 12:01:00,answered,8.0,7.0,,6.0,119.0,107.0,118.0,True,2,1,Account changes,30,0.9,0.9,6.0,Selmer,Marquardt,Team East,30.0,1.1,58,CL-823617,small_business,West,2025-02-28,12,Friday,4,1,0,1.0
+53,4,101,2025-02-20 14:45:00,answered,48.0,72.0,,22.0,133.0,173.0,178.0,True,4,1,Technical support,30,1.5,1.3,22.0,Dan,Heaney,Team East,45.0,1.03,101,CL-943289,consumer,West,2025-02-20,14,Thursday,3,1,0,0.0
+54,4,10,2025-02-28 23:15:00,answered,17.0,26.0,,30.0,131.0,170.0,165.0,False,4,1,Technical support,30,1.5,1.3,30.0,Ceasar,Corwin,Team North,83.0,0.97,10,CL-613207,small_business,North,2025-02-28,23,Friday,4,1,0,1.0
+55,3,121,2025-02-03 13:48:00,answered,26.0,31.0,,25.0,218.0,240.0,254.0,False,3,1,Sales,30,1.2,1.1,25.0,Merritt,McGlynn,Team South,2.0,1.06,121,CL-575992,consumer,South,2025-02-03,13,Monday,0,1,0,0.0
+56,1,103,2025-02-24 10:37:00,answered,20.0,12.0,,8.0,151.0,106.0,118.0,True,1,1,Billing,30,0.6,0.7,8.0,Benjamin,Kassulke,Team South,83.0,1.11,103,CL-756072,consumer,West,2025-02-24,10,Monday,0,1,0,1.0
+57,1,62,2025-02-09 11:11:00,answered,43.0,26.0,,25.0,168.0,118.0,125.0,True,1,1,Billing,30,0.6,0.7,25.0,Merritt,McGlynn,Team South,2.0,1.06,62,CL-862852,consumer,East,2025-02-09,11,Sunday,6,1,0,1.0
+58,4,216,2025-02-26 11:27:00,answered,10.0,15.0,,8.0,186.0,242.0,269.0,True,4,1,Technical support,30,1.5,1.3,8.0,Benjamin,Kassulke,Team South,83.0,1.11,216,CL-856152,consumer,West,2025-02-26,11,Wednesday,2,1,0,1.0
+59,3,40,2025-02-24 14:41:00,answered,12.0,14.0,,4.0,232.0,255.0,245.0,True,3,1,Sales,30,1.2,1.1,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,40,CL-220482,consumer,West,2025-02-24,14,Monday,0,1,0,1.0
+60,2,188,2025-02-14 16:50:00,answered,13.0,12.0,,13.0,281.0,253.0,266.0,True,2,1,Account changes,30,0.9,0.9,13.0,Jermey,Shanahan,Team South,3.0,1.05,188,CL-475789,consumer,East,2025-02-14,16,Friday,4,1,0,1.0
+61,3,101,2025-02-17 14:34:00,answered,24.0,29.0,,14.0,198.0,218.0,229.0,True,3,1,Sales,30,1.2,1.1,14.0,Polly,Purdy,Team South,2.0,1.05,101,CL-943289,consumer,West,2025-02-17,14,Monday,0,1,0,1.0
+62,5,160,2025-02-04 08:38:00,answered,22.0,40.0,,3.0,207.0,311.0,370.0,True,5,1,Complaints,30,1.8,1.5,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,160,CL-548285,consumer,North,2025-02-04,8,Tuesday,1,1,0,0.0
+63,5,146,2025-02-26 13:20:00,answered,14.0,25.0,,4.0,266.0,399.0,383.0,True,5,1,Complaints,30,1.8,1.5,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,146,CL-541296,small_business,West,2025-02-26,13,Wednesday,2,1,0,1.0
+64,3,113,2025-02-27 18:40:00,answered,18.0,22.0,,26.0,118.0,130.0,143.0,False,3,1,Sales,30,1.2,1.1,26.0,Brain,Dooley,Team East,73.0,1.1,113,CL-827954,consumer,West,2025-02-27,18,Thursday,3,1,0,1.0
+65,1,217,2025-02-06 13:17:00,answered,29.0,17.0,,14.0,158.0,111.0,117.0,True,1,1,Billing,30,0.6,0.7,14.0,Polly,Purdy,Team South,2.0,1.05,217,CL-976745,consumer,North,2025-02-06,13,Thursday,3,1,0,1.0
+66,3,22,2025-02-21 11:13:00,answered,15.0,18.0,,7.0,153.0,168.0,163.0,True,3,1,Sales,30,1.2,1.1,7.0,Travon,Mann,Team East,2.0,0.97,22,CL-349477,consumer,West,2025-02-21,11,Friday,4,1,0,1.0
+67,3,112,2025-02-07 08:29:00,answered,26.0,31.0,,26.0,523.0,575.0,633.0,True,3,1,Sales,30,1.2,1.1,26.0,Brain,Dooley,Team East,73.0,1.1,112,CL-537702,enterprise,North,2025-02-07,8,Friday,4,1,0,0.0
+68,4,1,2025-02-03 15:23:00,answered,14.0,21.0,,7.0,140.0,182.0,177.0,True,4,1,Technical support,30,1.5,1.3,7.0,Travon,Mann,Team East,2.0,0.97,1,CL-696409,consumer,West,2025-02-03,15,Monday,0,1,0,1.0
+69,1,212,2025-02-11 11:29:00,answered,35.0,21.0,,18.0,129.0,90.0,95.0,False,1,1,Billing,30,0.6,0.7,18.0,Aaron,Tillman,Team South,65.0,1.05,212,CL-875757,consumer,North,2025-02-11,11,Tuesday,1,1,0,1.0
+70,1,45,2025-02-25 09:02:00,abandoned,,,122.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,45,CL-850392,consumer,West,2025-02-25,9,Tuesday,1,0,1,
+71,1,1,2025-02-20 15:58:00,answered,19.0,11.0,,11.0,234.0,164.0,162.0,True,1,1,Billing,30,0.6,0.7,11.0,Zakary,Sawayn,Team South,40.0,0.99,1,CL-696409,consumer,West,2025-02-20,15,Thursday,3,1,0,1.0
+72,1,210,2025-02-17 12:46:00,abandoned,,,11.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,210,CL-116882,consumer,South,2025-02-17,12,Monday,0,0,1,
+73,2,1,2025-02-14 13:55:00,answered,10.0,9.0,,7.0,238.0,214.0,208.0,True,2,1,Account changes,30,0.9,0.9,7.0,Travon,Mann,Team East,2.0,0.97,1,CL-696409,consumer,West,2025-02-14,13,Friday,4,1,0,1.0
+74,2,153,2025-02-03 00:13:00,answered,14.0,13.0,,5.0,177.0,159.0,153.0,True,2,1,Account changes,30,0.9,0.9,5.0,Earnest,Bednar,Team North,63.0,0.96,153,CL-064439,consumer,South,2025-02-03,0,Monday,0,1,0,1.0
+75,4,1,2025-02-10 16:38:00,answered,19.0,29.0,,27.0,177.0,230.0,230.0,False,4,1,Technical support,30,1.5,1.3,27.0,Michale,Grimes,Team East,82.0,1.0,1,CL-696409,consumer,West,2025-02-10,16,Monday,0,1,0,1.0
+76,4,59,2025-02-07 14:13:00,answered,43.0,65.0,,4.0,118.0,153.0,147.0,False,4,1,Technical support,30,1.5,1.3,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,59,CL-763270,consumer,West,2025-02-07,14,Friday,4,1,0,0.0
+77,4,121,2025-02-21 11:36:00,answered,5.0,8.0,,5.0,408.0,530.0,509.0,False,4,1,Technical support,30,1.5,1.3,5.0,Earnest,Bednar,Team North,63.0,0.96,121,CL-575992,consumer,South,2025-02-21,11,Friday,4,1,0,1.0
+78,1,216,2025-02-18 16:23:00,answered,40.0,24.0,,16.0,167.0,117.0,113.0,False,1,1,Billing,30,0.6,0.7,16.0,Dusty,Wunsch,Team South,19.0,0.97,216,CL-856152,consumer,West,2025-02-18,16,Tuesday,1,1,0,1.0
+79,2,6,2025-02-18 08:57:00,answered,11.0,10.0,,26.0,206.0,185.0,204.0,True,2,1,Account changes,30,0.9,0.9,26.0,Brain,Dooley,Team East,73.0,1.1,6,CL-907931,consumer,North,2025-02-18,8,Tuesday,1,1,0,1.0
+80,5,210,2025-02-25 16:19:00,answered,11.0,20.0,,16.0,135.0,203.0,197.0,True,5,1,Complaints,30,1.8,1.5,16.0,Dusty,Wunsch,Team South,19.0,0.97,210,CL-116882,consumer,South,2025-02-25,16,Tuesday,1,1,0,1.0
+81,1,4,2025-02-27 17:29:00,answered,9.0,5.0,,28.0,115.0,81.0,75.0,False,1,1,Billing,30,0.6,0.7,28.0,Richard,Gislason,Team East,3.0,0.93,4,CL-726161,consumer,East,2025-02-27,17,Thursday,3,1,0,1.0
+82,1,6,2025-02-17 11:07:00,answered,28.0,17.0,,10.0,246.0,172.0,182.0,False,1,1,Billing,30,0.6,0.7,10.0,Darryl,Becker,Team South,15.0,1.06,6,CL-907931,consumer,North,2025-02-17,11,Monday,0,1,0,1.0
+83,4,82,2025-02-28 08:48:00,answered,23.0,35.0,,11.0,140.0,182.0,180.0,True,4,1,Technical support,30,1.5,1.3,11.0,Zakary,Sawayn,Team South,40.0,0.99,82,CL-292376,consumer,South,2025-02-28,8,Friday,4,1,0,0.0
+84,5,148,2025-02-07 09:26:00,answered,41.0,74.0,,29.0,173.0,260.0,239.0,True,5,1,Complaints,30,1.8,1.5,29.0,Alexie,Lehner,Team North,70.0,0.92,148,CL-357510,consumer,West,2025-02-07,9,Friday,4,1,0,0.0
+85,3,40,2025-02-26 19:59:00,answered,12.0,14.0,,14.0,201.0,221.0,232.0,True,3,1,Sales,30,1.2,1.1,14.0,Polly,Purdy,Team South,2.0,1.05,40,CL-220482,consumer,West,2025-02-26,19,Wednesday,2,1,0,1.0
+86,3,203,2025-02-24 16:43:00,answered,13.0,16.0,,13.0,220.0,242.0,254.0,True,3,1,Sales,30,1.2,1.1,13.0,Jermey,Shanahan,Team South,3.0,1.05,203,CL-121900,consumer,South,2025-02-24,16,Monday,0,1,0,1.0
+87,4,125,2025-02-11 13:39:00,answered,8.0,12.0,,8.0,199.0,259.0,287.0,True,4,1,Technical support,30,1.5,1.3,8.0,Benjamin,Kassulke,Team South,83.0,1.11,125,CL-803006,small_business,South,2025-02-11,13,Tuesday,1,1,0,1.0
+88,4,190,2025-02-04 17:44:00,answered,12.0,18.0,,5.0,213.0,277.0,266.0,True,4,1,Technical support,30,1.5,1.3,5.0,Earnest,Bednar,Team North,63.0,0.96,190,CL-285000,consumer,East,2025-02-04,17,Tuesday,1,1,0,1.0
+89,3,227,2025-02-20 11:33:00,answered,12.0,14.0,,11.0,202.0,222.0,220.0,False,3,1,Sales,30,1.2,1.1,11.0,Zakary,Sawayn,Team South,40.0,0.99,227,CL-165711,consumer,West,2025-02-20,11,Thursday,3,1,0,1.0
+90,1,57,2025-02-23 08:26:00,answered,21.0,13.0,,28.0,206.0,144.0,134.0,True,1,1,Billing,30,0.6,0.7,28.0,Richard,Gislason,Team East,3.0,0.93,57,CL-511057,enterprise,East,2025-02-23,8,Sunday,6,1,0,1.0
+91,4,1,2025-02-12 09:21:00,answered,25.0,38.0,,19.0,234.0,304.0,331.0,True,4,1,Technical support,30,1.5,1.3,19.0,Manuel,Weissnat,Team East,7.0,1.09,1,CL-696409,consumer,West,2025-02-12,9,Wednesday,2,1,0,0.0
+92,2,9,2025-02-19 12:24:00,answered,23.0,21.0,,22.0,194.0,175.0,180.0,True,2,1,Account changes,30,0.9,0.9,22.0,Dan,Heaney,Team East,45.0,1.03,9,CL-994954,consumer,East,2025-02-19,12,Wednesday,2,1,0,1.0
+93,4,1,2025-02-22 13:34:00,answered,9.0,14.0,,11.0,149.0,194.0,192.0,True,4,1,Technical support,30,1.5,1.3,11.0,Zakary,Sawayn,Team South,40.0,0.99,1,CL-696409,consumer,West,2025-02-22,13,Saturday,5,1,0,1.0
+94,4,62,2025-02-14 16:48:00,answered,18.0,27.0,,9.0,120.0,156.0,162.0,True,4,1,Technical support,30,1.5,1.3,9.0,Abraham,Ortiz,Team South,88.0,1.04,62,CL-862852,consumer,East,2025-02-14,16,Friday,4,1,0,1.0
+95,5,35,2025-02-18 10:09:00,answered,32.0,58.0,,21.0,176.0,264.0,269.0,True,5,1,Complaints,30,1.8,1.5,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,35,CL-938756,consumer,North,2025-02-18,10,Tuesday,1,1,0,0.0
+96,1,9,2025-02-11 21:37:00,answered,27.0,16.0,,4.0,272.0,190.0,182.0,True,1,1,Billing,30,0.6,0.7,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,9,CL-994954,consumer,East,2025-02-11,21,Tuesday,1,1,0,1.0
+97,4,1,2025-02-20 10:44:00,answered,19.0,29.0,,26.0,161.0,209.0,230.0,False,4,1,Technical support,30,1.5,1.3,26.0,Brain,Dooley,Team East,73.0,1.1,1,CL-696409,consumer,West,2025-02-20,10,Thursday,3,1,0,1.0
+98,1,115,2025-02-03 09:53:00,answered,17.0,10.0,,15.0,193.0,135.0,128.0,True,1,1,Billing,30,0.6,0.7,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,115,CL-872851,consumer,South,2025-02-03,9,Monday,0,1,0,1.0
+99,5,74,2025-02-28 18:20:00,abandoned,,,93.0,,,,,,5,1,Complaints,30,1.8,1.5,,,,,,,74,CL-907468,small_business,North,2025-02-28,18,Friday,4,0,1,
+100,1,39,2025-02-21 14:19:00,answered,24.0,14.0,,18.0,374.0,262.0,275.0,False,1,1,Billing,30,0.6,0.7,18.0,Aaron,Tillman,Team South,65.0,1.05,39,CL-699740,consumer,North,2025-02-21,14,Friday,4,1,0,1.0
+101,4,8,2025-02-25 12:29:00,answered,15.0,23.0,,3.0,260.0,338.0,402.0,False,4,1,Technical support,30,1.5,1.3,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,8,CL-711583,consumer,East,2025-02-25,12,Tuesday,1,1,0,1.0
+102,4,109,2025-02-04 14:05:00,answered,16.0,24.0,,26.0,194.0,252.0,277.0,True,4,1,Technical support,30,1.5,1.3,26.0,Brain,Dooley,Team East,73.0,1.1,109,CL-806874,consumer,West,2025-02-04,14,Tuesday,1,1,0,1.0
+103,4,209,2025-02-10 15:14:00,answered,8.0,12.0,,22.0,134.0,174.0,179.0,False,4,1,Technical support,30,1.5,1.3,22.0,Dan,Heaney,Team East,45.0,1.03,209,CL-741786,enterprise,South,2025-02-10,15,Monday,0,1,0,1.0
+104,5,38,2025-02-20 14:37:00,abandoned,,,42.0,,,,,,5,1,Complaints,30,1.8,1.5,,,,,,,38,CL-178793,small_business,East,2025-02-20,14,Thursday,3,0,1,
+105,4,173,2025-02-24 07:58:00,abandoned,,,31.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,173,CL-922788,small_business,South,2025-02-24,7,Monday,0,0,1,
+106,5,122,2025-02-20 12:50:00,answered,42.0,76.0,,21.0,238.0,357.0,364.0,True,5,1,Complaints,30,1.8,1.5,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,122,CL-578568,enterprise,South,2025-02-20,12,Thursday,3,1,0,0.0
+107,1,176,2025-02-28 15:54:00,answered,18.0,11.0,,30.0,228.0,160.0,155.0,False,1,1,Billing,30,0.6,0.7,30.0,Ceasar,Corwin,Team North,83.0,0.97,176,CL-509391,small_business,North,2025-02-28,15,Friday,4,1,0,1.0
+108,3,184,2025-02-28 16:24:00,answered,16.0,19.0,,11.0,148.0,163.0,161.0,True,3,1,Sales,30,1.2,1.1,11.0,Zakary,Sawayn,Team South,40.0,0.99,184,CL-193841,consumer,South,2025-02-28,16,Friday,4,1,0,1.0
+109,4,166,2025-02-18 15:45:00,abandoned,,,24.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,166,CL-280634,consumer,West,2025-02-18,15,Tuesday,1,0,1,
+110,5,9,2025-02-28 15:17:00,answered,19.0,34.0,,6.0,252.0,378.0,416.0,False,5,1,Complaints,30,1.8,1.5,6.0,Selmer,Marquardt,Team East,30.0,1.1,9,CL-994954,consumer,East,2025-02-28,15,Friday,4,1,0,0.0
+111,2,2,2025-02-19 09:29:00,answered,14.0,13.0,,16.0,334.0,301.0,292.0,True,2,1,Account changes,30,0.9,0.9,16.0,Dusty,Wunsch,Team South,19.0,0.97,2,CL-330627,consumer,North,2025-02-19,9,Wednesday,2,1,0,1.0
+112,2,10,2025-02-04 14:14:00,answered,20.0,18.0,,20.0,192.0,173.0,154.0,False,2,1,Account changes,30,0.9,0.9,20.0,Arvid,Ondricka,Team South,81.0,0.89,10,CL-613207,small_business,North,2025-02-04,14,Tuesday,1,1,0,1.0
+113,4,37,2025-02-05 11:09:00,answered,19.0,29.0,,20.0,183.0,238.0,212.0,False,4,1,Technical support,30,1.5,1.3,20.0,Arvid,Ondricka,Team South,81.0,0.89,37,CL-968724,consumer,East,2025-02-05,11,Wednesday,2,1,0,1.0
+114,2,1,2025-02-17 15:56:00,answered,33.0,30.0,,7.0,296.0,266.0,258.0,True,2,1,Account changes,30,0.9,0.9,7.0,Travon,Mann,Team East,2.0,0.97,1,CL-696409,consumer,West,2025-02-17,15,Monday,0,1,0,1.0
+115,1,2,2025-02-27 13:31:00,answered,11.0,7.0,,29.0,111.0,78.0,72.0,False,1,1,Billing,30,0.6,0.7,29.0,Alexie,Lehner,Team North,70.0,0.92,2,CL-330627,consumer,North,2025-02-27,13,Thursday,3,1,0,1.0
+116,4,205,2025-02-21 16:09:00,answered,10.0,15.0,,21.0,498.0,647.0,660.0,False,4,1,Technical support,30,1.5,1.3,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,205,CL-468715,consumer,West,2025-02-21,16,Friday,4,1,0,1.0
+117,4,1,2025-02-17 14:21:00,answered,13.0,20.0,,6.0,177.0,230.0,253.0,True,4,1,Technical support,30,1.5,1.3,6.0,Selmer,Marquardt,Team East,30.0,1.1,1,CL-696409,consumer,West,2025-02-17,14,Monday,0,1,0,1.0
+118,2,25,2025-02-24 17:51:00,answered,26.0,23.0,,26.0,269.0,242.0,266.0,True,2,1,Account changes,30,0.9,0.9,26.0,Brain,Dooley,Team East,73.0,1.1,25,CL-784169,consumer,North,2025-02-24,17,Monday,0,1,0,1.0
+119,4,107,2025-02-17 13:39:00,answered,13.0,20.0,,21.0,248.0,322.0,328.0,True,4,1,Technical support,30,1.5,1.3,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,107,CL-912356,small_business,South,2025-02-17,13,Monday,0,1,0,1.0
+120,4,147,2025-02-06 13:28:00,answered,86.0,129.0,,18.0,219.0,285.0,299.0,True,4,1,Technical support,30,1.5,1.3,18.0,Aaron,Tillman,Team South,65.0,1.05,147,CL-566642,consumer,South,2025-02-06,13,Thursday,3,1,0,0.0
+121,2,98,2025-02-10 10:07:00,answered,25.0,23.0,,13.0,126.0,113.0,119.0,False,2,1,Account changes,30,0.9,0.9,13.0,Jermey,Shanahan,Team South,3.0,1.05,98,CL-561534,enterprise,East,2025-02-10,10,Monday,0,1,0,1.0
+122,1,64,2025-02-03 13:59:00,answered,13.0,8.0,,18.0,232.0,162.0,170.0,True,1,1,Billing,30,0.6,0.7,18.0,Aaron,Tillman,Team South,65.0,1.05,64,CL-492179,consumer,West,2025-02-03,13,Monday,0,1,0,1.0
+123,4,6,2025-02-17 10:47:00,answered,37.0,56.0,,10.0,166.0,216.0,229.0,True,4,1,Technical support,30,1.5,1.3,10.0,Darryl,Becker,Team South,15.0,1.06,6,CL-907931,consumer,North,2025-02-17,10,Monday,0,1,0,0.0
+124,2,1,2025-02-17 11:39:00,answered,24.0,22.0,,23.0,152.0,137.0,142.0,True,2,1,Account changes,30,0.9,0.9,23.0,Lawrence,Trantow,Team North,56.0,1.04,1,CL-696409,consumer,West,2025-02-17,11,Monday,0,1,0,1.0
+125,4,25,2025-02-24 16:54:00,answered,16.0,24.0,,6.0,186.0,242.0,266.0,True,4,1,Technical support,30,1.5,1.3,6.0,Selmer,Marquardt,Team East,30.0,1.1,25,CL-784169,consumer,North,2025-02-24,16,Monday,0,1,0,1.0
+126,1,98,2025-02-26 16:55:00,answered,14.0,8.0,,20.0,117.0,82.0,73.0,True,1,1,Billing,30,0.6,0.7,20.0,Arvid,Ondricka,Team South,81.0,0.89,98,CL-561534,enterprise,East,2025-02-26,16,Wednesday,2,1,0,1.0
+127,3,65,2025-02-24 15:25:00,answered,14.0,17.0,,22.0,130.0,143.0,147.0,False,3,1,Sales,30,1.2,1.1,22.0,Dan,Heaney,Team East,45.0,1.03,65,CL-869624,consumer,South,2025-02-24,15,Monday,0,1,0,1.0
+128,4,235,2025-02-19 12:42:00,answered,16.0,24.0,,24.0,134.0,174.0,177.0,True,4,1,Technical support,30,1.5,1.3,24.0,Graciela,Luettgen,Team South,2.0,1.02,235,CL-995422,consumer,North,2025-02-19,12,Wednesday,2,1,0,1.0
+129,5,22,2025-02-11 12:54:00,answered,19.0,34.0,,2.0,203.0,305.0,332.0,False,5,1,Complaints,30,1.8,1.5,2.0,Edyth,Lockman,Team North,31.0,1.09,22,CL-349477,consumer,West,2025-02-11,12,Tuesday,1,1,0,0.0
+130,1,164,2025-02-24 10:05:00,answered,17.0,10.0,,2.0,147.0,103.0,112.0,True,1,1,Billing,30,0.6,0.7,2.0,Edyth,Lockman,Team North,31.0,1.09,164,CL-283010,consumer,North,2025-02-24,10,Monday,0,1,0,1.0
+131,4,217,2025-02-14 15:10:00,answered,15.0,23.0,,19.0,191.0,248.0,270.0,True,4,1,Technical support,30,1.5,1.3,19.0,Manuel,Weissnat,Team East,7.0,1.09,217,CL-976745,consumer,North,2025-02-14,15,Friday,4,1,0,1.0
+132,3,63,2025-02-19 10:08:00,answered,17.0,20.0,,14.0,212.0,233.0,245.0,False,3,1,Sales,30,1.2,1.1,14.0,Polly,Purdy,Team South,2.0,1.05,63,CL-746386,consumer,South,2025-02-19,10,Wednesday,2,1,0,1.0
+133,5,156,2025-02-21 13:23:00,answered,46.0,83.0,,6.0,223.0,335.0,369.0,True,5,1,Complaints,30,1.8,1.5,6.0,Selmer,Marquardt,Team East,30.0,1.1,156,CL-278493,consumer,South,2025-02-21,13,Friday,4,1,0,0.0
+134,2,3,2025-02-24 12:30:00,abandoned,,,79.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,3,CL-501041,consumer,South,2025-02-24,12,Monday,0,0,1,
+135,1,18,2025-02-28 14:56:00,answered,7.0,4.0,,4.0,234.0,164.0,157.0,True,1,1,Billing,30,0.6,0.7,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,18,CL-336272,consumer,South,2025-02-28,14,Friday,4,1,0,1.0
+136,3,62,2025-02-22 11:27:00,abandoned,,,147.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,62,CL-862852,consumer,East,2025-02-22,11,Saturday,5,0,1,
+137,3,244,2025-02-18 03:31:00,answered,24.0,29.0,,27.0,125.0,138.0,138.0,True,3,1,Sales,30,1.2,1.1,27.0,Michale,Grimes,Team East,82.0,1.0,244,CL-028545,consumer,South,2025-02-18,3,Tuesday,1,1,0,1.0
+138,4,15,2025-02-19 20:12:00,answered,30.0,45.0,,16.0,155.0,202.0,196.0,True,4,1,Technical support,30,1.5,1.3,16.0,Dusty,Wunsch,Team South,19.0,0.97,15,CL-898287,small_business,North,2025-02-19,20,Wednesday,2,1,0,0.0
+139,1,30,2025-02-24 11:46:00,answered,24.0,14.0,,9.0,462.0,323.0,336.0,True,1,1,Billing,30,0.6,0.7,9.0,Abraham,Ortiz,Team South,88.0,1.04,30,CL-166681,consumer,West,2025-02-24,11,Monday,0,1,0,1.0
+140,3,4,2025-02-24 05:03:00,answered,18.0,22.0,,16.0,197.0,217.0,210.0,True,3,1,Sales,30,1.2,1.1,16.0,Dusty,Wunsch,Team South,19.0,0.97,4,CL-726161,consumer,East,2025-02-24,5,Monday,0,1,0,1.0
+141,3,113,2025-02-15 17:14:00,answered,24.0,29.0,,13.0,186.0,205.0,215.0,True,3,1,Sales,30,1.2,1.1,13.0,Jermey,Shanahan,Team South,3.0,1.05,113,CL-827954,consumer,West,2025-02-15,17,Saturday,5,1,0,1.0
+142,2,31,2025-02-11 18:26:00,answered,12.0,11.0,,17.0,171.0,154.0,145.0,True,2,1,Account changes,30,0.9,0.9,17.0,Lesly,Huels,Team North,16.0,0.94,31,CL-089861,small_business,West,2025-02-11,18,Tuesday,1,1,0,1.0
+143,4,210,2025-02-06 10:29:00,answered,12.0,18.0,,11.0,123.0,160.0,158.0,True,4,1,Technical support,30,1.5,1.3,11.0,Zakary,Sawayn,Team South,40.0,0.99,210,CL-116882,consumer,South,2025-02-06,10,Thursday,3,1,0,1.0
+144,4,122,2025-02-26 13:33:00,answered,12.0,18.0,,14.0,183.0,238.0,250.0,True,4,1,Technical support,30,1.5,1.3,14.0,Polly,Purdy,Team South,2.0,1.05,122,CL-578568,enterprise,South,2025-02-26,13,Wednesday,2,1,0,1.0
+145,3,61,2025-02-17 08:16:00,answered,32.0,38.0,,20.0,198.0,218.0,194.0,False,3,1,Sales,30,1.2,1.1,20.0,Arvid,Ondricka,Team South,81.0,0.89,61,CL-134774,consumer,South,2025-02-17,8,Monday,0,1,0,0.0
+146,2,39,2025-02-21 13:25:00,answered,38.0,34.0,,9.0,129.0,116.0,121.0,True,2,1,Account changes,30,0.9,0.9,9.0,Abraham,Ortiz,Team South,88.0,1.04,39,CL-699740,consumer,North,2025-02-21,13,Friday,4,1,0,0.0
+147,4,122,2025-02-12 16:37:00,abandoned,,,80.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,122,CL-578568,enterprise,South,2025-02-12,16,Wednesday,2,0,1,
+148,4,235,2025-02-13 14:33:00,answered,64.0,96.0,,28.0,259.0,337.0,313.0,True,4,1,Technical support,30,1.5,1.3,28.0,Richard,Gislason,Team East,3.0,0.93,235,CL-995422,consumer,North,2025-02-13,14,Thursday,3,1,0,0.0
+149,5,3,2025-02-21 09:36:00,answered,6.0,11.0,,11.0,181.0,272.0,269.0,True,5,1,Complaints,30,1.8,1.5,11.0,Zakary,Sawayn,Team South,40.0,0.99,3,CL-501041,consumer,South,2025-02-21,9,Friday,4,1,0,1.0
+150,1,19,2025-02-27 10:42:00,answered,35.0,21.0,,26.0,186.0,130.0,143.0,True,1,1,Billing,30,0.6,0.7,26.0,Brain,Dooley,Team East,73.0,1.1,19,CL-830412,consumer,West,2025-02-27,10,Thursday,3,1,0,1.0
+151,3,5,2025-02-25 12:09:00,abandoned,,,25.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,5,CL-669474,small_business,South,2025-02-25,12,Tuesday,1,0,1,
+152,3,77,2025-02-25 05:17:00,answered,11.0,13.0,,25.0,213.0,234.0,248.0,True,3,1,Sales,30,1.2,1.1,25.0,Merritt,McGlynn,Team South,2.0,1.06,77,CL-374090,small_business,North,2025-02-25,5,Tuesday,1,1,0,1.0
+153,5,11,2025-02-03 14:13:00,answered,6.0,11.0,,4.0,141.0,212.0,204.0,True,5,1,Complaints,30,1.8,1.5,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,11,CL-077793,consumer,East,2025-02-03,14,Monday,0,1,0,1.0
+154,3,196,2025-02-12 11:22:00,abandoned,,,11.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,196,CL-064293,small_business,South,2025-02-12,11,Wednesday,2,0,1,
+155,1,134,2025-02-26 14:36:00,answered,21.0,13.0,,15.0,356.0,249.0,237.0,True,1,1,Billing,30,0.6,0.7,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,134,CL-936127,consumer,North,2025-02-26,14,Wednesday,2,1,0,1.0
+156,2,131,2025-02-05 23:49:00,answered,28.0,25.0,,12.0,259.0,233.0,226.0,True,2,1,Account changes,30,0.9,0.9,12.0,Valerie,Auer,Team North,58.0,0.97,131,CL-693056,small_business,West,2025-02-05,23,Wednesday,2,1,0,1.0
+157,4,4,2025-02-18 10:51:00,answered,19.0,29.0,,23.0,118.0,153.0,159.0,False,4,1,Technical support,30,1.5,1.3,23.0,Lawrence,Trantow,Team North,56.0,1.04,4,CL-726161,consumer,East,2025-02-18,10,Tuesday,1,1,0,1.0
+158,2,23,2025-02-13 10:06:00,abandoned,,,85.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,23,CL-320092,consumer,East,2025-02-13,10,Thursday,3,0,1,
+159,4,174,2025-02-11 06:51:00,answered,27.0,41.0,,3.0,161.0,209.0,249.0,True,4,1,Technical support,30,1.5,1.3,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,174,CL-556435,consumer,South,2025-02-11,6,Tuesday,1,1,0,0.0
+160,1,130,2025-02-24 09:31:00,answered,32.0,19.0,,5.0,198.0,139.0,133.0,False,1,1,Billing,30,0.6,0.7,5.0,Earnest,Bednar,Team North,63.0,0.96,130,CL-761891,consumer,West,2025-02-24,9,Monday,0,1,0,1.0
+161,1,7,2025-02-04 09:03:00,answered,27.0,16.0,,21.0,195.0,137.0,140.0,False,1,1,Billing,30,0.6,0.7,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,7,CL-669268,small_business,East,2025-02-04,9,Tuesday,1,1,0,1.0
+162,1,215,2025-02-03 13:17:00,abandoned,,,4.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,215,CL-156799,consumer,North,2025-02-03,13,Monday,0,0,1,
+163,3,54,2025-02-25 10:32:00,answered,11.0,13.0,,24.0,249.0,274.0,279.0,True,3,1,Sales,30,1.2,1.1,24.0,Graciela,Luettgen,Team South,2.0,1.02,54,CL-786949,consumer,South,2025-02-25,10,Tuesday,1,1,0,1.0
+164,4,117,2025-02-21 11:09:00,answered,9.0,14.0,,25.0,193.0,251.0,266.0,True,4,1,Technical support,30,1.5,1.3,25.0,Merritt,McGlynn,Team South,2.0,1.06,117,CL-506777,consumer,South,2025-02-21,11,Friday,4,1,0,1.0
+165,2,73,2025-02-17 14:35:00,answered,33.0,30.0,,19.0,159.0,143.0,156.0,False,2,1,Account changes,30,0.9,0.9,19.0,Manuel,Weissnat,Team East,7.0,1.09,73,CL-054765,consumer,North,2025-02-17,14,Monday,0,1,0,1.0
+166,1,37,2025-02-04 16:28:00,answered,46.0,28.0,,19.0,163.0,114.0,124.0,True,1,1,Billing,30,0.6,0.7,19.0,Manuel,Weissnat,Team East,7.0,1.09,37,CL-968724,consumer,East,2025-02-04,16,Tuesday,1,1,0,1.0
+167,1,215,2025-02-26 18:48:00,answered,26.0,16.0,,6.0,251.0,176.0,194.0,False,1,1,Billing,30,0.6,0.7,6.0,Selmer,Marquardt,Team East,30.0,1.1,215,CL-156799,consumer,North,2025-02-26,18,Wednesday,2,1,0,1.0
+168,1,95,2025-02-18 12:56:00,answered,22.0,13.0,,26.0,444.0,311.0,342.0,True,1,1,Billing,30,0.6,0.7,26.0,Brain,Dooley,Team East,73.0,1.1,95,CL-703870,small_business,West,2025-02-18,12,Tuesday,1,1,0,1.0
+169,1,150,2025-02-10 17:33:00,abandoned,,,39.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,150,CL-614092,consumer,West,2025-02-10,17,Monday,0,0,1,
+170,5,31,2025-02-11 10:40:00,abandoned,,,4.0,,,,,,5,1,Complaints,30,1.8,1.5,,,,,,,31,CL-089861,small_business,West,2025-02-11,10,Tuesday,1,0,1,
+171,2,232,2025-02-20 10:18:00,answered,11.0,10.0,,17.0,158.0,142.0,133.0,True,2,1,Account changes,30,0.9,0.9,17.0,Lesly,Huels,Team North,16.0,0.94,232,CL-739969,consumer,West,2025-02-20,10,Thursday,3,1,0,1.0
+172,4,126,2025-02-12 13:18:00,answered,13.0,20.0,,6.0,147.0,191.0,210.0,True,4,1,Technical support,30,1.5,1.3,6.0,Selmer,Marquardt,Team East,30.0,1.1,126,CL-349204,enterprise,East,2025-02-12,13,Wednesday,2,1,0,1.0
+173,3,19,2025-02-11 22:27:00,abandoned,,,6.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,19,CL-830412,consumer,West,2025-02-11,22,Tuesday,1,0,1,
+174,1,161,2025-02-24 15:39:00,answered,29.0,17.0,,11.0,132.0,92.0,91.0,True,1,1,Billing,30,0.6,0.7,11.0,Zakary,Sawayn,Team South,40.0,0.99,161,CL-039969,consumer,North,2025-02-24,15,Monday,0,1,0,1.0
+175,4,222,2025-02-07 08:27:00,answered,8.0,12.0,,4.0,116.0,151.0,145.0,True,4,1,Technical support,30,1.5,1.3,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,222,CL-427734,consumer,East,2025-02-07,8,Friday,4,1,0,1.0
+176,5,6,2025-02-18 09:19:00,answered,15.0,27.0,,26.0,226.0,339.0,373.0,True,5,1,Complaints,30,1.8,1.5,26.0,Brain,Dooley,Team East,73.0,1.1,6,CL-907931,consumer,North,2025-02-18,9,Tuesday,1,1,0,1.0
+177,1,27,2025-02-15 10:11:00,answered,29.0,17.0,,25.0,97.0,68.0,72.0,True,1,1,Billing,30,0.6,0.7,25.0,Merritt,McGlynn,Team South,2.0,1.06,27,CL-625844,consumer,North,2025-02-15,10,Saturday,5,1,0,1.0
+178,4,154,2025-02-28 14:59:00,answered,19.0,29.0,,6.0,156.0,203.0,223.0,False,4,1,Technical support,30,1.5,1.3,6.0,Selmer,Marquardt,Team East,30.0,1.1,154,CL-264281,small_business,South,2025-02-28,14,Friday,4,1,0,1.0
+179,1,94,2025-02-06 17:12:00,answered,11.0,7.0,,20.0,179.0,125.0,111.0,True,1,1,Billing,30,0.6,0.7,20.0,Arvid,Ondricka,Team South,81.0,0.89,94,CL-037299,consumer,East,2025-02-06,17,Thursday,3,1,0,1.0
+180,2,138,2025-02-17 09:06:00,answered,16.0,14.0,,18.0,153.0,138.0,145.0,False,2,1,Account changes,30,0.9,0.9,18.0,Aaron,Tillman,Team South,65.0,1.05,138,CL-453803,consumer,East,2025-02-17,9,Monday,0,1,0,1.0
+181,4,61,2025-02-10 10:33:00,answered,57.0,86.0,,28.0,247.0,321.0,299.0,False,4,1,Technical support,30,1.5,1.3,28.0,Richard,Gislason,Team East,3.0,0.93,61,CL-134774,consumer,South,2025-02-10,10,Monday,0,1,0,0.0
+182,4,76,2025-02-28 12:20:00,answered,28.0,42.0,,22.0,145.0,189.0,195.0,True,4,1,Technical support,30,1.5,1.3,22.0,Dan,Heaney,Team East,45.0,1.03,76,CL-870786,consumer,West,2025-02-28,12,Friday,4,1,0,0.0
+183,4,3,2025-02-12 13:48:00,answered,6.0,9.0,,11.0,150.0,195.0,193.0,False,4,1,Technical support,30,1.5,1.3,11.0,Zakary,Sawayn,Team South,40.0,0.99,3,CL-501041,consumer,South,2025-02-12,13,Wednesday,2,1,0,1.0
+184,4,64,2025-02-26 11:00:00,abandoned,,,6.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,64,CL-492179,consumer,West,2025-02-26,11,Wednesday,2,0,1,
+185,2,7,2025-02-14 11:56:00,abandoned,,,10.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,7,CL-669268,small_business,East,2025-02-14,11,Friday,4,0,1,
+186,3,98,2025-02-07 14:06:00,answered,9.0,11.0,,18.0,161.0,177.0,186.0,False,3,1,Sales,30,1.2,1.1,18.0,Aaron,Tillman,Team South,65.0,1.05,98,CL-561534,enterprise,East,2025-02-07,14,Friday,4,1,0,1.0
+187,1,57,2025-02-18 13:42:00,answered,19.0,11.0,,4.0,184.0,129.0,124.0,True,1,1,Billing,30,0.6,0.7,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,57,CL-511057,enterprise,East,2025-02-18,13,Tuesday,1,1,0,1.0
+188,1,12,2025-02-21 19:36:00,answered,33.0,20.0,,5.0,134.0,94.0,90.0,True,1,1,Billing,30,0.6,0.7,5.0,Earnest,Bednar,Team North,63.0,0.96,12,CL-743079,consumer,East,2025-02-21,19,Friday,4,1,0,1.0
+189,5,144,2025-02-10 20:17:00,answered,33.0,59.0,,29.0,244.0,366.0,337.0,True,5,1,Complaints,30,1.8,1.5,29.0,Alexie,Lehner,Team North,70.0,0.92,144,CL-506971,consumer,North,2025-02-10,20,Monday,0,1,0,0.0
+190,2,36,2025-02-18 07:47:00,answered,15.0,14.0,,18.0,201.0,181.0,190.0,True,2,1,Account changes,30,0.9,0.9,18.0,Aaron,Tillman,Team South,65.0,1.05,36,CL-515567,small_business,South,2025-02-18,7,Tuesday,1,1,0,1.0
+191,4,1,2025-02-06 17:08:00,answered,10.0,15.0,,21.0,232.0,302.0,308.0,True,4,1,Technical support,30,1.5,1.3,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,1,CL-696409,consumer,West,2025-02-06,17,Thursday,3,1,0,1.0
+192,4,3,2025-02-27 12:39:00,answered,9.0,14.0,,14.0,287.0,373.0,392.0,False,4,1,Technical support,30,1.5,1.3,14.0,Polly,Purdy,Team South,2.0,1.05,3,CL-501041,consumer,South,2025-02-27,12,Thursday,3,1,0,1.0
+193,3,90,2025-02-14 10:08:00,answered,7.0,8.0,,22.0,173.0,190.0,196.0,True,3,1,Sales,30,1.2,1.1,22.0,Dan,Heaney,Team East,45.0,1.03,90,CL-251307,consumer,North,2025-02-14,10,Friday,4,1,0,1.0
+194,3,104,2025-02-21 16:40:00,abandoned,,,7.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,104,CL-960645,consumer,North,2025-02-21,16,Friday,4,0,1,
+195,3,19,2025-02-21 13:43:00,abandoned,,,69.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,19,CL-830412,consumer,West,2025-02-21,13,Friday,4,0,1,
+196,3,249,2025-02-10 15:58:00,answered,24.0,29.0,,9.0,168.0,185.0,192.0,False,3,1,Sales,30,1.2,1.1,9.0,Abraham,Ortiz,Team South,88.0,1.04,249,CL-989953,small_business,South,2025-02-10,15,Monday,0,1,0,1.0
+197,4,42,2025-02-12 16:30:00,answered,14.0,21.0,,28.0,202.0,263.0,245.0,True,4,1,Technical support,30,1.5,1.3,28.0,Richard,Gislason,Team East,3.0,0.93,42,CL-431319,consumer,South,2025-02-12,16,Wednesday,2,1,0,1.0
+198,3,138,2025-02-24 15:49:00,abandoned,,,15.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,138,CL-453803,consumer,East,2025-02-24,15,Monday,0,0,1,
+199,2,138,2025-02-21 14:44:00,answered,15.0,14.0,,5.0,158.0,142.0,136.0,False,2,1,Account changes,30,0.9,0.9,5.0,Earnest,Bednar,Team North,63.0,0.96,138,CL-453803,consumer,East,2025-02-21,14,Friday,4,1,0,1.0
+200,1,84,2025-02-22 14:23:00,answered,10.0,6.0,,23.0,112.0,78.0,81.0,False,1,1,Billing,30,0.6,0.7,23.0,Lawrence,Trantow,Team North,56.0,1.04,84,CL-556598,consumer,South,2025-02-22,14,Saturday,5,1,0,1.0
+201,3,106,2025-02-20 14:03:00,answered,26.0,31.0,,22.0,181.0,199.0,205.0,True,3,1,Sales,30,1.2,1.1,22.0,Dan,Heaney,Team East,45.0,1.03,106,CL-224674,consumer,East,2025-02-20,14,Thursday,3,1,0,0.0
+202,1,76,2025-02-13 11:40:00,answered,12.0,7.0,,28.0,144.0,101.0,94.0,True,1,1,Billing,30,0.6,0.7,28.0,Richard,Gislason,Team East,3.0,0.93,76,CL-870786,consumer,West,2025-02-13,11,Thursday,3,1,0,1.0
+203,4,21,2025-02-24 12:05:00,answered,11.0,17.0,,19.0,418.0,543.0,592.0,True,4,1,Technical support,30,1.5,1.3,19.0,Manuel,Weissnat,Team East,7.0,1.09,21,CL-080107,consumer,West,2025-02-24,12,Monday,0,1,0,1.0
+204,1,123,2025-02-06 15:53:00,abandoned,,,124.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,123,CL-496020,consumer,South,2025-02-06,15,Thursday,3,0,1,
+205,3,78,2025-02-21 14:36:00,answered,17.0,20.0,,7.0,116.0,128.0,124.0,False,3,1,Sales,30,1.2,1.1,7.0,Travon,Mann,Team East,2.0,0.97,78,CL-746742,consumer,South,2025-02-21,14,Friday,4,1,0,1.0
+206,5,1,2025-02-19 10:35:00,answered,7.0,13.0,,21.0,222.0,333.0,340.0,True,5,1,Complaints,30,1.8,1.5,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,1,CL-696409,consumer,West,2025-02-19,10,Wednesday,2,1,0,1.0
+207,3,154,2025-02-03 20:01:00,abandoned,,,112.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,154,CL-264281,small_business,South,2025-02-03,20,Monday,0,0,1,
+208,2,48,2025-02-16 16:45:00,answered,5.0,5.0,,5.0,221.0,199.0,191.0,True,2,1,Account changes,30,0.9,0.9,5.0,Earnest,Bednar,Team North,63.0,0.96,48,CL-065054,consumer,South,2025-02-16,16,Sunday,6,1,0,1.0
+209,4,13,2025-02-25 15:36:00,answered,33.0,50.0,,1.0,168.0,218.0,220.0,True,4,1,Technical support,30,1.5,1.3,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,13,CL-383450,consumer,North,2025-02-25,15,Tuesday,1,1,0,0.0
+210,4,217,2025-02-13 12:44:00,answered,12.0,18.0,,30.0,207.0,269.0,261.0,False,4,1,Technical support,30,1.5,1.3,30.0,Ceasar,Corwin,Team North,83.0,0.97,217,CL-976745,consumer,North,2025-02-13,12,Thursday,3,1,0,1.0
+211,3,34,2025-02-22 18:02:00,answered,46.0,55.0,,29.0,124.0,136.0,125.0,True,3,1,Sales,30,1.2,1.1,29.0,Alexie,Lehner,Team North,70.0,0.92,34,CL-823869,consumer,North,2025-02-22,18,Saturday,5,1,0,0.0
+212,5,56,2025-02-27 12:17:00,answered,15.0,27.0,,16.0,139.0,209.0,203.0,True,5,1,Complaints,30,1.8,1.5,16.0,Dusty,Wunsch,Team South,19.0,0.97,56,CL-043517,consumer,North,2025-02-27,12,Thursday,3,1,0,1.0
+213,3,1,2025-02-07 12:16:00,answered,21.0,25.0,,7.0,184.0,202.0,196.0,True,3,1,Sales,30,1.2,1.1,7.0,Travon,Mann,Team East,2.0,0.97,1,CL-696409,consumer,West,2025-02-07,12,Friday,4,1,0,1.0
+214,1,31,2025-02-21 23:56:00,answered,30.0,18.0,,29.0,108.0,76.0,70.0,True,1,1,Billing,30,0.6,0.7,29.0,Alexie,Lehner,Team North,70.0,0.92,31,CL-089861,small_business,West,2025-02-21,23,Friday,4,1,0,1.0
+215,1,2,2025-02-03 15:06:00,answered,52.0,31.0,,16.0,231.0,162.0,157.0,True,1,1,Billing,30,0.6,0.7,16.0,Dusty,Wunsch,Team South,19.0,0.97,2,CL-330627,consumer,North,2025-02-03,15,Monday,0,1,0,0.0
+216,3,13,2025-02-13 17:36:00,answered,20.0,24.0,,24.0,152.0,167.0,170.0,True,3,1,Sales,30,1.2,1.1,24.0,Graciela,Luettgen,Team South,2.0,1.02,13,CL-383450,consumer,North,2025-02-13,17,Thursday,3,1,0,1.0
+217,2,37,2025-02-10 19:58:00,answered,13.0,12.0,,20.0,114.0,103.0,92.0,True,2,1,Account changes,30,0.9,0.9,20.0,Arvid,Ondricka,Team South,81.0,0.89,37,CL-968724,consumer,East,2025-02-10,19,Monday,0,1,0,1.0
+218,5,23,2025-02-27 14:44:00,answered,55.0,99.0,,5.0,125.0,188.0,180.0,True,5,1,Complaints,30,1.8,1.5,5.0,Earnest,Bednar,Team North,63.0,0.96,23,CL-320092,consumer,East,2025-02-27,14,Thursday,3,1,0,0.0
+219,1,38,2025-02-14 13:52:00,answered,30.0,18.0,,29.0,117.0,82.0,75.0,False,1,1,Billing,30,0.6,0.7,29.0,Alexie,Lehner,Team North,70.0,0.92,38,CL-178793,small_business,East,2025-02-14,13,Friday,4,1,0,1.0
+220,4,179,2025-02-14 16:43:00,answered,8.0,12.0,,14.0,127.0,165.0,173.0,True,4,1,Technical support,30,1.5,1.3,14.0,Polly,Purdy,Team South,2.0,1.05,179,CL-069433,small_business,North,2025-02-14,16,Friday,4,1,0,1.0
+221,3,68,2025-02-18 14:46:00,abandoned,,,5.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,68,CL-320039,consumer,East,2025-02-18,14,Tuesday,1,0,1,
+222,4,78,2025-02-14 14:01:00,answered,34.0,51.0,,15.0,243.0,316.0,300.0,True,4,1,Technical support,30,1.5,1.3,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,78,CL-746742,consumer,South,2025-02-14,14,Friday,4,1,0,0.0
+223,4,66,2025-02-06 09:55:00,answered,11.0,17.0,,29.0,140.0,182.0,167.0,True,4,1,Technical support,30,1.5,1.3,29.0,Alexie,Lehner,Team North,70.0,0.92,66,CL-635948,enterprise,East,2025-02-06,9,Thursday,3,1,0,1.0
+224,4,25,2025-02-19 02:35:00,answered,40.0,60.0,,14.0,184.0,239.0,251.0,False,4,1,Technical support,30,1.5,1.3,14.0,Polly,Purdy,Team South,2.0,1.05,25,CL-784169,consumer,North,2025-02-19,2,Wednesday,2,1,0,0.0
+225,3,4,2025-02-11 16:26:00,answered,13.0,16.0,,14.0,200.0,220.0,231.0,True,3,1,Sales,30,1.2,1.1,14.0,Polly,Purdy,Team South,2.0,1.05,4,CL-726161,consumer,East,2025-02-11,16,Tuesday,1,1,0,1.0
+226,5,44,2025-02-25 11:42:00,answered,28.0,50.0,,1.0,159.0,239.0,241.0,True,5,1,Complaints,30,1.8,1.5,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,44,CL-387135,small_business,West,2025-02-25,11,Tuesday,1,1,0,0.0
+227,3,2,2025-02-25 18:21:00,answered,8.0,10.0,,17.0,193.0,212.0,199.0,True,3,1,Sales,30,1.2,1.1,17.0,Lesly,Huels,Team North,16.0,0.94,2,CL-330627,consumer,North,2025-02-25,18,Tuesday,1,1,0,1.0
+228,1,207,2025-02-03 15:21:00,answered,13.0,8.0,,9.0,189.0,132.0,137.0,True,1,1,Billing,30,0.6,0.7,9.0,Abraham,Ortiz,Team South,88.0,1.04,207,CL-518304,consumer,East,2025-02-03,15,Monday,0,1,0,1.0
+229,1,219,2025-02-10 08:54:00,answered,56.0,34.0,,28.0,126.0,88.0,82.0,False,1,1,Billing,30,0.6,0.7,28.0,Richard,Gislason,Team East,3.0,0.93,219,CL-394392,consumer,East,2025-02-10,8,Monday,0,1,0,0.0
+230,2,199,2025-02-10 10:19:00,answered,38.0,34.0,,16.0,149.0,134.0,130.0,True,2,1,Account changes,30,0.9,0.9,16.0,Dusty,Wunsch,Team South,19.0,0.97,199,CL-285101,consumer,East,2025-02-10,10,Monday,0,1,0,0.0
+231,4,169,2025-02-11 11:02:00,answered,16.0,24.0,,28.0,422.0,549.0,511.0,True,4,1,Technical support,30,1.5,1.3,28.0,Richard,Gislason,Team East,3.0,0.93,169,CL-706004,consumer,North,2025-02-11,11,Tuesday,1,1,0,1.0
+232,2,118,2025-02-04 17:13:00,answered,11.0,10.0,,26.0,142.0,128.0,141.0,True,2,1,Account changes,30,0.9,0.9,26.0,Brain,Dooley,Team East,73.0,1.1,118,CL-092745,consumer,East,2025-02-04,17,Tuesday,1,1,0,1.0
+233,4,23,2025-02-13 15:29:00,answered,12.0,18.0,,23.0,162.0,211.0,219.0,True,4,1,Technical support,30,1.5,1.3,23.0,Lawrence,Trantow,Team North,56.0,1.04,23,CL-320092,consumer,East,2025-02-13,15,Thursday,3,1,0,1.0
+234,2,6,2025-02-03 15:27:00,answered,11.0,10.0,,27.0,136.0,122.0,122.0,True,2,1,Account changes,30,0.9,0.9,27.0,Michale,Grimes,Team East,82.0,1.0,6,CL-907931,consumer,North,2025-02-03,15,Monday,0,1,0,1.0
+235,4,88,2025-02-14 16:47:00,answered,39.0,59.0,,22.0,123.0,160.0,165.0,True,4,1,Technical support,30,1.5,1.3,22.0,Dan,Heaney,Team East,45.0,1.03,88,CL-799007,consumer,East,2025-02-14,16,Friday,4,1,0,0.0
+236,4,241,2025-02-18 14:55:00,answered,35.0,53.0,,17.0,177.0,230.0,216.0,False,4,1,Technical support,30,1.5,1.3,17.0,Lesly,Huels,Team North,16.0,0.94,241,CL-560904,consumer,East,2025-02-18,14,Tuesday,1,1,0,0.0
+237,3,85,2025-02-24 12:00:00,answered,14.0,17.0,,16.0,371.0,408.0,396.0,True,3,1,Sales,30,1.2,1.1,16.0,Dusty,Wunsch,Team South,19.0,0.97,85,CL-481027,consumer,South,2025-02-24,12,Monday,0,1,0,1.0
+238,4,101,2025-02-18 12:27:00,answered,13.0,20.0,,29.0,256.0,333.0,306.0,True,4,1,Technical support,30,1.5,1.3,29.0,Alexie,Lehner,Team North,70.0,0.92,101,CL-943289,consumer,West,2025-02-18,12,Tuesday,1,1,0,1.0
+239,1,127,2025-02-13 16:58:00,answered,13.0,8.0,,30.0,142.0,99.0,96.0,False,1,1,Billing,30,0.6,0.7,30.0,Ceasar,Corwin,Team North,83.0,0.97,127,CL-120732,consumer,North,2025-02-13,16,Thursday,3,1,0,1.0
+240,1,153,2025-02-10 12:45:00,answered,21.0,13.0,,23.0,147.0,103.0,107.0,True,1,1,Billing,30,0.6,0.7,23.0,Lawrence,Trantow,Team North,56.0,1.04,153,CL-064439,consumer,South,2025-02-10,12,Monday,0,1,0,1.0
+241,2,7,2025-02-18 14:28:00,abandoned,,,7.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,7,CL-669268,small_business,East,2025-02-18,14,Tuesday,1,0,1,
+242,4,1,2025-02-06 09:42:00,answered,20.0,30.0,,6.0,161.0,209.0,230.0,True,4,1,Technical support,30,1.5,1.3,6.0,Selmer,Marquardt,Team East,30.0,1.1,1,CL-696409,consumer,West,2025-02-06,9,Thursday,3,1,0,1.0
+243,2,178,2025-02-17 12:19:00,answered,10.0,9.0,,20.0,181.0,163.0,145.0,True,2,1,Account changes,30,0.9,0.9,20.0,Arvid,Ondricka,Team South,81.0,0.89,178,CL-343932,consumer,North,2025-02-17,12,Monday,0,1,0,1.0
+244,4,93,2025-02-26 18:21:00,answered,23.0,35.0,,14.0,171.0,222.0,233.0,True,4,1,Technical support,30,1.5,1.3,14.0,Polly,Purdy,Team South,2.0,1.05,93,CL-037220,enterprise,East,2025-02-26,18,Wednesday,2,1,0,0.0
+245,1,18,2025-02-17 18:44:00,answered,11.0,7.0,,20.0,164.0,115.0,102.0,False,1,1,Billing,30,0.6,0.7,20.0,Arvid,Ondricka,Team South,81.0,0.89,18,CL-336272,consumer,South,2025-02-17,18,Monday,0,1,0,1.0
+246,1,50,2025-02-20 14:32:00,answered,17.0,10.0,,17.0,132.0,92.0,86.0,True,1,1,Billing,30,0.6,0.7,17.0,Lesly,Huels,Team North,16.0,0.94,50,CL-021676,small_business,East,2025-02-20,14,Thursday,3,1,0,1.0
+247,5,1,2025-02-12 17:14:00,answered,14.0,25.0,,24.0,418.0,627.0,640.0,False,5,1,Complaints,30,1.8,1.5,24.0,Graciela,Luettgen,Team South,2.0,1.02,1,CL-696409,consumer,West,2025-02-12,17,Wednesday,2,1,0,1.0
+248,3,132,2025-02-12 11:01:00,abandoned,,,84.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,132,CL-317534,consumer,North,2025-02-12,11,Wednesday,2,0,1,
+249,4,1,2025-02-06 11:00:00,answered,7.0,11.0,,13.0,350.0,455.0,478.0,False,4,1,Technical support,30,1.5,1.3,13.0,Jermey,Shanahan,Team South,3.0,1.05,1,CL-696409,consumer,West,2025-02-06,11,Thursday,3,1,0,1.0
+250,4,172,2025-02-18 16:09:00,answered,8.0,12.0,,21.0,112.0,146.0,149.0,True,4,1,Technical support,30,1.5,1.3,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,172,CL-110086,consumer,South,2025-02-18,16,Tuesday,1,1,0,1.0
+251,1,76,2025-02-25 11:56:00,answered,17.0,10.0,,16.0,220.0,154.0,149.0,True,1,1,Billing,30,0.6,0.7,16.0,Dusty,Wunsch,Team South,19.0,0.97,76,CL-870786,consumer,West,2025-02-25,11,Tuesday,1,1,0,1.0
+252,4,195,2025-02-16 09:44:00,answered,20.0,30.0,,14.0,157.0,204.0,214.0,False,4,1,Technical support,30,1.5,1.3,14.0,Polly,Purdy,Team South,2.0,1.05,195,CL-673629,small_business,South,2025-02-16,9,Sunday,6,1,0,1.0
+253,4,153,2025-02-18 15:58:00,answered,10.0,15.0,,5.0,317.0,412.0,396.0,True,4,1,Technical support,30,1.5,1.3,5.0,Earnest,Bednar,Team North,63.0,0.96,153,CL-064439,consumer,South,2025-02-18,15,Tuesday,1,1,0,1.0
+254,4,63,2025-02-25 09:10:00,answered,12.0,18.0,,29.0,185.0,241.0,222.0,False,4,1,Technical support,30,1.5,1.3,29.0,Alexie,Lehner,Team North,70.0,0.92,63,CL-746386,consumer,South,2025-02-25,9,Tuesday,1,1,0,1.0
+255,3,150,2025-02-28 10:05:00,answered,3.0,4.0,,2.0,574.0,631.0,688.0,True,3,1,Sales,30,1.2,1.1,2.0,Edyth,Lockman,Team North,31.0,1.09,150,CL-614092,consumer,West,2025-02-28,10,Friday,4,1,0,1.0
+256,2,103,2025-02-17 11:04:00,answered,8.0,7.0,,27.0,313.0,282.0,282.0,True,2,1,Account changes,30,0.9,0.9,27.0,Michale,Grimes,Team East,82.0,1.0,103,CL-756072,consumer,West,2025-02-17,11,Monday,0,1,0,1.0
+257,3,24,2025-02-27 14:17:00,answered,18.0,22.0,,18.0,180.0,198.0,208.0,True,3,1,Sales,30,1.2,1.1,18.0,Aaron,Tillman,Team South,65.0,1.05,24,CL-198597,consumer,North,2025-02-27,14,Thursday,3,1,0,1.0
+258,3,14,2025-02-08 11:04:00,answered,17.0,20.0,,26.0,163.0,179.0,197.0,False,3,1,Sales,30,1.2,1.1,26.0,Brain,Dooley,Team East,73.0,1.1,14,CL-985730,consumer,East,2025-02-08,11,Saturday,5,1,0,1.0
+259,2,25,2025-02-08 14:28:00,answered,21.0,19.0,,23.0,136.0,122.0,127.0,True,2,1,Account changes,30,0.9,0.9,23.0,Lawrence,Trantow,Team North,56.0,1.04,25,CL-784169,consumer,North,2025-02-08,14,Saturday,5,1,0,1.0
+260,4,31,2025-02-05 14:48:00,answered,19.0,29.0,,6.0,209.0,272.0,299.0,True,4,1,Technical support,30,1.5,1.3,6.0,Selmer,Marquardt,Team East,30.0,1.1,31,CL-089861,small_business,West,2025-02-05,14,Wednesday,2,1,0,1.0
+261,2,87,2025-02-20 10:58:00,answered,10.0,9.0,,8.0,289.0,260.0,289.0,True,2,1,Account changes,30,0.9,0.9,8.0,Benjamin,Kassulke,Team South,83.0,1.11,87,CL-209015,small_business,South,2025-02-20,10,Thursday,3,1,0,1.0
+262,3,1,2025-02-13 15:55:00,abandoned,,,106.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,1,CL-696409,consumer,West,2025-02-13,15,Thursday,3,0,1,
+263,1,44,2025-02-06 14:45:00,answered,22.0,13.0,,21.0,194.0,136.0,139.0,True,1,1,Billing,30,0.6,0.7,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,44,CL-387135,small_business,West,2025-02-06,14,Thursday,3,1,0,1.0
+264,4,23,2025-02-06 11:38:00,answered,21.0,32.0,,26.0,407.0,529.0,582.0,True,4,1,Technical support,30,1.5,1.3,26.0,Brain,Dooley,Team East,73.0,1.1,23,CL-320092,consumer,East,2025-02-06,11,Thursday,3,1,0,0.0
+265,1,20,2025-02-07 15:48:00,answered,13.0,8.0,,28.0,213.0,149.0,139.0,True,1,1,Billing,30,0.6,0.7,28.0,Richard,Gislason,Team East,3.0,0.93,20,CL-589392,consumer,West,2025-02-07,15,Friday,4,1,0,1.0
+266,4,161,2025-02-25 13:50:00,answered,5.0,8.0,,6.0,204.0,265.0,292.0,False,4,1,Technical support,30,1.5,1.3,6.0,Selmer,Marquardt,Team East,30.0,1.1,161,CL-039969,consumer,North,2025-02-25,13,Tuesday,1,1,0,1.0
+267,4,62,2025-02-07 17:12:00,answered,46.0,69.0,,2.0,249.0,324.0,353.0,True,4,1,Technical support,30,1.5,1.3,2.0,Edyth,Lockman,Team North,31.0,1.09,62,CL-862852,consumer,East,2025-02-07,17,Friday,4,1,0,0.0
+268,4,41,2025-02-24 20:52:00,answered,10.0,15.0,,22.0,120.0,156.0,161.0,True,4,1,Technical support,30,1.5,1.3,22.0,Dan,Heaney,Team East,45.0,1.03,41,CL-853059,small_business,West,2025-02-24,20,Monday,0,1,0,1.0
+269,1,157,2025-02-09 15:50:00,answered,65.0,39.0,,20.0,254.0,178.0,158.0,False,1,1,Billing,30,0.6,0.7,20.0,Arvid,Ondricka,Team South,81.0,0.89,157,CL-014212,small_business,West,2025-02-09,15,Sunday,6,1,0,0.0
+270,1,1,2025-02-04 12:25:00,answered,17.0,10.0,,11.0,193.0,135.0,134.0,True,1,1,Billing,30,0.6,0.7,11.0,Zakary,Sawayn,Team South,40.0,0.99,1,CL-696409,consumer,West,2025-02-04,12,Tuesday,1,1,0,1.0
+271,4,171,2025-02-12 16:05:00,answered,27.0,41.0,,13.0,264.0,343.0,360.0,False,4,1,Technical support,30,1.5,1.3,13.0,Jermey,Shanahan,Team South,3.0,1.05,171,CL-275384,consumer,North,2025-02-12,16,Wednesday,2,1,0,0.0
+272,1,102,2025-02-25 14:16:00,answered,21.0,13.0,,16.0,187.0,131.0,127.0,True,1,1,Billing,30,0.6,0.7,16.0,Dusty,Wunsch,Team South,19.0,0.97,102,CL-344846,consumer,West,2025-02-25,14,Tuesday,1,1,0,1.0
+273,4,26,2025-02-27 10:48:00,abandoned,,,7.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,26,CL-026838,consumer,West,2025-02-27,10,Thursday,3,0,1,
+274,4,112,2025-02-20 13:45:00,answered,33.0,50.0,,7.0,165.0,215.0,209.0,False,4,1,Technical support,30,1.5,1.3,7.0,Travon,Mann,Team East,2.0,0.97,112,CL-537702,enterprise,North,2025-02-20,13,Thursday,3,1,0,0.0
+275,1,56,2025-02-06 15:33:00,answered,43.0,26.0,,10.0,137.0,96.0,102.0,True,1,1,Billing,30,0.6,0.7,10.0,Darryl,Becker,Team South,15.0,1.06,56,CL-043517,consumer,North,2025-02-06,15,Thursday,3,1,0,1.0
+276,4,54,2025-02-28 07:29:00,answered,8.0,12.0,,17.0,125.0,163.0,153.0,True,4,1,Technical support,30,1.5,1.3,17.0,Lesly,Huels,Team North,16.0,0.94,54,CL-786949,consumer,South,2025-02-28,7,Friday,4,1,0,1.0
+277,1,6,2025-02-07 17:34:00,answered,8.0,5.0,,23.0,195.0,137.0,142.0,False,1,1,Billing,30,0.6,0.7,23.0,Lawrence,Trantow,Team North,56.0,1.04,6,CL-907931,consumer,North,2025-02-07,17,Friday,4,1,0,1.0
+278,3,4,2025-02-24 11:27:00,answered,6.0,7.0,,22.0,158.0,174.0,179.0,False,3,1,Sales,30,1.2,1.1,22.0,Dan,Heaney,Team East,45.0,1.03,4,CL-726161,consumer,East,2025-02-24,11,Monday,0,1,0,1.0
+279,2,232,2025-02-28 16:49:00,answered,31.0,28.0,,6.0,142.0,128.0,141.0,True,2,1,Account changes,30,0.9,0.9,6.0,Selmer,Marquardt,Team East,30.0,1.1,232,CL-739969,consumer,West,2025-02-28,16,Friday,4,1,0,1.0
+280,2,89,2025-02-03 15:50:00,answered,9.0,8.0,,9.0,251.0,226.0,235.0,False,2,1,Account changes,30,0.9,0.9,9.0,Abraham,Ortiz,Team South,88.0,1.04,89,CL-513914,consumer,South,2025-02-03,15,Monday,0,1,0,1.0
+281,2,87,2025-02-28 08:10:00,answered,14.0,13.0,,7.0,307.0,276.0,268.0,True,2,1,Account changes,30,0.9,0.9,7.0,Travon,Mann,Team East,2.0,0.97,87,CL-209015,small_business,South,2025-02-28,8,Friday,4,1,0,1.0
+282,1,41,2025-02-28 10:15:00,answered,13.0,8.0,,18.0,112.0,78.0,82.0,False,1,1,Billing,30,0.6,0.7,18.0,Aaron,Tillman,Team South,65.0,1.05,41,CL-853059,small_business,West,2025-02-28,10,Friday,4,1,0,1.0
+283,1,154,2025-02-13 10:44:00,answered,22.0,13.0,,9.0,207.0,145.0,151.0,False,1,1,Billing,30,0.6,0.7,9.0,Abraham,Ortiz,Team South,88.0,1.04,154,CL-264281,small_business,South,2025-02-13,10,Thursday,3,1,0,1.0
+284,5,90,2025-02-10 08:20:00,answered,40.0,72.0,,18.0,422.0,633.0,665.0,True,5,1,Complaints,30,1.8,1.5,18.0,Aaron,Tillman,Team South,65.0,1.05,90,CL-251307,consumer,North,2025-02-10,8,Monday,0,1,0,0.0
+285,2,4,2025-02-25 09:21:00,abandoned,,,10.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,4,CL-726161,consumer,East,2025-02-25,9,Tuesday,1,0,1,
+286,2,56,2025-02-19 11:09:00,abandoned,,,9.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,56,CL-043517,consumer,North,2025-02-19,11,Wednesday,2,0,1,
+287,1,89,2025-02-05 16:21:00,abandoned,,,145.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,89,CL-513914,consumer,South,2025-02-05,16,Wednesday,2,0,1,
+288,1,35,2025-02-27 14:12:00,answered,45.0,27.0,,3.0,143.0,100.0,119.0,True,1,1,Billing,30,0.6,0.7,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,35,CL-938756,consumer,North,2025-02-27,14,Thursday,3,1,0,1.0
+289,2,1,2025-02-24 09:31:00,answered,15.0,14.0,,22.0,131.0,118.0,122.0,False,2,1,Account changes,30,0.9,0.9,22.0,Dan,Heaney,Team East,45.0,1.03,1,CL-696409,consumer,West,2025-02-24,9,Monday,0,1,0,1.0
+290,4,68,2025-02-21 14:45:00,answered,9.0,14.0,,2.0,147.0,191.0,208.0,True,4,1,Technical support,30,1.5,1.3,2.0,Edyth,Lockman,Team North,31.0,1.09,68,CL-320039,consumer,East,2025-02-21,14,Friday,4,1,0,1.0
+291,5,46,2025-02-28 09:54:00,answered,14.0,25.0,,12.0,209.0,314.0,305.0,True,5,1,Complaints,30,1.8,1.5,12.0,Valerie,Auer,Team North,58.0,0.97,46,CL-149317,consumer,South,2025-02-28,9,Friday,4,1,0,1.0
+292,3,249,2025-02-28 20:23:00,answered,17.0,20.0,,8.0,180.0,198.0,220.0,True,3,1,Sales,30,1.2,1.1,8.0,Benjamin,Kassulke,Team South,83.0,1.11,249,CL-989953,small_business,South,2025-02-28,20,Friday,4,1,0,1.0
+293,4,171,2025-02-19 10:02:00,answered,8.0,12.0,,23.0,205.0,267.0,278.0,True,4,1,Technical support,30,1.5,1.3,23.0,Lawrence,Trantow,Team North,56.0,1.04,171,CL-275384,consumer,North,2025-02-19,10,Wednesday,2,1,0,1.0
+294,2,34,2025-02-03 16:48:00,answered,15.0,14.0,,14.0,148.0,133.0,140.0,False,2,1,Account changes,30,0.9,0.9,14.0,Polly,Purdy,Team South,2.0,1.05,34,CL-823869,consumer,North,2025-02-03,16,Monday,0,1,0,1.0
+295,2,162,2025-02-13 08:54:00,answered,23.0,21.0,,6.0,127.0,114.0,125.0,False,2,1,Account changes,30,0.9,0.9,6.0,Selmer,Marquardt,Team East,30.0,1.1,162,CL-444010,small_business,North,2025-02-13,8,Thursday,3,1,0,1.0
+296,1,8,2025-02-12 21:00:00,answered,28.0,17.0,,10.0,192.0,134.0,142.0,True,1,1,Billing,30,0.6,0.7,10.0,Darryl,Becker,Team South,15.0,1.06,8,CL-711583,consumer,East,2025-02-12,21,Wednesday,2,1,0,1.0
+297,5,183,2025-02-24 09:35:00,answered,8.0,14.0,,29.0,148.0,222.0,204.0,False,5,1,Complaints,30,1.8,1.5,29.0,Alexie,Lehner,Team North,70.0,0.92,183,CL-519005,consumer,North,2025-02-24,9,Monday,0,1,0,1.0
+298,2,33,2025-02-27 17:38:00,answered,21.0,19.0,,4.0,226.0,203.0,195.0,False,2,1,Account changes,30,0.9,0.9,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,33,CL-486293,consumer,West,2025-02-27,17,Thursday,3,1,0,1.0
+299,1,4,2025-02-04 09:07:00,answered,14.0,8.0,,30.0,107.0,75.0,73.0,False,1,1,Billing,30,0.6,0.7,30.0,Ceasar,Corwin,Team North,83.0,0.97,4,CL-726161,consumer,East,2025-02-04,9,Tuesday,1,1,0,1.0
+300,3,68,2025-02-25 18:40:00,answered,32.0,38.0,,15.0,146.0,161.0,153.0,True,3,1,Sales,30,1.2,1.1,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,68,CL-320039,consumer,East,2025-02-25,18,Tuesday,1,1,0,0.0
+301,1,137,2025-02-10 09:46:00,answered,29.0,17.0,,23.0,368.0,258.0,268.0,True,1,1,Billing,30,0.6,0.7,23.0,Lawrence,Trantow,Team North,56.0,1.04,137,CL-510810,consumer,East,2025-02-10,9,Monday,0,1,0,1.0
+302,1,7,2025-02-06 11:46:00,abandoned,,,12.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,7,CL-669268,small_business,East,2025-02-06,11,Thursday,3,0,1,
+303,2,32,2025-02-28 10:16:00,answered,29.0,26.0,,7.0,229.0,206.0,200.0,True,2,1,Account changes,30,0.9,0.9,7.0,Travon,Mann,Team East,2.0,0.97,32,CL-623987,consumer,South,2025-02-28,10,Friday,4,1,0,1.0
+304,3,246,2025-02-03 10:53:00,answered,23.0,28.0,,11.0,158.0,174.0,172.0,True,3,1,Sales,30,1.2,1.1,11.0,Zakary,Sawayn,Team South,40.0,0.99,246,CL-677329,consumer,West,2025-02-03,10,Monday,0,1,0,1.0
+305,4,44,2025-02-26 08:25:00,answered,35.0,53.0,,2.0,161.0,209.0,228.0,True,4,1,Technical support,30,1.5,1.3,2.0,Edyth,Lockman,Team North,31.0,1.09,44,CL-387135,small_business,West,2025-02-26,8,Wednesday,2,1,0,0.0
+306,4,77,2025-02-25 13:25:00,abandoned,,,128.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,77,CL-374090,small_business,North,2025-02-25,13,Tuesday,1,0,1,
+307,1,20,2025-02-03 10:17:00,answered,22.0,13.0,,20.0,222.0,155.0,138.0,True,1,1,Billing,30,0.6,0.7,20.0,Arvid,Ondricka,Team South,81.0,0.89,20,CL-589392,consumer,West,2025-02-03,10,Monday,0,1,0,1.0
+308,1,73,2025-02-24 14:32:00,answered,19.0,11.0,,21.0,146.0,102.0,104.0,False,1,1,Billing,30,0.6,0.7,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,73,CL-054765,consumer,North,2025-02-24,14,Monday,0,1,0,1.0
+309,1,237,2025-02-17 07:03:00,answered,13.0,8.0,,24.0,125.0,88.0,90.0,True,1,1,Billing,30,0.6,0.7,24.0,Graciela,Luettgen,Team South,2.0,1.02,237,CL-538898,consumer,South,2025-02-17,7,Monday,0,1,0,1.0
+310,1,99,2025-02-15 15:37:00,answered,28.0,17.0,,3.0,255.0,179.0,213.0,True,1,1,Billing,30,0.6,0.7,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,99,CL-966539,small_business,South,2025-02-15,15,Saturday,5,1,0,1.0
+311,2,48,2025-02-10 12:05:00,answered,28.0,25.0,,11.0,192.0,173.0,171.0,True,2,1,Account changes,30,0.9,0.9,11.0,Zakary,Sawayn,Team South,40.0,0.99,48,CL-065054,consumer,South,2025-02-10,12,Monday,0,1,0,1.0
+312,2,41,2025-02-10 10:26:00,answered,28.0,25.0,,14.0,163.0,147.0,154.0,True,2,1,Account changes,30,0.9,0.9,14.0,Polly,Purdy,Team South,2.0,1.05,41,CL-853059,small_business,West,2025-02-10,10,Monday,0,1,0,1.0
+313,4,137,2025-02-21 08:12:00,abandoned,,,36.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,137,CL-510810,consumer,East,2025-02-21,8,Friday,4,0,1,
+314,3,190,2025-02-20 17:56:00,answered,19.0,23.0,,21.0,226.0,249.0,254.0,True,3,1,Sales,30,1.2,1.1,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,190,CL-285000,consumer,East,2025-02-20,17,Thursday,3,1,0,1.0
+315,3,108,2025-02-06 14:26:00,abandoned,,,56.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,108,CL-120557,consumer,North,2025-02-06,14,Thursday,3,0,1,
+316,1,59,2025-02-18 12:45:00,answered,23.0,14.0,,24.0,136.0,95.0,97.0,True,1,1,Billing,30,0.6,0.7,24.0,Graciela,Luettgen,Team South,2.0,1.02,59,CL-763270,consumer,West,2025-02-18,12,Tuesday,1,1,0,1.0
+317,3,161,2025-02-21 10:07:00,answered,20.0,24.0,,22.0,120.0,132.0,136.0,False,3,1,Sales,30,1.2,1.1,22.0,Dan,Heaney,Team East,45.0,1.03,161,CL-039969,consumer,North,2025-02-21,10,Friday,4,1,0,1.0
+318,4,29,2025-02-24 13:17:00,answered,14.0,21.0,,24.0,169.0,220.0,224.0,True,4,1,Technical support,30,1.5,1.3,24.0,Graciela,Luettgen,Team South,2.0,1.02,29,CL-153345,consumer,East,2025-02-24,13,Monday,0,1,0,1.0
+319,4,170,2025-02-21 10:49:00,answered,38.0,57.0,,22.0,146.0,190.0,196.0,True,4,1,Technical support,30,1.5,1.3,22.0,Dan,Heaney,Team East,45.0,1.03,170,CL-896960,consumer,East,2025-02-21,10,Friday,4,1,0,0.0
+320,3,90,2025-02-07 12:05:00,answered,51.0,61.0,,28.0,191.0,210.0,195.0,True,3,1,Sales,30,1.2,1.1,28.0,Richard,Gislason,Team East,3.0,0.93,90,CL-251307,consumer,North,2025-02-07,12,Friday,4,1,0,0.0
+321,2,53,2025-02-25 15:08:00,answered,20.0,18.0,,29.0,191.0,172.0,158.0,True,2,1,Account changes,30,0.9,0.9,29.0,Alexie,Lehner,Team North,70.0,0.92,53,CL-940066,small_business,East,2025-02-25,15,Tuesday,1,1,0,1.0
+322,4,74,2025-02-28 09:59:00,answered,52.0,78.0,,29.0,166.0,216.0,199.0,False,4,1,Technical support,30,1.5,1.3,29.0,Alexie,Lehner,Team North,70.0,0.92,74,CL-907468,small_business,North,2025-02-28,9,Friday,4,1,0,0.0
+323,1,1,2025-02-25 15:42:00,answered,32.0,19.0,,29.0,172.0,120.0,110.0,True,1,1,Billing,30,0.6,0.7,29.0,Alexie,Lehner,Team North,70.0,0.92,1,CL-696409,consumer,West,2025-02-25,15,Tuesday,1,1,0,1.0
+324,1,77,2025-02-05 14:05:00,answered,26.0,16.0,,28.0,154.0,108.0,100.0,True,1,1,Billing,30,0.6,0.7,28.0,Richard,Gislason,Team East,3.0,0.93,77,CL-374090,small_business,North,2025-02-05,14,Wednesday,2,1,0,1.0
+325,1,166,2025-02-14 09:37:00,answered,30.0,18.0,,22.0,227.0,159.0,164.0,False,1,1,Billing,30,0.6,0.7,22.0,Dan,Heaney,Team East,45.0,1.03,166,CL-280634,consumer,West,2025-02-14,9,Friday,4,1,0,1.0
+326,4,2,2025-02-26 15:22:00,answered,27.0,41.0,,9.0,234.0,304.0,316.0,True,4,1,Technical support,30,1.5,1.3,9.0,Abraham,Ortiz,Team South,88.0,1.04,2,CL-330627,consumer,North,2025-02-26,15,Wednesday,2,1,0,0.0
+327,4,87,2025-02-24 15:38:00,answered,19.0,29.0,,10.0,267.0,347.0,368.0,True,4,1,Technical support,30,1.5,1.3,10.0,Darryl,Becker,Team South,15.0,1.06,87,CL-209015,small_business,South,2025-02-24,15,Monday,0,1,0,1.0
+328,2,57,2025-02-24 10:26:00,abandoned,,,140.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,57,CL-511057,enterprise,East,2025-02-24,10,Monday,0,0,1,
+329,2,166,2025-02-19 13:32:00,answered,21.0,19.0,,5.0,175.0,158.0,152.0,False,2,1,Account changes,30,0.9,0.9,5.0,Earnest,Bednar,Team North,63.0,0.96,166,CL-280634,consumer,West,2025-02-19,13,Wednesday,2,1,0,1.0
+330,1,1,2025-02-06 17:32:00,answered,28.0,17.0,,15.0,142.0,99.0,94.0,True,1,1,Billing,30,0.6,0.7,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,1,CL-696409,consumer,West,2025-02-06,17,Thursday,3,1,0,1.0
+331,1,98,2025-02-11 13:48:00,abandoned,,,5.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,98,CL-561534,enterprise,East,2025-02-11,13,Tuesday,1,0,1,
+332,3,230,2025-02-27 10:30:00,answered,29.0,35.0,,20.0,249.0,274.0,244.0,True,3,1,Sales,30,1.2,1.1,20.0,Arvid,Ondricka,Team South,81.0,0.89,230,CL-933499,consumer,North,2025-02-27,10,Thursday,3,1,0,0.0
+333,4,35,2025-02-10 11:47:00,answered,23.0,35.0,,25.0,196.0,255.0,270.0,True,4,1,Technical support,30,1.5,1.3,25.0,Merritt,McGlynn,Team South,2.0,1.06,35,CL-938756,consumer,North,2025-02-10,11,Monday,0,1,0,0.0
+334,3,9,2025-02-11 13:05:00,answered,9.0,11.0,,9.0,257.0,283.0,294.0,False,3,1,Sales,30,1.2,1.1,9.0,Abraham,Ortiz,Team South,88.0,1.04,9,CL-994954,consumer,East,2025-02-11,13,Tuesday,1,1,0,1.0
+335,4,44,2025-02-12 09:15:00,answered,13.0,20.0,,13.0,213.0,277.0,291.0,True,4,1,Technical support,30,1.5,1.3,13.0,Jermey,Shanahan,Team South,3.0,1.05,44,CL-387135,small_business,West,2025-02-12,9,Wednesday,2,1,0,1.0
+336,2,146,2025-02-12 10:29:00,answered,45.0,41.0,,23.0,165.0,149.0,155.0,True,2,1,Account changes,30,0.9,0.9,23.0,Lawrence,Trantow,Team North,56.0,1.04,146,CL-541296,small_business,West,2025-02-12,10,Wednesday,2,1,0,0.0
+337,4,9,2025-02-28 11:42:00,answered,26.0,39.0,,14.0,187.0,243.0,255.0,False,4,1,Technical support,30,1.5,1.3,14.0,Polly,Purdy,Team South,2.0,1.05,9,CL-994954,consumer,East,2025-02-28,11,Friday,4,1,0,0.0
+338,1,1,2025-02-20 11:31:00,answered,10.0,6.0,,11.0,190.0,133.0,132.0,False,1,1,Billing,30,0.6,0.7,11.0,Zakary,Sawayn,Team South,40.0,0.99,1,CL-696409,consumer,West,2025-02-20,11,Thursday,3,1,0,1.0
+339,1,236,2025-02-10 09:19:00,answered,11.0,7.0,,9.0,177.0,124.0,129.0,True,1,1,Billing,30,0.6,0.7,9.0,Abraham,Ortiz,Team South,88.0,1.04,236,CL-794073,small_business,South,2025-02-10,9,Monday,0,1,0,1.0
+340,5,1,2025-02-04 15:14:00,answered,17.0,31.0,,5.0,145.0,218.0,209.0,True,5,1,Complaints,30,1.8,1.5,5.0,Earnest,Bednar,Team North,63.0,0.96,1,CL-696409,consumer,West,2025-02-04,15,Tuesday,1,1,0,0.0
+341,4,16,2025-02-05 16:42:00,answered,27.0,41.0,,23.0,281.0,365.0,380.0,True,4,1,Technical support,30,1.5,1.3,23.0,Lawrence,Trantow,Team North,56.0,1.04,16,CL-004696,consumer,North,2025-02-05,16,Wednesday,2,1,0,0.0
+342,3,78,2025-02-05 12:19:00,answered,23.0,28.0,,2.0,142.0,156.0,170.0,False,3,1,Sales,30,1.2,1.1,2.0,Edyth,Lockman,Team North,31.0,1.09,78,CL-746742,consumer,South,2025-02-05,12,Wednesday,2,1,0,1.0
+343,5,131,2025-02-14 15:11:00,answered,17.0,31.0,,13.0,167.0,251.0,264.0,True,5,1,Complaints,30,1.8,1.5,13.0,Jermey,Shanahan,Team South,3.0,1.05,131,CL-693056,small_business,West,2025-02-14,15,Friday,4,1,0,0.0
+344,4,6,2025-02-27 16:20:00,answered,34.0,51.0,,29.0,221.0,287.0,264.0,True,4,1,Technical support,30,1.5,1.3,29.0,Alexie,Lehner,Team North,70.0,0.92,6,CL-907931,consumer,North,2025-02-27,16,Thursday,3,1,0,0.0
+345,1,111,2025-02-09 09:41:00,answered,21.0,13.0,,28.0,180.0,126.0,117.0,True,1,1,Billing,30,0.6,0.7,28.0,Richard,Gislason,Team East,3.0,0.93,111,CL-969470,consumer,North,2025-02-09,9,Sunday,6,1,0,1.0
+346,3,37,2025-02-20 14:01:00,answered,18.0,22.0,,23.0,150.0,165.0,172.0,False,3,1,Sales,30,1.2,1.1,23.0,Lawrence,Trantow,Team North,56.0,1.04,37,CL-968724,consumer,East,2025-02-20,14,Thursday,3,1,0,1.0
+347,3,165,2025-02-17 13:29:00,answered,4.0,5.0,,8.0,143.0,157.0,174.0,True,3,1,Sales,30,1.2,1.1,8.0,Benjamin,Kassulke,Team South,83.0,1.11,165,CL-277256,consumer,East,2025-02-17,13,Monday,0,1,0,1.0
+348,3,211,2025-02-25 11:25:00,answered,10.0,12.0,,4.0,193.0,212.0,204.0,True,3,1,Sales,30,1.2,1.1,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,211,CL-373586,small_business,East,2025-02-25,11,Tuesday,1,1,0,1.0
+349,5,158,2025-02-06 11:28:00,answered,24.0,43.0,,10.0,190.0,285.0,302.0,True,5,1,Complaints,30,1.8,1.5,10.0,Darryl,Becker,Team South,15.0,1.06,158,CL-670099,consumer,South,2025-02-06,11,Thursday,3,1,0,0.0
+350,4,80,2025-02-19 16:42:00,answered,35.0,53.0,,22.0,289.0,376.0,387.0,True,4,1,Technical support,30,1.5,1.3,22.0,Dan,Heaney,Team East,45.0,1.03,80,CL-788025,consumer,South,2025-02-19,16,Wednesday,2,1,0,0.0
+351,2,149,2025-02-24 12:19:00,answered,14.0,13.0,,18.0,128.0,115.0,121.0,True,2,1,Account changes,30,0.9,0.9,18.0,Aaron,Tillman,Team South,65.0,1.05,149,CL-681205,small_business,East,2025-02-24,12,Monday,0,1,0,1.0
+352,3,127,2025-02-27 18:20:00,answered,19.0,23.0,,28.0,188.0,207.0,193.0,False,3,1,Sales,30,1.2,1.1,28.0,Richard,Gislason,Team East,3.0,0.93,127,CL-120732,consumer,North,2025-02-27,18,Thursday,3,1,0,1.0
+353,5,160,2025-02-04 16:55:00,answered,43.0,77.0,,18.0,167.0,251.0,264.0,True,5,1,Complaints,30,1.8,1.5,18.0,Aaron,Tillman,Team South,65.0,1.05,160,CL-548285,consumer,North,2025-02-04,16,Tuesday,1,1,0,0.0
+354,5,135,2025-02-18 19:28:00,answered,14.0,25.0,,9.0,209.0,314.0,327.0,True,5,1,Complaints,30,1.8,1.5,9.0,Abraham,Ortiz,Team South,88.0,1.04,135,CL-667277,small_business,South,2025-02-18,19,Tuesday,1,1,0,1.0
+355,1,119,2025-02-03 09:05:00,answered,7.0,4.0,,7.0,163.0,114.0,111.0,True,1,1,Billing,30,0.6,0.7,7.0,Travon,Mann,Team East,2.0,0.97,119,CL-017153,small_business,West,2025-02-03,9,Monday,0,1,0,1.0
+356,3,158,2025-02-19 15:25:00,answered,34.0,41.0,,18.0,134.0,147.0,154.0,True,3,1,Sales,30,1.2,1.1,18.0,Aaron,Tillman,Team South,65.0,1.05,158,CL-670099,consumer,South,2025-02-19,15,Wednesday,2,1,0,0.0
+357,4,53,2025-02-13 19:20:00,answered,11.0,17.0,,24.0,130.0,169.0,172.0,False,4,1,Technical support,30,1.5,1.3,24.0,Graciela,Luettgen,Team South,2.0,1.02,53,CL-940066,small_business,East,2025-02-13,19,Thursday,3,1,0,1.0
+358,5,31,2025-02-10 15:29:00,answered,8.0,14.0,,28.0,203.0,305.0,284.0,False,5,1,Complaints,30,1.8,1.5,28.0,Richard,Gislason,Team East,3.0,0.93,31,CL-089861,small_business,West,2025-02-10,15,Monday,0,1,0,1.0
+359,2,141,2025-02-12 08:21:00,answered,43.0,39.0,,23.0,143.0,129.0,134.0,False,2,1,Account changes,30,0.9,0.9,23.0,Lawrence,Trantow,Team North,56.0,1.04,141,CL-959730,small_business,South,2025-02-12,8,Wednesday,2,1,0,0.0
+360,5,45,2025-02-04 15:31:00,answered,33.0,59.0,,5.0,157.0,236.0,227.0,True,5,1,Complaints,30,1.8,1.5,5.0,Earnest,Bednar,Team North,63.0,0.96,45,CL-850392,consumer,West,2025-02-04,15,Tuesday,1,1,0,0.0
+361,5,179,2025-02-19 12:22:00,answered,13.0,23.0,,23.0,232.0,348.0,362.0,True,5,1,Complaints,30,1.8,1.5,23.0,Lawrence,Trantow,Team North,56.0,1.04,179,CL-069433,small_business,North,2025-02-19,12,Wednesday,2,1,0,1.0
+362,5,3,2025-02-25 14:45:00,abandoned,,,77.0,,,,,,5,1,Complaints,30,1.8,1.5,,,,,,,3,CL-501041,consumer,South,2025-02-25,14,Tuesday,1,0,1,
+363,4,209,2025-02-11 10:12:00,answered,10.0,15.0,,16.0,116.0,151.0,146.0,True,4,1,Technical support,30,1.5,1.3,16.0,Dusty,Wunsch,Team South,19.0,0.97,209,CL-741786,enterprise,South,2025-02-11,10,Tuesday,1,1,0,1.0
+364,4,8,2025-02-28 01:33:00,answered,16.0,24.0,,28.0,289.0,376.0,350.0,True,4,1,Technical support,30,1.5,1.3,28.0,Richard,Gislason,Team East,3.0,0.93,8,CL-711583,consumer,East,2025-02-28,1,Friday,4,1,0,1.0
+365,1,45,2025-02-12 13:02:00,answered,8.0,5.0,,23.0,160.0,112.0,116.0,False,1,1,Billing,30,0.6,0.7,23.0,Lawrence,Trantow,Team North,56.0,1.04,45,CL-850392,consumer,West,2025-02-12,13,Wednesday,2,1,0,1.0
+366,3,209,2025-02-19 13:07:00,abandoned,,,60.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,209,CL-741786,enterprise,South,2025-02-19,13,Wednesday,2,0,1,
+367,4,171,2025-02-12 17:07:00,answered,9.0,14.0,,26.0,180.0,234.0,257.0,False,4,1,Technical support,30,1.5,1.3,26.0,Brain,Dooley,Team East,73.0,1.1,171,CL-275384,consumer,North,2025-02-12,17,Wednesday,2,1,0,1.0
+368,3,13,2025-02-07 16:37:00,answered,14.0,17.0,,15.0,177.0,195.0,185.0,False,3,1,Sales,30,1.2,1.1,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,13,CL-383450,consumer,North,2025-02-07,16,Friday,4,1,0,1.0
+369,4,10,2025-02-04 11:42:00,answered,29.0,44.0,,20.0,425.0,553.0,492.0,True,4,1,Technical support,30,1.5,1.3,20.0,Arvid,Ondricka,Team South,81.0,0.89,10,CL-613207,small_business,North,2025-02-04,11,Tuesday,1,1,0,0.0
+370,4,15,2025-02-03 20:01:00,answered,16.0,24.0,,10.0,239.0,311.0,330.0,True,4,1,Technical support,30,1.5,1.3,10.0,Darryl,Becker,Team South,15.0,1.06,15,CL-898287,small_business,North,2025-02-03,20,Monday,0,1,0,1.0
+371,2,239,2025-02-26 20:31:00,answered,37.0,33.0,,8.0,164.0,148.0,164.0,False,2,1,Account changes,30,0.9,0.9,8.0,Benjamin,Kassulke,Team South,83.0,1.11,239,CL-093713,small_business,North,2025-02-26,20,Wednesday,2,1,0,0.0
+372,1,21,2025-02-26 11:18:00,answered,17.0,10.0,,18.0,171.0,120.0,126.0,True,1,1,Billing,30,0.6,0.7,18.0,Aaron,Tillman,Team South,65.0,1.05,21,CL-080107,consumer,West,2025-02-26,11,Wednesday,2,1,0,1.0
+373,1,167,2025-02-28 10:06:00,answered,12.0,7.0,,7.0,138.0,97.0,94.0,True,1,1,Billing,30,0.6,0.7,7.0,Travon,Mann,Team East,2.0,0.97,167,CL-720449,small_business,North,2025-02-28,10,Friday,4,1,0,1.0
+374,4,132,2025-02-19 12:21:00,answered,25.0,38.0,,7.0,117.0,152.0,147.0,True,4,1,Technical support,30,1.5,1.3,7.0,Travon,Mann,Team East,2.0,0.97,132,CL-317534,consumer,North,2025-02-19,12,Wednesday,2,1,0,0.0
+375,1,139,2025-02-24 11:10:00,answered,99.0,59.0,,3.0,145.0,102.0,121.0,True,1,1,Billing,30,0.6,0.7,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,139,CL-904932,consumer,West,2025-02-24,11,Monday,0,1,0,0.0
+376,3,27,2025-02-24 16:43:00,abandoned,,,31.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,27,CL-625844,consumer,North,2025-02-24,16,Monday,0,0,1,
+377,4,6,2025-02-19 14:33:00,abandoned,,,147.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,6,CL-907931,consumer,North,2025-02-19,14,Wednesday,2,0,1,
+378,3,6,2025-02-28 12:59:00,answered,19.0,23.0,,14.0,130.0,143.0,150.0,True,3,1,Sales,30,1.2,1.1,14.0,Polly,Purdy,Team South,2.0,1.05,6,CL-907931,consumer,North,2025-02-28,12,Friday,4,1,0,1.0
+379,2,123,2025-02-13 10:33:00,answered,12.0,11.0,,21.0,120.0,108.0,110.0,True,2,1,Account changes,30,0.9,0.9,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,123,CL-496020,consumer,South,2025-02-13,10,Thursday,3,1,0,1.0
+380,5,50,2025-02-24 12:04:00,answered,18.0,32.0,,9.0,147.0,221.0,230.0,True,5,1,Complaints,30,1.8,1.5,9.0,Abraham,Ortiz,Team South,88.0,1.04,50,CL-021676,small_business,East,2025-02-24,12,Monday,0,1,0,0.0
+381,2,10,2025-02-14 10:22:00,answered,36.0,32.0,,14.0,159.0,143.0,150.0,True,2,1,Account changes,30,0.9,0.9,14.0,Polly,Purdy,Team South,2.0,1.05,10,CL-613207,small_business,North,2025-02-14,10,Friday,4,1,0,0.0
+382,3,149,2025-02-24 09:52:00,answered,26.0,31.0,,25.0,247.0,272.0,288.0,True,3,1,Sales,30,1.2,1.1,25.0,Merritt,McGlynn,Team South,2.0,1.06,149,CL-681205,small_business,East,2025-02-24,9,Monday,0,1,0,0.0
+383,3,96,2025-02-24 09:13:00,answered,66.0,79.0,,7.0,195.0,215.0,209.0,True,3,1,Sales,30,1.2,1.1,7.0,Travon,Mann,Team East,2.0,0.97,96,CL-379937,consumer,West,2025-02-24,9,Monday,0,1,0,0.0
+384,3,193,2025-02-19 15:55:00,answered,14.0,17.0,,17.0,161.0,177.0,166.0,False,3,1,Sales,30,1.2,1.1,17.0,Lesly,Huels,Team North,16.0,0.94,193,CL-017211,small_business,West,2025-02-19,15,Wednesday,2,1,0,1.0
+385,2,231,2025-02-12 10:51:00,answered,12.0,11.0,,24.0,186.0,167.0,170.0,True,2,1,Account changes,30,0.9,0.9,24.0,Graciela,Luettgen,Team South,2.0,1.02,231,CL-946979,consumer,West,2025-02-12,10,Wednesday,2,1,0,1.0
+386,4,49,2025-02-18 16:17:00,answered,25.0,38.0,,11.0,389.0,506.0,501.0,True,4,1,Technical support,30,1.5,1.3,11.0,Zakary,Sawayn,Team South,40.0,0.99,49,CL-220519,consumer,South,2025-02-18,16,Tuesday,1,1,0,0.0
+387,2,239,2025-02-27 15:31:00,answered,72.0,65.0,,17.0,251.0,226.0,212.0,True,2,1,Account changes,30,0.9,0.9,17.0,Lesly,Huels,Team North,16.0,0.94,239,CL-093713,small_business,North,2025-02-27,15,Thursday,3,1,0,0.0
+388,1,28,2025-02-17 17:40:00,abandoned,,,56.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,28,CL-675907,enterprise,West,2025-02-17,17,Monday,0,0,1,
+389,1,34,2025-02-21 10:55:00,answered,19.0,11.0,,21.0,107.0,75.0,77.0,True,1,1,Billing,30,0.6,0.7,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,34,CL-823869,consumer,North,2025-02-21,10,Friday,4,1,0,1.0
+390,4,118,2025-02-14 09:32:00,answered,13.0,20.0,,19.0,163.0,212.0,231.0,True,4,1,Technical support,30,1.5,1.3,19.0,Manuel,Weissnat,Team East,7.0,1.09,118,CL-092745,consumer,East,2025-02-14,9,Friday,4,1,0,1.0
+391,1,34,2025-02-18 17:34:00,answered,30.0,18.0,,22.0,184.0,129.0,133.0,False,1,1,Billing,30,0.6,0.7,22.0,Dan,Heaney,Team East,45.0,1.03,34,CL-823869,consumer,North,2025-02-18,17,Tuesday,1,1,0,1.0
+392,5,42,2025-02-17 21:31:00,abandoned,,,11.0,,,,,,5,1,Complaints,30,1.8,1.5,,,,,,,42,CL-431319,consumer,South,2025-02-17,21,Monday,0,0,1,
+393,3,18,2025-02-25 12:22:00,answered,19.0,23.0,,20.0,259.0,285.0,254.0,False,3,1,Sales,30,1.2,1.1,20.0,Arvid,Ondricka,Team South,81.0,0.89,18,CL-336272,consumer,South,2025-02-25,12,Tuesday,1,1,0,1.0
+394,1,1,2025-02-11 17:03:00,answered,14.0,8.0,,5.0,292.0,204.0,196.0,True,1,1,Billing,30,0.6,0.7,5.0,Earnest,Bednar,Team North,63.0,0.96,1,CL-696409,consumer,West,2025-02-11,17,Tuesday,1,1,0,1.0
+395,1,114,2025-02-10 13:20:00,answered,15.0,9.0,,23.0,99.0,69.0,72.0,False,1,1,Billing,30,0.6,0.7,23.0,Lawrence,Trantow,Team North,56.0,1.04,114,CL-264353,consumer,West,2025-02-10,13,Monday,0,1,0,1.0
+396,1,150,2025-02-10 10:07:00,answered,6.0,4.0,,13.0,131.0,92.0,97.0,False,1,1,Billing,30,0.6,0.7,13.0,Jermey,Shanahan,Team South,3.0,1.05,150,CL-614092,consumer,West,2025-02-10,10,Monday,0,1,0,1.0
+397,2,1,2025-02-20 14:13:00,answered,38.0,34.0,,26.0,149.0,134.0,147.0,False,2,1,Account changes,30,0.9,0.9,26.0,Brain,Dooley,Team East,73.0,1.1,1,CL-696409,consumer,West,2025-02-20,14,Thursday,3,1,0,0.0
+398,1,125,2025-02-24 07:51:00,answered,24.0,14.0,,10.0,247.0,173.0,183.0,False,1,1,Billing,30,0.6,0.7,10.0,Darryl,Becker,Team South,15.0,1.06,125,CL-803006,small_business,South,2025-02-24,7,Monday,0,1,0,1.0
+399,2,15,2025-02-05 16:10:00,answered,15.0,14.0,,16.0,125.0,113.0,110.0,True,2,1,Account changes,30,0.9,0.9,16.0,Dusty,Wunsch,Team South,19.0,0.97,15,CL-898287,small_business,North,2025-02-05,16,Wednesday,2,1,0,1.0
+400,4,180,2025-02-07 14:17:00,abandoned,,,25.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,180,CL-476619,consumer,South,2025-02-07,14,Friday,4,0,1,
+401,1,93,2025-02-25 11:19:00,answered,46.0,28.0,,19.0,191.0,134.0,146.0,True,1,1,Billing,30,0.6,0.7,19.0,Manuel,Weissnat,Team East,7.0,1.09,93,CL-037220,enterprise,East,2025-02-25,11,Tuesday,1,1,0,1.0
+402,1,57,2025-02-07 14:36:00,answered,13.0,8.0,,23.0,155.0,109.0,113.0,True,1,1,Billing,30,0.6,0.7,23.0,Lawrence,Trantow,Team North,56.0,1.04,57,CL-511057,enterprise,East,2025-02-07,14,Friday,4,1,0,1.0
+403,5,4,2025-02-27 18:47:00,answered,33.0,59.0,,1.0,260.0,390.0,394.0,True,5,1,Complaints,30,1.8,1.5,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,4,CL-726161,consumer,East,2025-02-27,18,Thursday,3,1,0,0.0
+404,2,106,2025-02-14 21:33:00,answered,30.0,27.0,,1.0,188.0,169.0,171.0,True,2,1,Account changes,30,0.9,0.9,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,106,CL-224674,consumer,East,2025-02-14,21,Friday,4,1,0,1.0
+405,2,60,2025-02-14 16:28:00,answered,32.0,29.0,,8.0,383.0,345.0,383.0,True,2,1,Account changes,30,0.9,0.9,8.0,Benjamin,Kassulke,Team South,83.0,1.11,60,CL-774762,consumer,West,2025-02-14,16,Friday,4,1,0,1.0
+406,2,78,2025-02-11 15:21:00,abandoned,,,6.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,78,CL-746742,consumer,South,2025-02-11,15,Tuesday,1,0,1,
+407,2,128,2025-02-21 13:52:00,answered,29.0,26.0,,17.0,189.0,170.0,160.0,True,2,1,Account changes,30,0.9,0.9,17.0,Lesly,Huels,Team North,16.0,0.94,128,CL-908718,small_business,North,2025-02-21,13,Friday,4,1,0,1.0
+408,4,198,2025-02-03 16:04:00,answered,7.0,11.0,,21.0,122.0,159.0,162.0,True,4,1,Technical support,30,1.5,1.3,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,198,CL-366146,consumer,East,2025-02-03,16,Monday,0,1,0,1.0
+409,4,96,2025-02-12 14:13:00,answered,12.0,18.0,,27.0,150.0,195.0,195.0,True,4,1,Technical support,30,1.5,1.3,27.0,Michale,Grimes,Team East,82.0,1.0,96,CL-379937,consumer,West,2025-02-12,14,Wednesday,2,1,0,1.0
+410,5,65,2025-02-11 10:00:00,abandoned,,,125.0,,,,,,5,1,Complaints,30,1.8,1.5,,,,,,,65,CL-869624,consumer,South,2025-02-11,10,Tuesday,1,0,1,
+411,4,125,2025-02-17 10:58:00,answered,25.0,38.0,,10.0,170.0,221.0,234.0,False,4,1,Technical support,30,1.5,1.3,10.0,Darryl,Becker,Team South,15.0,1.06,125,CL-803006,small_business,South,2025-02-17,10,Monday,0,1,0,0.0
+412,1,4,2025-02-12 09:57:00,answered,19.0,11.0,,16.0,214.0,150.0,146.0,False,1,1,Billing,30,0.6,0.7,16.0,Dusty,Wunsch,Team South,19.0,0.97,4,CL-726161,consumer,East,2025-02-12,9,Wednesday,2,1,0,1.0
+413,4,133,2025-02-13 12:11:00,answered,19.0,29.0,,7.0,377.0,490.0,475.0,False,4,1,Technical support,30,1.5,1.3,7.0,Travon,Mann,Team East,2.0,0.97,133,CL-835657,consumer,North,2025-02-13,12,Thursday,3,1,0,1.0
+414,1,36,2025-02-19 17:17:00,answered,6.0,4.0,,10.0,183.0,128.0,136.0,True,1,1,Billing,30,0.6,0.7,10.0,Darryl,Becker,Team South,15.0,1.06,36,CL-515567,small_business,South,2025-02-19,17,Wednesday,2,1,0,1.0
+415,3,43,2025-02-05 14:28:00,answered,23.0,28.0,,3.0,128.0,141.0,168.0,True,3,1,Sales,30,1.2,1.1,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,43,CL-283772,small_business,West,2025-02-05,14,Wednesday,2,1,0,1.0
+416,1,8,2025-02-15 06:16:00,abandoned,,,54.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,8,CL-711583,consumer,East,2025-02-15,6,Saturday,5,0,1,
+417,4,162,2025-02-24 11:22:00,answered,12.0,18.0,,9.0,211.0,274.0,285.0,True,4,1,Technical support,30,1.5,1.3,9.0,Abraham,Ortiz,Team South,88.0,1.04,162,CL-444010,small_business,North,2025-02-24,11,Monday,0,1,0,1.0
+418,4,183,2025-02-03 16:46:00,abandoned,,,97.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,183,CL-519005,consumer,North,2025-02-03,16,Monday,0,0,1,
+419,3,4,2025-02-14 12:45:00,answered,16.0,19.0,,9.0,175.0,193.0,201.0,True,3,1,Sales,30,1.2,1.1,9.0,Abraham,Ortiz,Team South,88.0,1.04,4,CL-726161,consumer,East,2025-02-14,12,Friday,4,1,0,1.0
+420,1,7,2025-02-17 08:30:00,answered,7.0,4.0,,18.0,404.0,283.0,297.0,True,1,1,Billing,30,0.6,0.7,18.0,Aaron,Tillman,Team South,65.0,1.05,7,CL-669268,small_business,East,2025-02-17,8,Monday,0,1,0,1.0
+421,1,52,2025-02-07 14:09:00,answered,10.0,6.0,,1.0,201.0,141.0,142.0,False,1,1,Billing,30,0.6,0.7,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,52,CL-454328,small_business,East,2025-02-07,14,Friday,4,1,0,1.0
+422,3,26,2025-02-17 16:06:00,answered,32.0,38.0,,9.0,156.0,172.0,179.0,True,3,1,Sales,30,1.2,1.1,9.0,Abraham,Ortiz,Team South,88.0,1.04,26,CL-026838,consumer,West,2025-02-17,16,Monday,0,1,0,0.0
+423,4,1,2025-02-26 10:46:00,answered,10.0,15.0,,6.0,145.0,189.0,208.0,False,4,1,Technical support,30,1.5,1.3,6.0,Selmer,Marquardt,Team East,30.0,1.1,1,CL-696409,consumer,West,2025-02-26,10,Wednesday,2,1,0,1.0
+424,4,225,2025-02-24 18:06:00,abandoned,,,11.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,225,CL-125713,consumer,South,2025-02-24,18,Monday,0,0,1,
+425,1,84,2025-02-04 18:06:00,answered,11.0,7.0,,14.0,214.0,150.0,158.0,True,1,1,Billing,30,0.6,0.7,14.0,Polly,Purdy,Team South,2.0,1.05,84,CL-556598,consumer,South,2025-02-04,18,Tuesday,1,1,0,1.0
+426,3,202,2025-02-18 10:27:00,answered,27.0,32.0,,20.0,122.0,134.0,119.0,True,3,1,Sales,30,1.2,1.1,20.0,Arvid,Ondricka,Team South,81.0,0.89,202,CL-017371,consumer,North,2025-02-18,10,Tuesday,1,1,0,0.0
+427,2,238,2025-02-20 11:08:00,answered,45.0,41.0,,29.0,138.0,124.0,114.0,False,2,1,Account changes,30,0.9,0.9,29.0,Alexie,Lehner,Team North,70.0,0.92,238,CL-435069,consumer,North,2025-02-20,11,Thursday,3,1,0,0.0
+428,4,8,2025-02-06 11:17:00,answered,47.0,71.0,,5.0,219.0,285.0,274.0,True,4,1,Technical support,30,1.5,1.3,5.0,Earnest,Bednar,Team North,63.0,0.96,8,CL-711583,consumer,East,2025-02-06,11,Thursday,3,1,0,0.0
+429,3,34,2025-02-21 10:20:00,answered,15.0,18.0,,9.0,197.0,217.0,226.0,True,3,1,Sales,30,1.2,1.1,9.0,Abraham,Ortiz,Team South,88.0,1.04,34,CL-823869,consumer,North,2025-02-21,10,Friday,4,1,0,1.0
+430,4,78,2025-02-10 20:54:00,answered,21.0,32.0,,16.0,308.0,400.0,388.0,True,4,1,Technical support,30,1.5,1.3,16.0,Dusty,Wunsch,Team South,19.0,0.97,78,CL-746742,consumer,South,2025-02-10,20,Monday,0,1,0,0.0
+431,4,175,2025-02-27 10:41:00,answered,25.0,38.0,,17.0,203.0,264.0,248.0,True,4,1,Technical support,30,1.5,1.3,17.0,Lesly,Huels,Team North,16.0,0.94,175,CL-353404,consumer,West,2025-02-27,10,Thursday,3,1,0,0.0
+432,1,36,2025-02-07 10:21:00,answered,10.0,6.0,,14.0,216.0,151.0,159.0,True,1,1,Billing,30,0.6,0.7,14.0,Polly,Purdy,Team South,2.0,1.05,36,CL-515567,small_business,South,2025-02-07,10,Friday,4,1,0,1.0
+433,1,11,2025-02-04 12:11:00,answered,27.0,16.0,,7.0,297.0,208.0,202.0,True,1,1,Billing,30,0.6,0.7,7.0,Travon,Mann,Team East,2.0,0.97,11,CL-077793,consumer,East,2025-02-04,12,Tuesday,1,1,0,1.0
+434,3,19,2025-02-07 19:25:00,answered,9.0,11.0,,6.0,192.0,211.0,232.0,False,3,1,Sales,30,1.2,1.1,6.0,Selmer,Marquardt,Team East,30.0,1.1,19,CL-830412,consumer,West,2025-02-07,19,Friday,4,1,0,1.0
+435,1,4,2025-02-10 09:41:00,answered,34.0,20.0,,13.0,307.0,215.0,226.0,True,1,1,Billing,30,0.6,0.7,13.0,Jermey,Shanahan,Team South,3.0,1.05,4,CL-726161,consumer,East,2025-02-10,9,Monday,0,1,0,1.0
+436,1,60,2025-02-13 18:44:00,answered,12.0,7.0,,11.0,428.0,300.0,297.0,True,1,1,Billing,30,0.6,0.7,11.0,Zakary,Sawayn,Team South,40.0,0.99,60,CL-774762,consumer,West,2025-02-13,18,Thursday,3,1,0,1.0
+437,1,3,2025-02-07 10:57:00,answered,13.0,8.0,,7.0,405.0,284.0,275.0,False,1,1,Billing,30,0.6,0.7,7.0,Travon,Mann,Team East,2.0,0.97,3,CL-501041,consumer,South,2025-02-07,10,Friday,4,1,0,1.0
+438,1,19,2025-02-13 12:20:00,answered,9.0,5.0,,8.0,274.0,192.0,213.0,False,1,1,Billing,30,0.6,0.7,8.0,Benjamin,Kassulke,Team South,83.0,1.11,19,CL-830412,consumer,West,2025-02-13,12,Thursday,3,1,0,1.0
+439,4,34,2025-02-11 09:34:00,abandoned,,,88.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,34,CL-823869,consumer,North,2025-02-11,9,Tuesday,1,0,1,
+440,2,49,2025-02-12 17:08:00,answered,15.0,14.0,,27.0,161.0,145.0,145.0,True,2,1,Account changes,30,0.9,0.9,27.0,Michale,Grimes,Team East,82.0,1.0,49,CL-220519,consumer,South,2025-02-12,17,Wednesday,2,1,0,1.0
+441,1,1,2025-02-20 16:25:00,answered,15.0,9.0,,20.0,123.0,86.0,77.0,True,1,1,Billing,30,0.6,0.7,20.0,Arvid,Ondricka,Team South,81.0,0.89,1,CL-696409,consumer,West,2025-02-20,16,Thursday,3,1,0,1.0
+442,2,105,2025-02-27 16:12:00,answered,24.0,22.0,,4.0,192.0,173.0,166.0,False,2,1,Account changes,30,0.9,0.9,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,105,CL-093665,consumer,East,2025-02-27,16,Thursday,3,1,0,1.0
+443,1,2,2025-02-19 16:58:00,abandoned,,,149.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,2,CL-330627,consumer,North,2025-02-19,16,Wednesday,2,0,1,
+444,3,56,2025-02-14 11:02:00,answered,12.0,14.0,,28.0,145.0,160.0,149.0,True,3,1,Sales,30,1.2,1.1,28.0,Richard,Gislason,Team East,3.0,0.93,56,CL-043517,consumer,North,2025-02-14,11,Friday,4,1,0,1.0
+445,5,229,2025-02-04 12:47:00,answered,30.0,54.0,,23.0,189.0,284.0,295.0,True,5,1,Complaints,30,1.8,1.5,23.0,Lawrence,Trantow,Team North,56.0,1.04,229,CL-534551,small_business,West,2025-02-04,12,Tuesday,1,1,0,0.0
+446,3,5,2025-02-12 14:27:00,answered,6.0,7.0,,16.0,219.0,241.0,234.0,True,3,1,Sales,30,1.2,1.1,16.0,Dusty,Wunsch,Team South,19.0,0.97,5,CL-669474,small_business,South,2025-02-12,14,Wednesday,2,1,0,1.0
+447,1,1,2025-02-21 10:12:00,abandoned,,,106.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,1,CL-696409,consumer,West,2025-02-21,10,Friday,4,0,1,
+448,5,170,2025-02-10 08:58:00,answered,8.0,14.0,,7.0,247.0,371.0,360.0,True,5,1,Complaints,30,1.8,1.5,7.0,Travon,Mann,Team East,2.0,0.97,170,CL-896960,consumer,East,2025-02-10,8,Monday,0,1,0,1.0
+449,3,197,2025-02-17 19:09:00,answered,14.0,17.0,,24.0,126.0,139.0,142.0,False,3,1,Sales,30,1.2,1.1,24.0,Graciela,Luettgen,Team South,2.0,1.02,197,CL-655555,consumer,South,2025-02-17,19,Monday,0,1,0,1.0
+450,2,154,2025-02-14 17:04:00,abandoned,,,117.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,154,CL-264281,small_business,South,2025-02-14,17,Friday,4,0,1,
+451,5,38,2025-02-28 10:50:00,answered,16.0,29.0,,13.0,155.0,233.0,245.0,True,5,1,Complaints,30,1.8,1.5,13.0,Jermey,Shanahan,Team South,3.0,1.05,38,CL-178793,small_business,East,2025-02-28,10,Friday,4,1,0,1.0
+452,1,108,2025-02-14 11:36:00,answered,11.0,7.0,,16.0,249.0,174.0,169.0,True,1,1,Billing,30,0.6,0.7,16.0,Dusty,Wunsch,Team South,19.0,0.97,108,CL-120557,consumer,North,2025-02-14,11,Friday,4,1,0,1.0
+453,3,1,2025-02-19 07:40:00,answered,7.0,8.0,,5.0,190.0,209.0,201.0,False,3,1,Sales,30,1.2,1.1,5.0,Earnest,Bednar,Team North,63.0,0.96,1,CL-696409,consumer,West,2025-02-19,7,Wednesday,2,1,0,1.0
+454,1,4,2025-02-06 16:26:00,answered,14.0,8.0,,13.0,262.0,183.0,192.0,True,1,1,Billing,30,0.6,0.7,13.0,Jermey,Shanahan,Team South,3.0,1.05,4,CL-726161,consumer,East,2025-02-06,16,Thursday,3,1,0,1.0
+455,4,14,2025-02-07 11:39:00,answered,14.0,21.0,,17.0,126.0,164.0,154.0,True,4,1,Technical support,30,1.5,1.3,17.0,Lesly,Huels,Team North,16.0,0.94,14,CL-985730,consumer,East,2025-02-07,11,Friday,4,1,0,1.0
+456,3,17,2025-02-18 11:26:00,answered,7.0,8.0,,15.0,139.0,153.0,145.0,True,3,1,Sales,30,1.2,1.1,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,17,CL-788847,small_business,East,2025-02-18,11,Tuesday,1,1,0,1.0
+457,1,45,2025-02-03 22:48:00,answered,9.0,5.0,,9.0,168.0,118.0,123.0,True,1,1,Billing,30,0.6,0.7,9.0,Abraham,Ortiz,Team South,88.0,1.04,45,CL-850392,consumer,West,2025-02-03,22,Monday,0,1,0,1.0
+458,3,39,2025-02-13 11:21:00,abandoned,,,5.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,39,CL-699740,consumer,North,2025-02-13,11,Thursday,3,0,1,
+459,3,78,2025-02-07 11:50:00,abandoned,,,106.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,78,CL-746742,consumer,South,2025-02-07,11,Friday,4,0,1,
+460,4,37,2025-02-25 10:04:00,answered,35.0,53.0,,14.0,175.0,228.0,239.0,True,4,1,Technical support,30,1.5,1.3,14.0,Polly,Purdy,Team South,2.0,1.05,37,CL-968724,consumer,East,2025-02-25,10,Tuesday,1,1,0,0.0
+461,4,229,2025-02-06 08:00:00,abandoned,,,8.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,229,CL-534551,small_business,West,2025-02-06,8,Thursday,3,0,1,
+462,2,3,2025-02-04 10:15:00,answered,25.0,23.0,,18.0,180.0,162.0,170.0,True,2,1,Account changes,30,0.9,0.9,18.0,Aaron,Tillman,Team South,65.0,1.05,3,CL-501041,consumer,South,2025-02-04,10,Tuesday,1,1,0,1.0
+463,2,75,2025-02-22 14:10:00,answered,20.0,18.0,,8.0,194.0,175.0,194.0,False,2,1,Account changes,30,0.9,0.9,8.0,Benjamin,Kassulke,Team South,83.0,1.11,75,CL-982184,small_business,South,2025-02-22,14,Saturday,5,1,0,1.0
+464,4,237,2025-02-21 09:47:00,answered,27.0,41.0,,2.0,193.0,251.0,274.0,True,4,1,Technical support,30,1.5,1.3,2.0,Edyth,Lockman,Team North,31.0,1.09,237,CL-538898,consumer,South,2025-02-21,9,Friday,4,1,0,0.0
+465,5,2,2025-02-05 10:17:00,answered,28.0,50.0,,17.0,211.0,317.0,298.0,True,5,1,Complaints,30,1.8,1.5,17.0,Lesly,Huels,Team North,16.0,0.94,2,CL-330627,consumer,North,2025-02-05,10,Wednesday,2,1,0,0.0
+466,1,185,2025-02-13 11:14:00,abandoned,,,4.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,185,CL-696277,consumer,East,2025-02-13,11,Thursday,3,0,1,
+467,2,94,2025-02-21 15:16:00,answered,16.0,14.0,,27.0,118.0,106.0,106.0,True,2,1,Account changes,30,0.9,0.9,27.0,Michale,Grimes,Team East,82.0,1.0,94,CL-037299,consumer,East,2025-02-21,15,Friday,4,1,0,1.0
+468,3,176,2025-02-17 08:50:00,answered,11.0,13.0,,15.0,123.0,135.0,128.0,True,3,1,Sales,30,1.2,1.1,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,176,CL-509391,small_business,North,2025-02-17,8,Monday,0,1,0,1.0
+469,4,1,2025-02-17 13:24:00,answered,10.0,15.0,,14.0,206.0,268.0,281.0,True,4,1,Technical support,30,1.5,1.3,14.0,Polly,Purdy,Team South,2.0,1.05,1,CL-696409,consumer,West,2025-02-17,13,Monday,0,1,0,1.0
+470,4,39,2025-02-06 16:23:00,answered,17.0,26.0,,30.0,274.0,356.0,345.0,True,4,1,Technical support,30,1.5,1.3,30.0,Ceasar,Corwin,Team North,83.0,0.97,39,CL-699740,consumer,North,2025-02-06,16,Thursday,3,1,0,1.0
+471,4,131,2025-02-18 14:35:00,answered,12.0,18.0,,22.0,182.0,237.0,244.0,False,4,1,Technical support,30,1.5,1.3,22.0,Dan,Heaney,Team East,45.0,1.03,131,CL-693056,small_business,West,2025-02-18,14,Tuesday,1,1,0,1.0
+472,5,47,2025-02-17 09:33:00,answered,7.0,13.0,,11.0,385.0,578.0,572.0,True,5,1,Complaints,30,1.8,1.5,11.0,Zakary,Sawayn,Team South,40.0,0.99,47,CL-055365,consumer,South,2025-02-17,9,Monday,0,1,0,1.0
+473,2,9,2025-02-12 15:09:00,answered,39.0,35.0,,28.0,140.0,126.0,117.0,False,2,1,Account changes,30,0.9,0.9,28.0,Richard,Gislason,Team East,3.0,0.93,9,CL-994954,consumer,East,2025-02-12,15,Wednesday,2,1,0,0.0
+474,3,44,2025-02-11 18:35:00,answered,17.0,20.0,,19.0,223.0,245.0,267.0,True,3,1,Sales,30,1.2,1.1,19.0,Manuel,Weissnat,Team East,7.0,1.09,44,CL-387135,small_business,West,2025-02-11,18,Tuesday,1,1,0,1.0
+475,4,98,2025-02-12 09:56:00,answered,12.0,18.0,,10.0,220.0,286.0,303.0,True,4,1,Technical support,30,1.5,1.3,10.0,Darryl,Becker,Team South,15.0,1.06,98,CL-561534,enterprise,East,2025-02-12,9,Wednesday,2,1,0,1.0
+476,3,160,2025-02-28 14:34:00,abandoned,,,47.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,160,CL-548285,consumer,North,2025-02-28,14,Friday,4,0,1,
+477,4,26,2025-02-20 13:23:00,answered,22.0,33.0,,28.0,146.0,190.0,177.0,True,4,1,Technical support,30,1.5,1.3,28.0,Richard,Gislason,Team East,3.0,0.93,26,CL-026838,consumer,West,2025-02-20,13,Thursday,3,1,0,0.0
+478,3,150,2025-02-10 11:08:00,answered,16.0,19.0,,29.0,115.0,127.0,117.0,True,3,1,Sales,30,1.2,1.1,29.0,Alexie,Lehner,Team North,70.0,0.92,150,CL-614092,consumer,West,2025-02-10,11,Monday,0,1,0,1.0
+479,1,72,2025-02-18 11:31:00,answered,8.0,5.0,,29.0,273.0,191.0,176.0,True,1,1,Billing,30,0.6,0.7,29.0,Alexie,Lehner,Team North,70.0,0.92,72,CL-580864,consumer,South,2025-02-18,11,Tuesday,1,1,0,1.0
+480,5,3,2025-02-21 11:33:00,abandoned,,,23.0,,,,,,5,1,Complaints,30,1.8,1.5,,,,,,,3,CL-501041,consumer,South,2025-02-21,11,Friday,4,0,1,
+481,1,108,2025-02-03 09:54:00,answered,10.0,6.0,,18.0,126.0,88.0,92.0,True,1,1,Billing,30,0.6,0.7,18.0,Aaron,Tillman,Team South,65.0,1.05,108,CL-120557,consumer,North,2025-02-03,9,Monday,0,1,0,1.0
+482,2,137,2025-02-03 15:59:00,answered,16.0,14.0,,16.0,132.0,119.0,115.0,True,2,1,Account changes,30,0.9,0.9,16.0,Dusty,Wunsch,Team South,19.0,0.97,137,CL-510810,consumer,East,2025-02-03,15,Monday,0,1,0,1.0
+483,3,20,2025-02-13 13:53:00,answered,29.0,35.0,,5.0,179.0,197.0,189.0,True,3,1,Sales,30,1.2,1.1,5.0,Earnest,Bednar,Team North,63.0,0.96,20,CL-589392,consumer,West,2025-02-13,13,Thursday,3,1,0,0.0
+484,3,2,2025-02-25 11:16:00,answered,27.0,32.0,,15.0,117.0,129.0,123.0,True,3,1,Sales,30,1.2,1.1,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,2,CL-330627,consumer,North,2025-02-25,11,Tuesday,1,1,0,0.0
+485,5,60,2025-02-13 10:48:00,answered,52.0,94.0,,15.0,138.0,207.0,197.0,True,5,1,Complaints,30,1.8,1.5,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,60,CL-774762,consumer,West,2025-02-13,10,Thursday,3,1,0,0.0
+486,4,193,2025-02-07 18:41:00,answered,28.0,42.0,,6.0,181.0,235.0,259.0,False,4,1,Technical support,30,1.5,1.3,6.0,Selmer,Marquardt,Team East,30.0,1.1,193,CL-017211,small_business,West,2025-02-07,18,Friday,4,1,0,0.0
+487,3,48,2025-02-03 08:07:00,answered,11.0,13.0,,3.0,221.0,243.0,289.0,True,3,1,Sales,30,1.2,1.1,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,48,CL-065054,consumer,South,2025-02-03,8,Monday,0,1,0,1.0
+488,4,110,2025-02-27 16:31:00,answered,12.0,18.0,,20.0,191.0,248.0,221.0,False,4,1,Technical support,30,1.5,1.3,20.0,Arvid,Ondricka,Team South,81.0,0.89,110,CL-450977,consumer,South,2025-02-27,16,Thursday,3,1,0,1.0
+489,1,15,2025-02-17 15:22:00,answered,27.0,16.0,,3.0,149.0,104.0,124.0,True,1,1,Billing,30,0.6,0.7,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,15,CL-898287,small_business,North,2025-02-17,15,Monday,0,1,0,1.0
+490,5,33,2025-02-26 11:51:00,abandoned,,,16.0,,,,,,5,1,Complaints,30,1.8,1.5,,,,,,,33,CL-486293,consumer,West,2025-02-26,11,Wednesday,2,0,1,
+491,1,27,2025-02-24 19:56:00,abandoned,,,84.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,27,CL-625844,consumer,North,2025-02-24,19,Monday,0,0,1,
+492,2,182,2025-02-28 13:59:00,answered,36.0,32.0,,7.0,176.0,158.0,153.0,True,2,1,Account changes,30,0.9,0.9,7.0,Travon,Mann,Team East,2.0,0.97,182,CL-929920,consumer,West,2025-02-28,13,Friday,4,1,0,0.0
+493,5,112,2025-02-14 13:55:00,abandoned,,,5.0,,,,,,5,1,Complaints,30,1.8,1.5,,,,,,,112,CL-537702,enterprise,North,2025-02-14,13,Friday,4,0,1,
+494,3,218,2025-02-14 04:32:00,abandoned,,,9.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,218,CL-134040,consumer,West,2025-02-14,4,Friday,4,0,1,
+495,3,88,2025-02-15 13:49:00,answered,12.0,14.0,,1.0,168.0,185.0,187.0,True,3,1,Sales,30,1.2,1.1,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,88,CL-799007,consumer,East,2025-02-15,13,Saturday,5,1,0,1.0
+496,1,94,2025-02-07 15:01:00,answered,7.0,4.0,,4.0,352.0,246.0,236.0,True,1,1,Billing,30,0.6,0.7,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,94,CL-037299,consumer,East,2025-02-07,15,Friday,4,1,0,1.0
+497,2,61,2025-02-06 16:32:00,answered,29.0,26.0,,1.0,181.0,163.0,165.0,True,2,1,Account changes,30,0.9,0.9,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,61,CL-134774,consumer,South,2025-02-06,16,Thursday,3,1,0,1.0
+498,4,25,2025-02-21 12:01:00,answered,38.0,57.0,,12.0,193.0,251.0,243.0,True,4,1,Technical support,30,1.5,1.3,12.0,Valerie,Auer,Team North,58.0,0.97,25,CL-784169,consumer,North,2025-02-21,12,Friday,4,1,0,0.0
+499,2,168,2025-02-20 16:55:00,answered,16.0,14.0,,19.0,207.0,186.0,203.0,True,2,1,Account changes,30,0.9,0.9,19.0,Manuel,Weissnat,Team East,7.0,1.09,168,CL-499615,consumer,East,2025-02-20,16,Thursday,3,1,0,1.0
+500,2,85,2025-02-14 15:42:00,answered,12.0,11.0,,3.0,114.0,103.0,123.0,True,2,1,Account changes,30,0.9,0.9,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,85,CL-481027,consumer,South,2025-02-14,15,Friday,4,1,0,1.0
+501,4,143,2025-02-28 12:57:00,answered,9.0,14.0,,9.0,116.0,151.0,157.0,True,4,1,Technical support,30,1.5,1.3,9.0,Abraham,Ortiz,Team South,88.0,1.04,143,CL-127359,consumer,East,2025-02-28,12,Friday,4,1,0,1.0
+502,1,25,2025-02-24 14:48:00,answered,15.0,9.0,,26.0,118.0,83.0,91.0,True,1,1,Billing,30,0.6,0.7,26.0,Brain,Dooley,Team East,73.0,1.1,25,CL-784169,consumer,North,2025-02-24,14,Monday,0,1,0,1.0
+503,4,79,2025-02-11 09:36:00,answered,22.0,33.0,,21.0,164.0,213.0,217.0,True,4,1,Technical support,30,1.5,1.3,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,79,CL-041528,consumer,South,2025-02-11,9,Tuesday,1,1,0,0.0
+504,3,249,2025-02-28 12:22:00,answered,31.0,37.0,,10.0,130.0,143.0,152.0,True,3,1,Sales,30,1.2,1.1,10.0,Darryl,Becker,Team South,15.0,1.06,249,CL-989953,small_business,South,2025-02-28,12,Friday,4,1,0,0.0
+505,4,200,2025-02-14 07:09:00,abandoned,,,5.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,200,CL-861526,consumer,West,2025-02-14,7,Friday,4,0,1,
+506,1,154,2025-02-12 15:05:00,answered,9.0,5.0,,16.0,126.0,88.0,85.0,True,1,1,Billing,30,0.6,0.7,16.0,Dusty,Wunsch,Team South,19.0,0.97,154,CL-264281,small_business,South,2025-02-12,15,Wednesday,2,1,0,1.0
+507,3,86,2025-02-18 14:24:00,answered,10.0,12.0,,4.0,150.0,165.0,158.0,True,3,1,Sales,30,1.2,1.1,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,86,CL-244596,small_business,North,2025-02-18,14,Tuesday,1,1,0,1.0
+508,1,5,2025-02-17 15:23:00,answered,28.0,17.0,,2.0,250.0,175.0,191.0,True,1,1,Billing,30,0.6,0.7,2.0,Edyth,Lockman,Team North,31.0,1.09,5,CL-669474,small_business,South,2025-02-17,15,Monday,0,1,0,1.0
+509,4,99,2025-02-14 08:14:00,answered,18.0,27.0,,7.0,193.0,251.0,243.0,True,4,1,Technical support,30,1.5,1.3,7.0,Travon,Mann,Team East,2.0,0.97,99,CL-966539,small_business,South,2025-02-14,8,Friday,4,1,0,1.0
+510,4,72,2025-02-26 09:44:00,answered,10.0,15.0,,20.0,155.0,202.0,180.0,True,4,1,Technical support,30,1.5,1.3,20.0,Arvid,Ondricka,Team South,81.0,0.89,72,CL-580864,consumer,South,2025-02-26,9,Wednesday,2,1,0,1.0
+511,3,128,2025-02-04 10:34:00,abandoned,,,99.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,128,CL-908718,small_business,North,2025-02-04,10,Tuesday,1,0,1,
+512,4,86,2025-02-26 17:10:00,answered,15.0,23.0,,23.0,131.0,170.0,177.0,False,4,1,Technical support,30,1.5,1.3,23.0,Lawrence,Trantow,Team North,56.0,1.04,86,CL-244596,small_business,North,2025-02-26,17,Wednesday,2,1,0,1.0
+513,5,191,2025-02-19 11:30:00,answered,12.0,22.0,,25.0,358.0,537.0,569.0,True,5,1,Complaints,30,1.8,1.5,25.0,Merritt,McGlynn,Team South,2.0,1.06,191,CL-103762,consumer,West,2025-02-19,11,Wednesday,2,1,0,1.0
+514,4,225,2025-02-20 12:37:00,answered,21.0,32.0,,4.0,234.0,304.0,292.0,True,4,1,Technical support,30,1.5,1.3,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,225,CL-125713,consumer,South,2025-02-20,12,Thursday,3,1,0,0.0
+515,1,199,2025-02-17 10:32:00,answered,5.0,3.0,,20.0,180.0,126.0,112.0,True,1,1,Billing,30,0.6,0.7,20.0,Arvid,Ondricka,Team South,81.0,0.89,199,CL-285101,consumer,East,2025-02-17,10,Monday,0,1,0,1.0
+516,1,232,2025-02-12 15:39:00,answered,12.0,7.0,,25.0,127.0,89.0,94.0,True,1,1,Billing,30,0.6,0.7,25.0,Merritt,McGlynn,Team South,2.0,1.06,232,CL-739969,consumer,West,2025-02-12,15,Wednesday,2,1,0,1.0
+517,1,157,2025-02-17 14:20:00,answered,17.0,10.0,,8.0,181.0,127.0,141.0,False,1,1,Billing,30,0.6,0.7,8.0,Benjamin,Kassulke,Team South,83.0,1.11,157,CL-014212,small_business,West,2025-02-17,14,Monday,0,1,0,1.0
+518,1,13,2025-02-12 18:42:00,answered,22.0,13.0,,4.0,140.0,98.0,94.0,False,1,1,Billing,30,0.6,0.7,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,13,CL-383450,consumer,North,2025-02-12,18,Wednesday,2,1,0,1.0
+519,4,71,2025-02-14 10:58:00,answered,14.0,21.0,,7.0,340.0,442.0,429.0,False,4,1,Technical support,30,1.5,1.3,7.0,Travon,Mann,Team East,2.0,0.97,71,CL-188337,enterprise,North,2025-02-14,10,Friday,4,1,0,1.0
+520,3,158,2025-02-18 20:26:00,answered,25.0,30.0,,6.0,172.0,189.0,208.0,True,3,1,Sales,30,1.2,1.1,6.0,Selmer,Marquardt,Team East,30.0,1.1,158,CL-670099,consumer,South,2025-02-18,20,Tuesday,1,1,0,1.0
+521,3,1,2025-02-17 15:44:00,answered,52.0,62.0,,11.0,120.0,132.0,131.0,True,3,1,Sales,30,1.2,1.1,11.0,Zakary,Sawayn,Team South,40.0,0.99,1,CL-696409,consumer,West,2025-02-17,15,Monday,0,1,0,0.0
+522,3,190,2025-02-27 11:59:00,answered,24.0,29.0,,10.0,167.0,184.0,195.0,True,3,1,Sales,30,1.2,1.1,10.0,Darryl,Becker,Team South,15.0,1.06,190,CL-285000,consumer,East,2025-02-27,11,Thursday,3,1,0,1.0
+523,4,242,2025-02-16 14:02:00,answered,30.0,45.0,,2.0,252.0,328.0,358.0,False,4,1,Technical support,30,1.5,1.3,2.0,Edyth,Lockman,Team North,31.0,1.09,242,CL-811590,consumer,South,2025-02-16,14,Sunday,6,1,0,0.0
+524,1,58,2025-02-04 18:15:00,answered,21.0,13.0,,18.0,160.0,112.0,118.0,True,1,1,Billing,30,0.6,0.7,18.0,Aaron,Tillman,Team South,65.0,1.05,58,CL-823617,small_business,West,2025-02-04,18,Tuesday,1,1,0,1.0
+525,5,60,2025-02-18 15:58:00,answered,7.0,13.0,,25.0,178.0,267.0,283.0,True,5,1,Complaints,30,1.8,1.5,25.0,Merritt,McGlynn,Team South,2.0,1.06,60,CL-774762,consumer,West,2025-02-18,15,Tuesday,1,1,0,1.0
+526,2,130,2025-02-26 17:19:00,answered,37.0,33.0,,8.0,276.0,248.0,275.0,False,2,1,Account changes,30,0.9,0.9,8.0,Benjamin,Kassulke,Team South,83.0,1.11,130,CL-761891,consumer,West,2025-02-26,17,Wednesday,2,1,0,0.0
+527,1,171,2025-02-14 10:05:00,answered,66.0,40.0,,7.0,345.0,241.0,234.0,True,1,1,Billing,30,0.6,0.7,7.0,Travon,Mann,Team East,2.0,0.97,171,CL-275384,consumer,North,2025-02-14,10,Friday,4,1,0,0.0
+528,2,218,2025-02-28 16:30:00,answered,16.0,14.0,,20.0,179.0,161.0,143.0,False,2,1,Account changes,30,0.9,0.9,20.0,Arvid,Ondricka,Team South,81.0,0.89,218,CL-134040,consumer,West,2025-02-28,16,Friday,4,1,0,1.0
+529,5,4,2025-02-03 14:35:00,answered,10.0,18.0,,6.0,249.0,374.0,411.0,True,5,1,Complaints,30,1.8,1.5,6.0,Selmer,Marquardt,Team East,30.0,1.1,4,CL-726161,consumer,East,2025-02-03,14,Monday,0,1,0,1.0
+530,3,71,2025-02-10 13:08:00,answered,12.0,14.0,,12.0,146.0,161.0,156.0,True,3,1,Sales,30,1.2,1.1,12.0,Valerie,Auer,Team North,58.0,0.97,71,CL-188337,enterprise,North,2025-02-10,13,Monday,0,1,0,1.0
+531,4,128,2025-02-10 10:14:00,abandoned,,,6.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,128,CL-908718,small_business,North,2025-02-10,10,Monday,0,0,1,
+532,1,34,2025-02-20 16:17:00,answered,14.0,8.0,,21.0,324.0,227.0,232.0,True,1,1,Billing,30,0.6,0.7,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,34,CL-823869,consumer,North,2025-02-20,16,Thursday,3,1,0,1.0
+533,1,21,2025-02-12 11:22:00,answered,30.0,18.0,,6.0,166.0,116.0,128.0,True,1,1,Billing,30,0.6,0.7,6.0,Selmer,Marquardt,Team East,30.0,1.1,21,CL-080107,consumer,West,2025-02-12,11,Wednesday,2,1,0,1.0
+534,5,107,2025-02-13 13:44:00,abandoned,,,43.0,,,,,,5,1,Complaints,30,1.8,1.5,,,,,,,107,CL-912356,small_business,South,2025-02-13,13,Thursday,3,0,1,
+535,1,245,2025-02-17 13:19:00,answered,31.0,19.0,,27.0,112.0,78.0,78.0,False,1,1,Billing,30,0.6,0.7,27.0,Michale,Grimes,Team East,82.0,1.0,245,CL-647728,consumer,West,2025-02-17,13,Monday,0,1,0,1.0
+536,1,14,2025-02-27 14:34:00,answered,35.0,21.0,,26.0,336.0,235.0,259.0,True,1,1,Billing,30,0.6,0.7,26.0,Brain,Dooley,Team East,73.0,1.1,14,CL-985730,consumer,East,2025-02-27,14,Thursday,3,1,0,1.0
+537,4,129,2025-02-11 03:03:00,answered,5.0,8.0,,14.0,171.0,222.0,233.0,True,4,1,Technical support,30,1.5,1.3,14.0,Polly,Purdy,Team South,2.0,1.05,129,CL-182564,consumer,East,2025-02-11,3,Tuesday,1,1,0,1.0
+538,2,54,2025-02-18 16:53:00,answered,7.0,6.0,,21.0,421.0,379.0,387.0,False,2,1,Account changes,30,0.9,0.9,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,54,CL-786949,consumer,South,2025-02-18,16,Tuesday,1,1,0,1.0
+539,1,27,2025-02-13 11:39:00,answered,54.0,32.0,,19.0,218.0,153.0,167.0,True,1,1,Billing,30,0.6,0.7,19.0,Manuel,Weissnat,Team East,7.0,1.09,27,CL-625844,consumer,North,2025-02-13,11,Thursday,3,1,0,0.0
+540,1,111,2025-02-04 15:17:00,abandoned,,,4.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,111,CL-969470,consumer,North,2025-02-04,15,Tuesday,1,0,1,
+541,2,84,2025-02-19 15:24:00,abandoned,,,63.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,84,CL-556598,consumer,South,2025-02-19,15,Wednesday,2,0,1,
+542,4,227,2025-02-05 11:45:00,answered,59.0,89.0,,10.0,211.0,274.0,290.0,True,4,1,Technical support,30,1.5,1.3,10.0,Darryl,Becker,Team South,15.0,1.06,227,CL-165711,consumer,West,2025-02-05,11,Wednesday,2,1,0,0.0
+543,1,110,2025-02-24 14:13:00,answered,13.0,8.0,,12.0,290.0,203.0,197.0,True,1,1,Billing,30,0.6,0.7,12.0,Valerie,Auer,Team North,58.0,0.97,110,CL-450977,consumer,South,2025-02-24,14,Monday,0,1,0,1.0
+544,1,8,2025-02-06 14:02:00,answered,27.0,16.0,,27.0,123.0,86.0,86.0,True,1,1,Billing,30,0.6,0.7,27.0,Michale,Grimes,Team East,82.0,1.0,8,CL-711583,consumer,East,2025-02-06,14,Thursday,3,1,0,1.0
+545,4,108,2025-02-03 14:10:00,answered,38.0,57.0,,6.0,160.0,208.0,229.0,True,4,1,Technical support,30,1.5,1.3,6.0,Selmer,Marquardt,Team East,30.0,1.1,108,CL-120557,consumer,North,2025-02-03,14,Monday,0,1,0,0.0
+546,4,161,2025-02-21 09:09:00,answered,12.0,18.0,,25.0,149.0,194.0,206.0,True,4,1,Technical support,30,1.5,1.3,25.0,Merritt,McGlynn,Team South,2.0,1.06,161,CL-039969,consumer,North,2025-02-21,9,Friday,4,1,0,1.0
+547,2,242,2025-02-21 10:38:00,abandoned,,,40.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,242,CL-811590,consumer,South,2025-02-21,10,Friday,4,0,1,
+548,2,176,2025-02-13 17:05:00,abandoned,,,112.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,176,CL-509391,small_business,North,2025-02-13,17,Thursday,3,0,1,
+549,4,1,2025-02-18 11:48:00,answered,45.0,68.0,,4.0,160.0,208.0,200.0,False,4,1,Technical support,30,1.5,1.3,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,1,CL-696409,consumer,West,2025-02-18,11,Tuesday,1,1,0,0.0
+550,3,82,2025-02-22 09:51:00,answered,12.0,14.0,,7.0,174.0,191.0,185.0,True,3,1,Sales,30,1.2,1.1,7.0,Travon,Mann,Team East,2.0,0.97,82,CL-292376,consumer,South,2025-02-22,9,Saturday,5,1,0,1.0
+551,1,58,2025-02-06 13:04:00,answered,4.0,2.0,,14.0,163.0,114.0,120.0,True,1,1,Billing,30,0.6,0.7,14.0,Polly,Purdy,Team South,2.0,1.05,58,CL-823617,small_business,West,2025-02-06,13,Thursday,3,1,0,1.0
+552,3,13,2025-02-19 15:08:00,answered,31.0,37.0,,11.0,188.0,207.0,205.0,True,3,1,Sales,30,1.2,1.1,11.0,Zakary,Sawayn,Team South,40.0,0.99,13,CL-383450,consumer,North,2025-02-19,15,Wednesday,2,1,0,0.0
+553,5,55,2025-02-22 17:56:00,answered,5.0,9.0,,24.0,196.0,294.0,300.0,False,5,1,Complaints,30,1.8,1.5,24.0,Graciela,Luettgen,Team South,2.0,1.02,55,CL-163125,small_business,North,2025-02-22,17,Saturday,5,1,0,1.0
+554,2,193,2025-02-17 10:31:00,answered,17.0,15.0,,7.0,271.0,244.0,237.0,True,2,1,Account changes,30,0.9,0.9,7.0,Travon,Mann,Team East,2.0,0.97,193,CL-017211,small_business,West,2025-02-17,10,Monday,0,1,0,1.0
+555,2,208,2025-02-24 14:48:00,abandoned,,,30.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,208,CL-637215,consumer,South,2025-02-24,14,Monday,0,0,1,
+556,4,221,2025-02-22 08:26:00,answered,19.0,29.0,,8.0,249.0,324.0,360.0,False,4,1,Technical support,30,1.5,1.3,8.0,Benjamin,Kassulke,Team South,83.0,1.11,221,CL-386638,consumer,West,2025-02-22,8,Saturday,5,1,0,1.0
+557,4,12,2025-02-13 09:10:00,answered,31.0,47.0,,8.0,139.0,181.0,201.0,True,4,1,Technical support,30,1.5,1.3,8.0,Benjamin,Kassulke,Team South,83.0,1.11,12,CL-743079,consumer,East,2025-02-13,9,Thursday,3,1,0,0.0
+558,3,172,2025-02-25 21:16:00,answered,19.0,23.0,,9.0,149.0,164.0,171.0,True,3,1,Sales,30,1.2,1.1,9.0,Abraham,Ortiz,Team South,88.0,1.04,172,CL-110086,consumer,South,2025-02-25,21,Tuesday,1,1,0,1.0
+559,1,32,2025-02-26 17:28:00,abandoned,,,46.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,32,CL-623987,consumer,South,2025-02-26,17,Wednesday,2,0,1,
+560,1,14,2025-02-07 11:03:00,answered,10.0,6.0,,20.0,156.0,109.0,97.0,True,1,1,Billing,30,0.6,0.7,20.0,Arvid,Ondricka,Team South,81.0,0.89,14,CL-985730,consumer,East,2025-02-07,11,Friday,4,1,0,1.0
+561,4,188,2025-02-11 08:54:00,answered,13.0,20.0,,26.0,159.0,207.0,228.0,True,4,1,Technical support,30,1.5,1.3,26.0,Brain,Dooley,Team East,73.0,1.1,188,CL-475789,consumer,East,2025-02-11,8,Tuesday,1,1,0,1.0
+562,1,97,2025-02-13 13:05:00,answered,9.0,5.0,,22.0,187.0,131.0,135.0,True,1,1,Billing,30,0.6,0.7,22.0,Dan,Heaney,Team East,45.0,1.03,97,CL-912677,consumer,East,2025-02-13,13,Thursday,3,1,0,1.0
+563,4,24,2025-02-26 11:44:00,answered,56.0,84.0,,21.0,206.0,268.0,273.0,False,4,1,Technical support,30,1.5,1.3,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,24,CL-198597,consumer,North,2025-02-26,11,Wednesday,2,1,0,0.0
+564,4,1,2025-02-22 11:26:00,answered,19.0,29.0,,5.0,139.0,181.0,174.0,True,4,1,Technical support,30,1.5,1.3,5.0,Earnest,Bednar,Team North,63.0,0.96,1,CL-696409,consumer,West,2025-02-22,11,Saturday,5,1,0,1.0
+565,1,1,2025-02-13 08:39:00,answered,22.0,13.0,,28.0,107.0,75.0,70.0,True,1,1,Billing,30,0.6,0.7,28.0,Richard,Gislason,Team East,3.0,0.93,1,CL-696409,consumer,West,2025-02-13,8,Thursday,3,1,0,1.0
+566,1,246,2025-02-03 16:33:00,answered,31.0,19.0,,29.0,144.0,101.0,93.0,False,1,1,Billing,30,0.6,0.7,29.0,Alexie,Lehner,Team North,70.0,0.92,246,CL-677329,consumer,West,2025-02-03,16,Monday,0,1,0,1.0
+567,4,226,2025-02-24 09:05:00,answered,29.0,44.0,,14.0,115.0,150.0,158.0,True,4,1,Technical support,30,1.5,1.3,14.0,Polly,Purdy,Team South,2.0,1.05,226,CL-673026,consumer,East,2025-02-24,9,Monday,0,1,0,0.0
+568,2,158,2025-02-11 09:11:00,answered,28.0,25.0,,12.0,307.0,276.0,268.0,True,2,1,Account changes,30,0.9,0.9,12.0,Valerie,Auer,Team North,58.0,0.97,158,CL-670099,consumer,South,2025-02-11,9,Tuesday,1,1,0,1.0
+569,2,92,2025-02-27 21:05:00,answered,43.0,39.0,,29.0,205.0,185.0,170.0,True,2,1,Account changes,30,0.9,0.9,29.0,Alexie,Lehner,Team North,70.0,0.92,92,CL-505362,small_business,South,2025-02-27,21,Thursday,3,1,0,0.0
+570,2,109,2025-02-04 11:29:00,answered,8.0,7.0,,5.0,399.0,359.0,345.0,True,2,1,Account changes,30,0.9,0.9,5.0,Earnest,Bednar,Team North,63.0,0.96,109,CL-806874,consumer,West,2025-02-04,11,Tuesday,1,1,0,1.0
+571,5,105,2025-02-17 11:38:00,answered,11.0,20.0,,13.0,134.0,201.0,211.0,True,5,1,Complaints,30,1.8,1.5,13.0,Jermey,Shanahan,Team South,3.0,1.05,105,CL-093665,consumer,East,2025-02-17,11,Monday,0,1,0,1.0
+572,4,127,2025-02-27 15:29:00,abandoned,,,4.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,127,CL-120732,consumer,North,2025-02-27,15,Thursday,3,0,1,
+573,3,1,2025-02-12 08:18:00,answered,36.0,43.0,,11.0,262.0,288.0,285.0,True,3,1,Sales,30,1.2,1.1,11.0,Zakary,Sawayn,Team South,40.0,0.99,1,CL-696409,consumer,West,2025-02-12,8,Wednesday,2,1,0,0.0
+574,1,4,2025-02-06 18:17:00,answered,21.0,13.0,,20.0,116.0,81.0,72.0,True,1,1,Billing,30,0.6,0.7,20.0,Arvid,Ondricka,Team South,81.0,0.89,4,CL-726161,consumer,East,2025-02-06,18,Thursday,3,1,0,1.0
+575,4,154,2025-02-07 15:56:00,answered,8.0,12.0,,25.0,219.0,285.0,302.0,True,4,1,Technical support,30,1.5,1.3,25.0,Merritt,McGlynn,Team South,2.0,1.06,154,CL-264281,small_business,South,2025-02-07,15,Friday,4,1,0,1.0
+576,3,5,2025-02-06 12:23:00,answered,9.0,11.0,,26.0,170.0,187.0,206.0,True,3,1,Sales,30,1.2,1.1,26.0,Brain,Dooley,Team East,73.0,1.1,5,CL-669474,small_business,South,2025-02-06,12,Thursday,3,1,0,1.0
+577,5,187,2025-02-06 15:11:00,answered,20.0,36.0,,3.0,150.0,225.0,268.0,True,5,1,Complaints,30,1.8,1.5,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,187,CL-271851,enterprise,South,2025-02-06,15,Thursday,3,1,0,0.0
+578,4,1,2025-02-07 10:56:00,answered,24.0,36.0,,8.0,207.0,269.0,299.0,False,4,1,Technical support,30,1.5,1.3,8.0,Benjamin,Kassulke,Team South,83.0,1.11,1,CL-696409,consumer,West,2025-02-07,10,Friday,4,1,0,0.0
+579,4,69,2025-02-13 08:56:00,answered,20.0,30.0,,8.0,109.0,142.0,158.0,False,4,1,Technical support,30,1.5,1.3,8.0,Benjamin,Kassulke,Team South,83.0,1.11,69,CL-151572,consumer,West,2025-02-13,8,Thursday,3,1,0,1.0
+580,3,93,2025-02-04 10:46:00,answered,57.0,68.0,,2.0,136.0,150.0,164.0,False,3,1,Sales,30,1.2,1.1,2.0,Edyth,Lockman,Team North,31.0,1.09,93,CL-037220,enterprise,East,2025-02-04,10,Tuesday,1,1,0,0.0
+581,1,90,2025-02-06 13:08:00,answered,10.0,6.0,,14.0,161.0,113.0,119.0,False,1,1,Billing,30,0.6,0.7,14.0,Polly,Purdy,Team South,2.0,1.05,90,CL-251307,consumer,North,2025-02-06,13,Thursday,3,1,0,1.0
+582,3,84,2025-02-19 20:00:00,answered,14.0,17.0,,29.0,373.0,410.0,377.0,True,3,1,Sales,30,1.2,1.1,29.0,Alexie,Lehner,Team North,70.0,0.92,84,CL-556598,consumer,South,2025-02-19,20,Wednesday,2,1,0,1.0
+583,1,3,2025-02-28 13:50:00,answered,20.0,12.0,,13.0,179.0,125.0,131.0,True,1,1,Billing,30,0.6,0.7,13.0,Jermey,Shanahan,Team South,3.0,1.05,3,CL-501041,consumer,South,2025-02-28,13,Friday,4,1,0,1.0
+584,3,1,2025-02-07 10:27:00,answered,34.0,41.0,,5.0,190.0,209.0,201.0,False,3,1,Sales,30,1.2,1.1,5.0,Earnest,Bednar,Team North,63.0,0.96,1,CL-696409,consumer,West,2025-02-07,10,Friday,4,1,0,0.0
+585,5,132,2025-02-06 13:50:00,answered,20.0,36.0,,2.0,197.0,296.0,323.0,True,5,1,Complaints,30,1.8,1.5,2.0,Edyth,Lockman,Team North,31.0,1.09,132,CL-317534,consumer,North,2025-02-06,13,Thursday,3,1,0,0.0
+586,3,104,2025-02-28 17:40:00,answered,29.0,35.0,,15.0,161.0,177.0,168.0,True,3,1,Sales,30,1.2,1.1,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,104,CL-960645,consumer,North,2025-02-28,17,Friday,4,1,0,0.0
+587,5,184,2025-02-05 10:00:00,answered,8.0,14.0,,18.0,140.0,210.0,221.0,True,5,1,Complaints,30,1.8,1.5,18.0,Aaron,Tillman,Team South,65.0,1.05,184,CL-193841,consumer,South,2025-02-05,10,Wednesday,2,1,0,1.0
+588,5,1,2025-02-03 09:54:00,answered,10.0,18.0,,12.0,225.0,338.0,328.0,False,5,1,Complaints,30,1.8,1.5,12.0,Valerie,Auer,Team North,58.0,0.97,1,CL-696409,consumer,West,2025-02-03,9,Monday,0,1,0,1.0
+589,5,74,2025-02-24 08:27:00,answered,14.0,25.0,,6.0,199.0,299.0,329.0,True,5,1,Complaints,30,1.8,1.5,6.0,Selmer,Marquardt,Team East,30.0,1.1,74,CL-907468,small_business,North,2025-02-24,8,Monday,0,1,0,1.0
+590,3,13,2025-02-11 08:28:00,answered,34.0,41.0,,1.0,351.0,386.0,390.0,True,3,1,Sales,30,1.2,1.1,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,13,CL-383450,consumer,North,2025-02-11,8,Tuesday,1,1,0,0.0
+591,2,70,2025-02-28 14:20:00,answered,17.0,15.0,,16.0,211.0,190.0,184.0,True,2,1,Account changes,30,0.9,0.9,16.0,Dusty,Wunsch,Team South,19.0,0.97,70,CL-641361,small_business,North,2025-02-28,14,Friday,4,1,0,1.0
+592,3,155,2025-02-13 16:51:00,answered,32.0,38.0,,8.0,184.0,202.0,224.0,True,3,1,Sales,30,1.2,1.1,8.0,Benjamin,Kassulke,Team South,83.0,1.11,155,CL-687723,small_business,North,2025-02-13,16,Thursday,3,1,0,0.0
+593,2,28,2025-02-25 13:11:00,abandoned,,,5.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,28,CL-675907,enterprise,West,2025-02-25,13,Tuesday,1,0,1,
+594,3,97,2025-02-11 09:03:00,abandoned,,,24.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,97,CL-912677,consumer,East,2025-02-11,9,Tuesday,1,0,1,
+595,4,10,2025-02-25 20:33:00,answered,11.0,17.0,,21.0,217.0,282.0,288.0,True,4,1,Technical support,30,1.5,1.3,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,10,CL-613207,small_business,North,2025-02-25,20,Tuesday,1,1,0,1.0
+596,5,5,2025-02-03 10:15:00,answered,11.0,20.0,,23.0,129.0,194.0,202.0,True,5,1,Complaints,30,1.8,1.5,23.0,Lawrence,Trantow,Team North,56.0,1.04,5,CL-669474,small_business,South,2025-02-03,10,Monday,0,1,0,1.0
+597,5,219,2025-02-13 08:47:00,answered,13.0,23.0,,9.0,290.0,435.0,452.0,True,5,1,Complaints,30,1.8,1.5,9.0,Abraham,Ortiz,Team South,88.0,1.04,219,CL-394392,consumer,East,2025-02-13,8,Thursday,3,1,0,1.0
+598,3,1,2025-02-14 21:00:00,answered,18.0,22.0,,15.0,171.0,188.0,179.0,True,3,1,Sales,30,1.2,1.1,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,1,CL-696409,consumer,West,2025-02-14,21,Friday,4,1,0,1.0
+599,1,8,2025-02-03 11:07:00,answered,46.0,28.0,,20.0,124.0,87.0,77.0,True,1,1,Billing,30,0.6,0.7,20.0,Arvid,Ondricka,Team South,81.0,0.89,8,CL-711583,consumer,East,2025-02-03,11,Monday,0,1,0,1.0
+600,3,23,2025-02-04 11:32:00,answered,11.0,13.0,,14.0,154.0,169.0,177.0,True,3,1,Sales,30,1.2,1.1,14.0,Polly,Purdy,Team South,2.0,1.05,23,CL-320092,consumer,East,2025-02-04,11,Tuesday,1,1,0,1.0
+601,1,217,2025-02-24 10:19:00,answered,29.0,17.0,,8.0,347.0,243.0,270.0,False,1,1,Billing,30,0.6,0.7,8.0,Benjamin,Kassulke,Team South,83.0,1.11,217,CL-976745,consumer,North,2025-02-24,10,Monday,0,1,0,1.0
+602,2,79,2025-02-24 07:58:00,answered,32.0,29.0,,13.0,182.0,164.0,172.0,False,2,1,Account changes,30,0.9,0.9,13.0,Jermey,Shanahan,Team South,3.0,1.05,79,CL-041528,consumer,South,2025-02-24,7,Monday,0,1,0,1.0
+603,3,61,2025-02-17 16:55:00,abandoned,,,20.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,61,CL-134774,consumer,South,2025-02-17,16,Monday,0,0,1,
+604,3,25,2025-02-10 11:50:00,answered,17.0,20.0,,2.0,330.0,363.0,396.0,False,3,1,Sales,30,1.2,1.1,2.0,Edyth,Lockman,Team North,31.0,1.09,25,CL-784169,consumer,North,2025-02-10,11,Monday,0,1,0,1.0
+605,1,44,2025-02-26 15:47:00,answered,11.0,7.0,,20.0,214.0,150.0,134.0,False,1,1,Billing,30,0.6,0.7,20.0,Arvid,Ondricka,Team South,81.0,0.89,44,CL-387135,small_business,West,2025-02-26,15,Wednesday,2,1,0,1.0
+606,3,176,2025-02-23 12:54:00,answered,37.0,44.0,,3.0,213.0,234.0,278.0,True,3,1,Sales,30,1.2,1.1,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,176,CL-509391,small_business,North,2025-02-23,12,Sunday,6,1,0,0.0
+607,1,23,2025-02-05 13:45:00,answered,17.0,10.0,,6.0,146.0,102.0,112.0,True,1,1,Billing,30,0.6,0.7,6.0,Selmer,Marquardt,Team East,30.0,1.1,23,CL-320092,consumer,East,2025-02-05,13,Wednesday,2,1,0,1.0
+608,3,11,2025-02-21 12:37:00,answered,31.0,37.0,,13.0,233.0,256.0,269.0,True,3,1,Sales,30,1.2,1.1,13.0,Jermey,Shanahan,Team South,3.0,1.05,11,CL-077793,consumer,East,2025-02-21,12,Friday,4,1,0,0.0
+609,4,143,2025-02-27 09:16:00,answered,14.0,21.0,,15.0,275.0,358.0,340.0,True,4,1,Technical support,30,1.5,1.3,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,143,CL-127359,consumer,East,2025-02-27,9,Thursday,3,1,0,1.0
+610,2,14,2025-02-27 14:48:00,answered,29.0,26.0,,11.0,245.0,221.0,219.0,True,2,1,Account changes,30,0.9,0.9,11.0,Zakary,Sawayn,Team South,40.0,0.99,14,CL-985730,consumer,East,2025-02-27,14,Thursday,3,1,0,1.0
+611,1,129,2025-02-07 08:02:00,answered,14.0,8.0,,19.0,114.0,80.0,87.0,False,1,1,Billing,30,0.6,0.7,19.0,Manuel,Weissnat,Team East,7.0,1.09,129,CL-182564,consumer,East,2025-02-07,8,Friday,4,1,0,1.0
+612,1,1,2025-02-21 14:41:00,answered,5.0,3.0,,20.0,173.0,121.0,108.0,False,1,1,Billing,30,0.6,0.7,20.0,Arvid,Ondricka,Team South,81.0,0.89,1,CL-696409,consumer,West,2025-02-21,14,Friday,4,1,0,1.0
+613,2,36,2025-02-10 16:30:00,answered,13.0,12.0,,17.0,210.0,189.0,178.0,True,2,1,Account changes,30,0.9,0.9,17.0,Lesly,Huels,Team North,16.0,0.94,36,CL-515567,small_business,South,2025-02-10,16,Monday,0,1,0,1.0
+614,3,3,2025-02-06 07:37:00,answered,54.0,65.0,,2.0,145.0,160.0,174.0,True,3,1,Sales,30,1.2,1.1,2.0,Edyth,Lockman,Team North,31.0,1.09,3,CL-501041,consumer,South,2025-02-06,7,Thursday,3,1,0,0.0
+615,4,177,2025-02-12 10:13:00,answered,14.0,21.0,,27.0,307.0,399.0,399.0,True,4,1,Technical support,30,1.5,1.3,27.0,Michale,Grimes,Team East,82.0,1.0,177,CL-696515,consumer,South,2025-02-12,10,Wednesday,2,1,0,1.0
+616,3,40,2025-02-17 14:47:00,answered,13.0,16.0,,26.0,175.0,193.0,212.0,True,3,1,Sales,30,1.2,1.1,26.0,Brain,Dooley,Team East,73.0,1.1,40,CL-220482,consumer,West,2025-02-17,14,Monday,0,1,0,1.0
+617,4,98,2025-02-12 14:59:00,answered,14.0,21.0,,8.0,169.0,220.0,244.0,True,4,1,Technical support,30,1.5,1.3,8.0,Benjamin,Kassulke,Team South,83.0,1.11,98,CL-561534,enterprise,East,2025-02-12,14,Wednesday,2,1,0,1.0
+618,2,103,2025-02-27 11:58:00,answered,10.0,9.0,,20.0,254.0,229.0,204.0,True,2,1,Account changes,30,0.9,0.9,20.0,Arvid,Ondricka,Team South,81.0,0.89,103,CL-756072,consumer,West,2025-02-27,11,Thursday,3,1,0,1.0
+619,1,229,2025-02-14 13:18:00,abandoned,,,16.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,229,CL-534551,small_business,West,2025-02-14,13,Friday,4,0,1,
+620,4,10,2025-02-12 11:40:00,answered,39.0,59.0,,22.0,191.0,248.0,255.0,True,4,1,Technical support,30,1.5,1.3,22.0,Dan,Heaney,Team East,45.0,1.03,10,CL-613207,small_business,North,2025-02-12,11,Wednesday,2,1,0,0.0
+621,1,67,2025-02-09 10:39:00,answered,44.0,26.0,,29.0,214.0,150.0,138.0,False,1,1,Billing,30,0.6,0.7,29.0,Alexie,Lehner,Team North,70.0,0.92,67,CL-632587,small_business,North,2025-02-09,10,Sunday,6,1,0,1.0
+622,2,169,2025-02-21 12:58:00,answered,6.0,5.0,,11.0,165.0,149.0,148.0,True,2,1,Account changes,30,0.9,0.9,11.0,Zakary,Sawayn,Team South,40.0,0.99,169,CL-706004,consumer,North,2025-02-21,12,Friday,4,1,0,1.0
+623,4,16,2025-02-26 12:29:00,answered,10.0,15.0,,22.0,103.0,134.0,138.0,True,4,1,Technical support,30,1.5,1.3,22.0,Dan,Heaney,Team East,45.0,1.03,16,CL-004696,consumer,North,2025-02-26,12,Wednesday,2,1,0,1.0
+624,4,1,2025-02-26 15:16:00,answered,47.0,71.0,,13.0,162.0,211.0,222.0,True,4,1,Technical support,30,1.5,1.3,13.0,Jermey,Shanahan,Team South,3.0,1.05,1,CL-696409,consumer,West,2025-02-26,15,Wednesday,2,1,0,0.0
+625,4,94,2025-02-14 15:44:00,answered,47.0,71.0,,1.0,194.0,252.0,255.0,False,4,1,Technical support,30,1.5,1.3,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,94,CL-037299,consumer,East,2025-02-14,15,Friday,4,1,0,0.0
+626,3,99,2025-02-04 14:42:00,answered,23.0,28.0,,2.0,146.0,161.0,175.0,False,3,1,Sales,30,1.2,1.1,2.0,Edyth,Lockman,Team North,31.0,1.09,99,CL-966539,small_business,South,2025-02-04,14,Tuesday,1,1,0,1.0
+627,1,73,2025-02-10 16:56:00,answered,19.0,11.0,,26.0,150.0,105.0,116.0,True,1,1,Billing,30,0.6,0.7,26.0,Brain,Dooley,Team East,73.0,1.1,73,CL-054765,consumer,North,2025-02-10,16,Monday,0,1,0,1.0
+628,1,50,2025-02-10 15:02:00,abandoned,,,86.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,50,CL-021676,small_business,East,2025-02-10,15,Monday,0,0,1,
+629,3,223,2025-02-28 18:23:00,answered,23.0,28.0,,7.0,255.0,281.0,273.0,True,3,1,Sales,30,1.2,1.1,7.0,Travon,Mann,Team East,2.0,0.97,223,CL-124046,consumer,West,2025-02-28,18,Friday,4,1,0,1.0
+630,1,249,2025-02-27 11:05:00,answered,21.0,13.0,,22.0,291.0,204.0,210.0,True,1,1,Billing,30,0.6,0.7,22.0,Dan,Heaney,Team East,45.0,1.03,249,CL-989953,small_business,South,2025-02-27,11,Thursday,3,1,0,1.0
+631,1,233,2025-02-12 16:27:00,answered,14.0,8.0,,1.0,271.0,190.0,192.0,True,1,1,Billing,30,0.6,0.7,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,233,CL-342138,small_business,West,2025-02-12,16,Wednesday,2,1,0,1.0
+632,4,214,2025-02-26 13:25:00,answered,5.0,8.0,,1.0,173.0,225.0,227.0,True,4,1,Technical support,30,1.5,1.3,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,214,CL-328625,enterprise,South,2025-02-26,13,Wednesday,2,1,0,1.0
+633,1,250,2025-02-14 12:47:00,answered,7.0,4.0,,22.0,193.0,135.0,139.0,True,1,1,Billing,30,0.6,0.7,22.0,Dan,Heaney,Team East,45.0,1.03,250,CL-763058,consumer,South,2025-02-14,12,Friday,4,1,0,1.0
+634,5,1,2025-02-07 17:19:00,answered,30.0,54.0,,27.0,322.0,483.0,483.0,False,5,1,Complaints,30,1.8,1.5,27.0,Michale,Grimes,Team East,82.0,1.0,1,CL-696409,consumer,West,2025-02-07,17,Friday,4,1,0,0.0
+635,2,22,2025-02-11 11:38:00,answered,25.0,23.0,,17.0,135.0,122.0,115.0,True,2,1,Account changes,30,0.9,0.9,17.0,Lesly,Huels,Team North,16.0,0.94,22,CL-349477,consumer,West,2025-02-11,11,Tuesday,1,1,0,1.0
+636,5,127,2025-02-06 09:38:00,answered,37.0,67.0,,14.0,140.0,210.0,221.0,True,5,1,Complaints,30,1.8,1.5,14.0,Polly,Purdy,Team South,2.0,1.05,127,CL-120732,consumer,North,2025-02-06,9,Thursday,3,1,0,0.0
+637,1,26,2025-02-03 16:37:00,answered,7.0,4.0,,7.0,197.0,138.0,134.0,True,1,1,Billing,30,0.6,0.7,7.0,Travon,Mann,Team East,2.0,0.97,26,CL-026838,consumer,West,2025-02-03,16,Monday,0,1,0,1.0
+638,4,21,2025-02-03 12:10:00,answered,27.0,41.0,,20.0,235.0,306.0,272.0,False,4,1,Technical support,30,1.5,1.3,20.0,Arvid,Ondricka,Team South,81.0,0.89,21,CL-080107,consumer,West,2025-02-03,12,Monday,0,1,0,0.0
+639,2,1,2025-02-13 19:41:00,abandoned,,,11.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,1,CL-696409,consumer,West,2025-02-13,19,Thursday,3,0,1,
+640,1,145,2025-02-12 13:05:00,answered,17.0,10.0,,12.0,191.0,134.0,130.0,True,1,1,Billing,30,0.6,0.7,12.0,Valerie,Auer,Team North,58.0,0.97,145,CL-529697,consumer,North,2025-02-12,13,Wednesday,2,1,0,1.0
+641,5,2,2025-02-05 11:58:00,answered,7.0,13.0,,7.0,246.0,369.0,358.0,True,5,1,Complaints,30,1.8,1.5,7.0,Travon,Mann,Team East,2.0,0.97,2,CL-330627,consumer,North,2025-02-05,11,Wednesday,2,1,0,1.0
+642,2,20,2025-02-21 16:21:00,answered,20.0,18.0,,5.0,207.0,186.0,179.0,True,2,1,Account changes,30,0.9,0.9,5.0,Earnest,Bednar,Team North,63.0,0.96,20,CL-589392,consumer,West,2025-02-21,16,Friday,4,1,0,1.0
+643,3,74,2025-02-19 13:31:00,answered,9.0,11.0,,6.0,115.0,127.0,140.0,False,3,1,Sales,30,1.2,1.1,6.0,Selmer,Marquardt,Team East,30.0,1.1,74,CL-907468,small_business,North,2025-02-19,13,Wednesday,2,1,0,1.0
+644,4,27,2025-02-13 16:21:00,answered,6.0,9.0,,23.0,234.0,304.0,316.0,True,4,1,Technical support,30,1.5,1.3,23.0,Lawrence,Trantow,Team North,56.0,1.04,27,CL-625844,consumer,North,2025-02-13,16,Thursday,3,1,0,1.0
+645,2,5,2025-02-21 22:52:00,answered,28.0,25.0,,16.0,114.0,103.0,100.0,True,2,1,Account changes,30,0.9,0.9,16.0,Dusty,Wunsch,Team South,19.0,0.97,5,CL-669474,small_business,South,2025-02-21,22,Friday,4,1,0,1.0
+646,4,2,2025-02-13 15:35:00,answered,13.0,20.0,,27.0,213.0,277.0,277.0,False,4,1,Technical support,30,1.5,1.3,27.0,Michale,Grimes,Team East,82.0,1.0,2,CL-330627,consumer,North,2025-02-13,15,Thursday,3,1,0,1.0
+647,3,135,2025-02-03 08:08:00,answered,14.0,17.0,,2.0,138.0,152.0,166.0,True,3,1,Sales,30,1.2,1.1,2.0,Edyth,Lockman,Team North,31.0,1.09,135,CL-667277,small_business,South,2025-02-03,8,Monday,0,1,0,1.0
+648,5,198,2025-02-11 17:07:00,answered,25.0,45.0,,5.0,191.0,287.0,276.0,False,5,1,Complaints,30,1.8,1.5,5.0,Earnest,Bednar,Team North,63.0,0.96,198,CL-366146,consumer,East,2025-02-11,17,Tuesday,1,1,0,0.0
+649,3,37,2025-02-22 18:23:00,answered,7.0,8.0,,9.0,230.0,253.0,263.0,True,3,1,Sales,30,1.2,1.1,9.0,Abraham,Ortiz,Team South,88.0,1.04,37,CL-968724,consumer,East,2025-02-22,18,Saturday,5,1,0,1.0
+650,2,44,2025-02-03 12:06:00,answered,12.0,11.0,,12.0,158.0,142.0,138.0,True,2,1,Account changes,30,0.9,0.9,12.0,Valerie,Auer,Team North,58.0,0.97,44,CL-387135,small_business,West,2025-02-03,12,Monday,0,1,0,1.0
+651,5,124,2025-02-24 17:18:00,answered,21.0,38.0,,19.0,246.0,369.0,402.0,False,5,1,Complaints,30,1.8,1.5,19.0,Manuel,Weissnat,Team East,7.0,1.09,124,CL-221925,consumer,West,2025-02-24,17,Monday,0,1,0,0.0
+652,4,12,2025-02-13 17:16:00,answered,29.0,44.0,,24.0,200.0,260.0,265.0,True,4,1,Technical support,30,1.5,1.3,24.0,Graciela,Luettgen,Team South,2.0,1.02,12,CL-743079,consumer,East,2025-02-13,17,Thursday,3,1,0,0.0
+653,4,139,2025-02-07 17:50:00,answered,20.0,30.0,,23.0,132.0,172.0,179.0,True,4,1,Technical support,30,1.5,1.3,23.0,Lawrence,Trantow,Team North,56.0,1.04,139,CL-904932,consumer,West,2025-02-07,17,Friday,4,1,0,1.0
+654,4,165,2025-02-07 10:14:00,answered,8.0,12.0,,17.0,118.0,153.0,144.0,True,4,1,Technical support,30,1.5,1.3,17.0,Lesly,Huels,Team North,16.0,0.94,165,CL-277256,consumer,East,2025-02-07,10,Friday,4,1,0,1.0
+655,4,204,2025-02-17 15:42:00,answered,21.0,32.0,,17.0,139.0,181.0,170.0,True,4,1,Technical support,30,1.5,1.3,17.0,Lesly,Huels,Team North,16.0,0.94,204,CL-735937,consumer,South,2025-02-17,15,Monday,0,1,0,0.0
+656,4,1,2025-02-05 16:27:00,answered,24.0,36.0,,21.0,414.0,538.0,549.0,False,4,1,Technical support,30,1.5,1.3,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,1,CL-696409,consumer,West,2025-02-05,16,Wednesday,2,1,0,0.0
+657,1,184,2025-02-21 16:32:00,abandoned,,,133.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,184,CL-193841,consumer,South,2025-02-21,16,Friday,4,0,1,
+658,4,41,2025-02-15 13:44:00,answered,25.0,38.0,,24.0,139.0,181.0,185.0,True,4,1,Technical support,30,1.5,1.3,24.0,Graciela,Luettgen,Team South,2.0,1.02,41,CL-853059,small_business,West,2025-02-15,13,Saturday,5,1,0,0.0
+659,4,206,2025-02-26 14:54:00,answered,15.0,23.0,,10.0,251.0,326.0,346.0,True,4,1,Technical support,30,1.5,1.3,10.0,Darryl,Becker,Team South,15.0,1.06,206,CL-847685,small_business,East,2025-02-26,14,Wednesday,2,1,0,1.0
+660,2,90,2025-02-22 14:40:00,answered,19.0,17.0,,5.0,561.0,505.0,485.0,True,2,1,Account changes,30,0.9,0.9,5.0,Earnest,Bednar,Team North,63.0,0.96,90,CL-251307,consumer,North,2025-02-22,14,Saturday,5,1,0,1.0
+661,4,36,2025-02-26 09:09:00,abandoned,,,114.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,36,CL-515567,small_business,South,2025-02-26,9,Wednesday,2,0,1,
+662,1,14,2025-02-17 16:09:00,answered,43.0,26.0,,30.0,108.0,76.0,74.0,False,1,1,Billing,30,0.6,0.7,30.0,Ceasar,Corwin,Team North,83.0,0.97,14,CL-985730,consumer,East,2025-02-17,16,Monday,0,1,0,1.0
+663,1,3,2025-02-03 14:14:00,answered,3.0,2.0,,8.0,185.0,130.0,144.0,True,1,1,Billing,30,0.6,0.7,8.0,Benjamin,Kassulke,Team South,83.0,1.11,3,CL-501041,consumer,South,2025-02-03,14,Monday,0,1,0,1.0
+664,1,22,2025-02-25 08:40:00,answered,28.0,17.0,,10.0,148.0,104.0,110.0,False,1,1,Billing,30,0.6,0.7,10.0,Darryl,Becker,Team South,15.0,1.06,22,CL-349477,consumer,West,2025-02-25,8,Tuesday,1,1,0,1.0
+665,3,10,2025-02-12 14:03:00,answered,52.0,62.0,,5.0,330.0,363.0,348.0,True,3,1,Sales,30,1.2,1.1,5.0,Earnest,Bednar,Team North,63.0,0.96,10,CL-613207,small_business,North,2025-02-12,14,Wednesday,2,1,0,0.0
+666,4,113,2025-02-27 17:04:00,abandoned,,,32.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,113,CL-827954,consumer,West,2025-02-27,17,Thursday,3,0,1,
+667,5,83,2025-02-24 13:31:00,answered,12.0,22.0,,20.0,164.0,246.0,219.0,True,5,1,Complaints,30,1.8,1.5,20.0,Arvid,Ondricka,Team South,81.0,0.89,83,CL-990370,small_business,South,2025-02-24,13,Monday,0,1,0,1.0
+668,1,9,2025-02-28 09:04:00,answered,15.0,9.0,,28.0,185.0,130.0,121.0,True,1,1,Billing,30,0.6,0.7,28.0,Richard,Gislason,Team East,3.0,0.93,9,CL-994954,consumer,East,2025-02-28,9,Friday,4,1,0,1.0
+669,5,118,2025-02-10 17:10:00,abandoned,,,6.0,,,,,,5,1,Complaints,30,1.8,1.5,,,,,,,118,CL-092745,consumer,East,2025-02-10,17,Monday,0,0,1,
+670,2,1,2025-02-10 07:42:00,answered,35.0,32.0,,16.0,132.0,119.0,115.0,True,2,1,Account changes,30,0.9,0.9,16.0,Dusty,Wunsch,Team South,19.0,0.97,1,CL-696409,consumer,West,2025-02-10,7,Monday,0,1,0,0.0
+671,3,94,2025-02-18 12:04:00,answered,11.0,13.0,,5.0,155.0,171.0,164.0,True,3,1,Sales,30,1.2,1.1,5.0,Earnest,Bednar,Team North,63.0,0.96,94,CL-037299,consumer,East,2025-02-18,12,Tuesday,1,1,0,1.0
+672,5,46,2025-02-03 09:30:00,answered,8.0,14.0,,4.0,151.0,227.0,218.0,True,5,1,Complaints,30,1.8,1.5,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,46,CL-149317,consumer,South,2025-02-03,9,Monday,0,1,0,1.0
+673,4,225,2025-02-06 16:44:00,answered,44.0,66.0,,18.0,349.0,454.0,477.0,True,4,1,Technical support,30,1.5,1.3,18.0,Aaron,Tillman,Team South,65.0,1.05,225,CL-125713,consumer,South,2025-02-06,16,Thursday,3,1,0,0.0
+674,2,86,2025-02-27 15:29:00,answered,11.0,10.0,,13.0,244.0,220.0,231.0,True,2,1,Account changes,30,0.9,0.9,13.0,Jermey,Shanahan,Team South,3.0,1.05,86,CL-244596,small_business,North,2025-02-27,15,Thursday,3,1,0,1.0
+675,1,3,2025-02-24 15:37:00,answered,25.0,15.0,,30.0,188.0,132.0,128.0,False,1,1,Billing,30,0.6,0.7,30.0,Ceasar,Corwin,Team North,83.0,0.97,3,CL-501041,consumer,South,2025-02-24,15,Monday,0,1,0,1.0
+676,1,102,2025-02-17 15:38:00,answered,23.0,14.0,,11.0,164.0,115.0,114.0,False,1,1,Billing,30,0.6,0.7,11.0,Zakary,Sawayn,Team South,40.0,0.99,102,CL-344846,consumer,West,2025-02-17,15,Monday,0,1,0,1.0
+677,1,16,2025-02-27 06:47:00,answered,9.0,5.0,,2.0,166.0,116.0,126.0,True,1,1,Billing,30,0.6,0.7,2.0,Edyth,Lockman,Team North,31.0,1.09,16,CL-004696,consumer,North,2025-02-27,6,Thursday,3,1,0,1.0
+678,1,49,2025-02-14 13:16:00,answered,10.0,6.0,,7.0,150.0,105.0,102.0,True,1,1,Billing,30,0.6,0.7,7.0,Travon,Mann,Team East,2.0,0.97,49,CL-220519,consumer,South,2025-02-14,13,Friday,4,1,0,1.0
+679,1,23,2025-02-20 10:16:00,answered,35.0,21.0,,10.0,278.0,195.0,207.0,False,1,1,Billing,30,0.6,0.7,10.0,Darryl,Becker,Team South,15.0,1.06,23,CL-320092,consumer,East,2025-02-20,10,Thursday,3,1,0,1.0
+680,1,4,2025-02-26 09:01:00,answered,13.0,8.0,,7.0,257.0,180.0,175.0,False,1,1,Billing,30,0.6,0.7,7.0,Travon,Mann,Team East,2.0,0.97,4,CL-726161,consumer,East,2025-02-26,9,Wednesday,2,1,0,1.0
+681,3,31,2025-02-10 13:17:00,abandoned,,,11.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,31,CL-089861,small_business,West,2025-02-10,13,Monday,0,0,1,
+682,4,122,2025-02-07 11:00:00,answered,20.0,30.0,,15.0,273.0,355.0,337.0,True,4,1,Technical support,30,1.5,1.3,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,122,CL-578568,enterprise,South,2025-02-07,11,Friday,4,1,0,1.0
+683,1,25,2025-02-25 14:05:00,answered,13.0,8.0,,4.0,195.0,137.0,132.0,True,1,1,Billing,30,0.6,0.7,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,25,CL-784169,consumer,North,2025-02-25,14,Tuesday,1,1,0,1.0
+684,5,162,2025-02-03 13:42:00,answered,5.0,9.0,,11.0,290.0,435.0,431.0,True,5,1,Complaints,30,1.8,1.5,11.0,Zakary,Sawayn,Team South,40.0,0.99,162,CL-444010,small_business,North,2025-02-03,13,Monday,0,1,0,1.0
+685,4,36,2025-02-24 16:35:00,answered,32.0,48.0,,13.0,187.0,243.0,255.0,True,4,1,Technical support,30,1.5,1.3,13.0,Jermey,Shanahan,Team South,3.0,1.05,36,CL-515567,small_business,South,2025-02-24,16,Monday,0,1,0,0.0
+686,4,8,2025-02-20 14:13:00,abandoned,,,55.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,8,CL-711583,consumer,East,2025-02-20,14,Thursday,3,0,1,
+687,1,1,2025-02-21 10:29:00,answered,45.0,27.0,,26.0,242.0,169.0,186.0,True,1,1,Billing,30,0.6,0.7,26.0,Brain,Dooley,Team East,73.0,1.1,1,CL-696409,consumer,West,2025-02-21,10,Friday,4,1,0,1.0
+688,4,2,2025-02-12 03:28:00,answered,48.0,72.0,,14.0,136.0,177.0,186.0,True,4,1,Technical support,30,1.5,1.3,14.0,Polly,Purdy,Team South,2.0,1.05,2,CL-330627,consumer,North,2025-02-12,3,Wednesday,2,1,0,0.0
+689,3,50,2025-02-11 09:48:00,answered,18.0,22.0,,18.0,318.0,350.0,368.0,True,3,1,Sales,30,1.2,1.1,18.0,Aaron,Tillman,Team South,65.0,1.05,50,CL-021676,small_business,East,2025-02-11,9,Tuesday,1,1,0,1.0
+690,2,176,2025-02-24 14:24:00,answered,26.0,23.0,,23.0,180.0,162.0,168.0,True,2,1,Account changes,30,0.9,0.9,23.0,Lawrence,Trantow,Team North,56.0,1.04,176,CL-509391,small_business,North,2025-02-24,14,Monday,0,1,0,1.0
+691,2,197,2025-02-10 12:05:00,answered,19.0,17.0,,25.0,218.0,196.0,208.0,False,2,1,Account changes,30,0.9,0.9,25.0,Merritt,McGlynn,Team South,2.0,1.06,197,CL-655555,consumer,South,2025-02-10,12,Monday,0,1,0,1.0
+692,4,82,2025-02-19 10:11:00,answered,21.0,32.0,,13.0,129.0,168.0,176.0,True,4,1,Technical support,30,1.5,1.3,13.0,Jermey,Shanahan,Team South,3.0,1.05,82,CL-292376,consumer,South,2025-02-19,10,Wednesday,2,1,0,0.0
+693,3,1,2025-02-18 11:52:00,answered,16.0,19.0,,8.0,112.0,123.0,137.0,True,3,1,Sales,30,1.2,1.1,8.0,Benjamin,Kassulke,Team South,83.0,1.11,1,CL-696409,consumer,West,2025-02-18,11,Tuesday,1,1,0,1.0
+694,2,80,2025-02-21 17:40:00,answered,22.0,20.0,,14.0,124.0,112.0,118.0,False,2,1,Account changes,30,0.9,0.9,14.0,Polly,Purdy,Team South,2.0,1.05,80,CL-788025,consumer,South,2025-02-21,17,Friday,4,1,0,1.0
+695,1,124,2025-02-05 13:20:00,answered,70.0,42.0,,2.0,131.0,92.0,100.0,False,1,1,Billing,30,0.6,0.7,2.0,Edyth,Lockman,Team North,31.0,1.09,124,CL-221925,consumer,West,2025-02-05,13,Wednesday,2,1,0,0.0
+696,5,10,2025-02-24 11:47:00,answered,27.0,49.0,,16.0,141.0,212.0,206.0,True,5,1,Complaints,30,1.8,1.5,16.0,Dusty,Wunsch,Team South,19.0,0.97,10,CL-613207,small_business,North,2025-02-24,11,Monday,0,1,0,0.0
+697,3,99,2025-02-04 15:36:00,answered,44.0,53.0,,19.0,145.0,160.0,174.0,True,3,1,Sales,30,1.2,1.1,19.0,Manuel,Weissnat,Team East,7.0,1.09,99,CL-966539,small_business,South,2025-02-04,15,Tuesday,1,1,0,0.0
+698,2,11,2025-02-05 09:44:00,answered,55.0,50.0,,19.0,199.0,179.0,195.0,True,2,1,Account changes,30,0.9,0.9,19.0,Manuel,Weissnat,Team East,7.0,1.09,11,CL-077793,consumer,East,2025-02-05,9,Wednesday,2,1,0,0.0
+699,4,182,2025-02-21 14:52:00,answered,5.0,8.0,,14.0,243.0,316.0,332.0,True,4,1,Technical support,30,1.5,1.3,14.0,Polly,Purdy,Team South,2.0,1.05,182,CL-929920,consumer,West,2025-02-21,14,Friday,4,1,0,1.0
+700,5,9,2025-02-17 19:27:00,answered,7.0,13.0,,14.0,331.0,497.0,522.0,True,5,1,Complaints,30,1.8,1.5,14.0,Polly,Purdy,Team South,2.0,1.05,9,CL-994954,consumer,East,2025-02-17,19,Monday,0,1,0,1.0
+701,4,1,2025-02-11 10:22:00,answered,21.0,32.0,,9.0,216.0,281.0,292.0,True,4,1,Technical support,30,1.5,1.3,9.0,Abraham,Ortiz,Team South,88.0,1.04,1,CL-696409,consumer,West,2025-02-11,10,Tuesday,1,1,0,0.0
+702,5,60,2025-02-14 12:12:00,answered,10.0,18.0,,4.0,230.0,345.0,331.0,True,5,1,Complaints,30,1.8,1.5,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,60,CL-774762,consumer,West,2025-02-14,12,Friday,4,1,0,1.0
+703,4,192,2025-02-13 16:32:00,answered,28.0,42.0,,30.0,286.0,372.0,361.0,False,4,1,Technical support,30,1.5,1.3,30.0,Ceasar,Corwin,Team North,83.0,0.97,192,CL-983506,consumer,South,2025-02-13,16,Thursday,3,1,0,0.0
+704,5,138,2025-02-04 13:16:00,answered,11.0,20.0,,3.0,254.0,381.0,453.0,True,5,1,Complaints,30,1.8,1.5,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,138,CL-453803,consumer,East,2025-02-04,13,Tuesday,1,1,0,1.0
+705,1,65,2025-02-28 08:47:00,answered,35.0,21.0,,6.0,190.0,133.0,146.0,True,1,1,Billing,30,0.6,0.7,6.0,Selmer,Marquardt,Team East,30.0,1.1,65,CL-869624,consumer,South,2025-02-28,8,Friday,4,1,0,1.0
+706,5,68,2025-02-11 14:47:00,abandoned,,,91.0,,,,,,5,1,Complaints,30,1.8,1.5,,,,,,,68,CL-320039,consumer,East,2025-02-11,14,Tuesday,1,0,1,
+707,1,11,2025-02-14 09:36:00,answered,3.0,2.0,,10.0,151.0,106.0,112.0,False,1,1,Billing,30,0.6,0.7,10.0,Darryl,Becker,Team South,15.0,1.06,11,CL-077793,consumer,East,2025-02-14,9,Friday,4,1,0,1.0
+708,3,161,2025-02-20 09:37:00,answered,8.0,10.0,,4.0,165.0,182.0,175.0,True,3,1,Sales,30,1.2,1.1,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,161,CL-039969,consumer,North,2025-02-20,9,Thursday,3,1,0,1.0
+709,2,191,2025-02-19 10:37:00,answered,34.0,31.0,,9.0,185.0,167.0,174.0,True,2,1,Account changes,30,0.9,0.9,9.0,Abraham,Ortiz,Team South,88.0,1.04,191,CL-103762,consumer,West,2025-02-19,10,Wednesday,2,1,0,0.0
+710,4,53,2025-02-21 11:25:00,answered,13.0,20.0,,26.0,171.0,222.0,244.0,True,4,1,Technical support,30,1.5,1.3,26.0,Brain,Dooley,Team East,73.0,1.1,53,CL-940066,small_business,East,2025-02-21,11,Friday,4,1,0,1.0
+711,4,41,2025-02-17 16:33:00,answered,41.0,62.0,,25.0,220.0,286.0,303.0,True,4,1,Technical support,30,1.5,1.3,25.0,Merritt,McGlynn,Team South,2.0,1.06,41,CL-853059,small_business,West,2025-02-17,16,Monday,0,1,0,0.0
+712,1,77,2025-02-03 14:31:00,answered,40.0,24.0,,19.0,257.0,180.0,196.0,True,1,1,Billing,30,0.6,0.7,19.0,Manuel,Weissnat,Team East,7.0,1.09,77,CL-374090,small_business,North,2025-02-03,14,Monday,0,1,0,1.0
+713,4,126,2025-02-11 10:26:00,answered,34.0,51.0,,12.0,167.0,217.0,210.0,False,4,1,Technical support,30,1.5,1.3,12.0,Valerie,Auer,Team North,58.0,0.97,126,CL-349204,enterprise,East,2025-02-11,10,Tuesday,1,1,0,0.0
+714,4,228,2025-02-10 11:39:00,answered,22.0,33.0,,12.0,279.0,363.0,352.0,True,4,1,Technical support,30,1.5,1.3,12.0,Valerie,Auer,Team North,58.0,0.97,228,CL-661035,consumer,West,2025-02-10,11,Monday,0,1,0,0.0
+715,1,1,2025-02-25 19:26:00,abandoned,,,79.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,1,CL-696409,consumer,West,2025-02-25,19,Tuesday,1,0,1,
+716,1,232,2025-02-28 15:47:00,abandoned,,,97.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,232,CL-739969,consumer,West,2025-02-28,15,Friday,4,0,1,
+717,1,98,2025-02-14 12:27:00,answered,30.0,18.0,,30.0,383.0,268.0,260.0,True,1,1,Billing,30,0.6,0.7,30.0,Ceasar,Corwin,Team North,83.0,0.97,98,CL-561534,enterprise,East,2025-02-14,12,Friday,4,1,0,1.0
+718,4,2,2025-02-27 19:04:00,answered,15.0,23.0,,16.0,167.0,217.0,210.0,True,4,1,Technical support,30,1.5,1.3,16.0,Dusty,Wunsch,Team South,19.0,0.97,2,CL-330627,consumer,North,2025-02-27,19,Thursday,3,1,0,1.0
+719,1,158,2025-02-18 17:40:00,answered,20.0,12.0,,1.0,114.0,80.0,81.0,True,1,1,Billing,30,0.6,0.7,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,158,CL-670099,consumer,South,2025-02-18,17,Tuesday,1,1,0,1.0
+720,3,15,2025-02-14 15:53:00,answered,53.0,64.0,,4.0,215.0,237.0,228.0,True,3,1,Sales,30,1.2,1.1,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,15,CL-898287,small_business,North,2025-02-14,15,Friday,4,1,0,0.0
+721,3,50,2025-02-07 15:39:00,answered,11.0,13.0,,12.0,143.0,157.0,152.0,True,3,1,Sales,30,1.2,1.1,12.0,Valerie,Auer,Team North,58.0,0.97,50,CL-021676,small_business,East,2025-02-07,15,Friday,4,1,0,1.0
+722,4,24,2025-02-07 09:06:00,answered,33.0,50.0,,16.0,203.0,264.0,256.0,True,4,1,Technical support,30,1.5,1.3,16.0,Dusty,Wunsch,Team South,19.0,0.97,24,CL-198597,consumer,North,2025-02-07,9,Friday,4,1,0,0.0
+723,1,149,2025-02-10 14:27:00,answered,21.0,13.0,,1.0,184.0,129.0,130.0,True,1,1,Billing,30,0.6,0.7,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,149,CL-681205,small_business,East,2025-02-10,14,Monday,0,1,0,1.0
+724,2,102,2025-02-11 14:14:00,answered,18.0,16.0,,5.0,203.0,183.0,176.0,True,2,1,Account changes,30,0.9,0.9,5.0,Earnest,Bednar,Team North,63.0,0.96,102,CL-344846,consumer,West,2025-02-11,14,Tuesday,1,1,0,1.0
+725,4,231,2025-02-03 12:06:00,answered,17.0,26.0,,8.0,192.0,250.0,278.0,True,4,1,Technical support,30,1.5,1.3,8.0,Benjamin,Kassulke,Team South,83.0,1.11,231,CL-946979,consumer,West,2025-02-03,12,Monday,0,1,0,1.0
+726,2,34,2025-02-24 12:07:00,answered,26.0,23.0,,10.0,246.0,221.0,234.0,False,2,1,Account changes,30,0.9,0.9,10.0,Darryl,Becker,Team South,15.0,1.06,34,CL-823869,consumer,North,2025-02-24,12,Monday,0,1,0,1.0
+727,2,85,2025-02-07 16:32:00,abandoned,,,32.0,,,,,,2,1,Account changes,30,0.9,0.9,,,,,,,85,CL-481027,consumer,South,2025-02-07,16,Friday,4,0,1,
+728,2,27,2025-02-28 18:41:00,answered,18.0,16.0,,7.0,197.0,177.0,172.0,True,2,1,Account changes,30,0.9,0.9,7.0,Travon,Mann,Team East,2.0,0.97,27,CL-625844,consumer,North,2025-02-28,18,Friday,4,1,0,1.0
+729,1,6,2025-02-17 14:02:00,answered,11.0,7.0,,14.0,121.0,85.0,89.0,True,1,1,Billing,30,0.6,0.7,14.0,Polly,Purdy,Team South,2.0,1.05,6,CL-907931,consumer,North,2025-02-17,14,Monday,0,1,0,1.0
+730,2,22,2025-02-21 11:55:00,answered,28.0,25.0,,29.0,242.0,218.0,201.0,True,2,1,Account changes,30,0.9,0.9,29.0,Alexie,Lehner,Team North,70.0,0.92,22,CL-349477,consumer,West,2025-02-21,11,Friday,4,1,0,1.0
+731,3,129,2025-02-26 10:55:00,answered,35.0,42.0,,11.0,433.0,476.0,471.0,True,3,1,Sales,30,1.2,1.1,11.0,Zakary,Sawayn,Team South,40.0,0.99,129,CL-182564,consumer,East,2025-02-26,10,Wednesday,2,1,0,0.0
+732,4,17,2025-02-09 09:22:00,answered,10.0,15.0,,27.0,255.0,332.0,332.0,False,4,1,Technical support,30,1.5,1.3,27.0,Michale,Grimes,Team East,82.0,1.0,17,CL-788847,small_business,East,2025-02-09,9,Sunday,6,1,0,1.0
+733,4,15,2025-02-08 16:56:00,answered,12.0,18.0,,14.0,194.0,252.0,265.0,True,4,1,Technical support,30,1.5,1.3,14.0,Polly,Purdy,Team South,2.0,1.05,15,CL-898287,small_business,North,2025-02-08,16,Saturday,5,1,0,1.0
+734,3,34,2025-02-21 17:28:00,answered,33.0,40.0,,3.0,271.0,298.0,355.0,True,3,1,Sales,30,1.2,1.1,3.0,Lupe,Kertzmann-Brekke,Team North,12.0,1.19,34,CL-823869,consumer,North,2025-02-21,17,Friday,4,1,0,0.0
+735,3,225,2025-02-09 09:37:00,answered,34.0,41.0,,26.0,224.0,246.0,271.0,True,3,1,Sales,30,1.2,1.1,26.0,Brain,Dooley,Team East,73.0,1.1,225,CL-125713,consumer,South,2025-02-09,9,Sunday,6,1,0,0.0
+736,1,198,2025-02-14 20:05:00,answered,16.0,10.0,,10.0,421.0,295.0,313.0,True,1,1,Billing,30,0.6,0.7,10.0,Darryl,Becker,Team South,15.0,1.06,198,CL-366146,consumer,East,2025-02-14,20,Friday,4,1,0,1.0
+737,3,29,2025-02-04 12:12:00,abandoned,,,125.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,29,CL-153345,consumer,East,2025-02-04,12,Tuesday,1,0,1,
+738,1,92,2025-02-03 13:47:00,answered,24.0,14.0,,30.0,198.0,139.0,135.0,True,1,1,Billing,30,0.6,0.7,30.0,Ceasar,Corwin,Team North,83.0,0.97,92,CL-505362,small_business,South,2025-02-03,13,Monday,0,1,0,1.0
+739,3,1,2025-02-10 10:32:00,answered,20.0,24.0,,29.0,139.0,153.0,141.0,True,3,1,Sales,30,1.2,1.1,29.0,Alexie,Lehner,Team North,70.0,0.92,1,CL-696409,consumer,West,2025-02-10,10,Monday,0,1,0,1.0
+740,4,4,2025-02-13 14:51:00,answered,31.0,47.0,,22.0,175.0,228.0,235.0,False,4,1,Technical support,30,1.5,1.3,22.0,Dan,Heaney,Team East,45.0,1.03,4,CL-726161,consumer,East,2025-02-13,14,Thursday,3,1,0,0.0
+741,4,21,2025-02-11 12:32:00,answered,41.0,62.0,,23.0,214.0,278.0,289.0,True,4,1,Technical support,30,1.5,1.3,23.0,Lawrence,Trantow,Team North,56.0,1.04,21,CL-080107,consumer,West,2025-02-11,12,Tuesday,1,1,0,0.0
+742,3,1,2025-02-26 12:42:00,answered,45.0,54.0,,17.0,159.0,175.0,165.0,True,3,1,Sales,30,1.2,1.1,17.0,Lesly,Huels,Team North,16.0,0.94,1,CL-696409,consumer,West,2025-02-26,12,Wednesday,2,1,0,0.0
+743,2,76,2025-02-17 17:53:00,answered,25.0,23.0,,23.0,364.0,328.0,341.0,False,2,1,Account changes,30,0.9,0.9,23.0,Lawrence,Trantow,Team North,56.0,1.04,76,CL-870786,consumer,West,2025-02-17,17,Monday,0,1,0,1.0
+744,1,209,2025-02-18 10:01:00,answered,25.0,15.0,,1.0,198.0,139.0,140.0,True,1,1,Billing,30,0.6,0.7,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,209,CL-741786,enterprise,South,2025-02-18,10,Tuesday,1,1,0,1.0
+745,3,192,2025-02-10 08:30:00,answered,10.0,12.0,,8.0,310.0,341.0,379.0,False,3,1,Sales,30,1.2,1.1,8.0,Benjamin,Kassulke,Team South,83.0,1.11,192,CL-983506,consumer,South,2025-02-10,8,Monday,0,1,0,1.0
+746,1,34,2025-02-17 11:28:00,abandoned,,,4.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,34,CL-823869,consumer,North,2025-02-17,11,Monday,0,0,1,
+747,4,73,2025-02-19 16:21:00,answered,16.0,24.0,,17.0,165.0,215.0,202.0,True,4,1,Technical support,30,1.5,1.3,17.0,Lesly,Huels,Team North,16.0,0.94,73,CL-054765,consumer,North,2025-02-19,16,Wednesday,2,1,0,1.0
+748,1,130,2025-02-26 08:00:00,answered,8.0,5.0,,17.0,175.0,122.0,115.0,True,1,1,Billing,30,0.6,0.7,17.0,Lesly,Huels,Team North,16.0,0.94,130,CL-761891,consumer,West,2025-02-26,8,Wednesday,2,1,0,1.0
+749,4,69,2025-02-26 22:50:00,answered,35.0,53.0,,29.0,100.0,130.0,120.0,True,4,1,Technical support,30,1.5,1.3,29.0,Alexie,Lehner,Team North,70.0,0.92,69,CL-151572,consumer,West,2025-02-26,22,Wednesday,2,1,0,0.0
+750,3,20,2025-02-04 11:44:00,abandoned,,,34.0,,,,,,3,1,Sales,30,1.2,1.1,,,,,,,20,CL-589392,consumer,West,2025-02-04,11,Tuesday,1,0,1,
+751,1,51,2025-02-19 15:34:00,answered,18.0,11.0,,8.0,274.0,192.0,213.0,True,1,1,Billing,30,0.6,0.7,8.0,Benjamin,Kassulke,Team South,83.0,1.11,51,CL-136072,small_business,North,2025-02-19,15,Wednesday,2,1,0,1.0
+752,3,92,2025-02-04 12:26:00,answered,51.0,61.0,,26.0,320.0,352.0,387.0,True,3,1,Sales,30,1.2,1.1,26.0,Brain,Dooley,Team East,73.0,1.1,92,CL-505362,small_business,South,2025-02-04,12,Tuesday,1,1,0,0.0
+753,4,93,2025-02-14 13:41:00,answered,21.0,32.0,,15.0,176.0,229.0,218.0,True,4,1,Technical support,30,1.5,1.3,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,93,CL-037220,enterprise,East,2025-02-14,13,Friday,4,1,0,0.0
+754,4,174,2025-02-23 09:29:00,answered,22.0,33.0,,29.0,218.0,283.0,260.0,False,4,1,Technical support,30,1.5,1.3,29.0,Alexie,Lehner,Team North,70.0,0.92,174,CL-556435,consumer,South,2025-02-23,9,Sunday,6,1,0,0.0
+755,4,47,2025-02-08 15:45:00,answered,28.0,42.0,,6.0,302.0,393.0,432.0,True,4,1,Technical support,30,1.5,1.3,6.0,Selmer,Marquardt,Team East,30.0,1.1,47,CL-055365,consumer,South,2025-02-08,15,Saturday,5,1,0,0.0
+756,4,75,2025-02-12 16:46:00,abandoned,,,8.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,75,CL-982184,small_business,South,2025-02-12,16,Wednesday,2,0,1,
+757,4,245,2025-02-13 09:19:00,answered,7.0,11.0,,15.0,246.0,320.0,304.0,True,4,1,Technical support,30,1.5,1.3,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,245,CL-647728,consumer,West,2025-02-13,9,Thursday,3,1,0,1.0
+758,2,22,2025-02-17 22:43:00,answered,13.0,12.0,,9.0,229.0,206.0,214.0,False,2,1,Account changes,30,0.9,0.9,9.0,Abraham,Ortiz,Team South,88.0,1.04,22,CL-349477,consumer,West,2025-02-17,22,Monday,0,1,0,1.0
+759,1,1,2025-02-21 08:32:00,answered,17.0,10.0,,17.0,333.0,233.0,219.0,True,1,1,Billing,30,0.6,0.7,17.0,Lesly,Huels,Team North,16.0,0.94,1,CL-696409,consumer,West,2025-02-21,8,Friday,4,1,0,1.0
+760,3,56,2025-02-25 10:48:00,answered,52.0,62.0,,16.0,144.0,158.0,153.0,False,3,1,Sales,30,1.2,1.1,16.0,Dusty,Wunsch,Team South,19.0,0.97,56,CL-043517,consumer,North,2025-02-25,10,Tuesday,1,1,0,0.0
+761,5,2,2025-02-27 16:40:00,abandoned,,,71.0,,,,,,5,1,Complaints,30,1.8,1.5,,,,,,,2,CL-330627,consumer,North,2025-02-27,16,Thursday,3,0,1,
+762,5,24,2025-02-26 12:25:00,answered,19.0,34.0,,19.0,164.0,246.0,268.0,True,5,1,Complaints,30,1.8,1.5,19.0,Manuel,Weissnat,Team East,7.0,1.09,24,CL-198597,consumer,North,2025-02-26,12,Wednesday,2,1,0,0.0
+763,4,234,2025-02-03 14:46:00,answered,45.0,68.0,,2.0,321.0,417.0,455.0,False,4,1,Technical support,30,1.5,1.3,2.0,Edyth,Lockman,Team North,31.0,1.09,234,CL-219546,small_business,South,2025-02-03,14,Monday,0,1,0,0.0
+764,1,48,2025-02-12 16:04:00,answered,18.0,11.0,,7.0,176.0,123.0,119.0,False,1,1,Billing,30,0.6,0.7,7.0,Travon,Mann,Team East,2.0,0.97,48,CL-065054,consumer,South,2025-02-12,16,Wednesday,2,1,0,1.0
+765,4,126,2025-02-18 14:13:00,abandoned,,,29.0,,,,,,4,1,Technical support,30,1.5,1.3,,,,,,,126,CL-349204,enterprise,East,2025-02-18,14,Tuesday,1,0,1,
+766,3,152,2025-02-20 12:33:00,answered,22.0,26.0,,26.0,255.0,281.0,309.0,True,3,1,Sales,30,1.2,1.1,26.0,Brain,Dooley,Team East,73.0,1.1,152,CL-255104,consumer,South,2025-02-20,12,Thursday,3,1,0,1.0
+767,1,45,2025-02-05 08:48:00,abandoned,,,61.0,,,,,,1,1,Billing,30,0.6,0.7,,,,,,,45,CL-850392,consumer,West,2025-02-05,8,Wednesday,2,0,1,
+768,2,168,2025-02-23 16:16:00,answered,30.0,27.0,,16.0,407.0,366.0,355.0,True,2,1,Account changes,30,0.9,0.9,16.0,Dusty,Wunsch,Team South,19.0,0.97,168,CL-499615,consumer,East,2025-02-23,16,Sunday,6,1,0,1.0
+769,1,33,2025-02-19 13:34:00,answered,15.0,9.0,,27.0,118.0,83.0,83.0,True,1,1,Billing,30,0.6,0.7,27.0,Michale,Grimes,Team East,82.0,1.0,33,CL-486293,consumer,West,2025-02-19,13,Wednesday,2,1,0,1.0
+770,4,191,2025-02-25 13:28:00,answered,6.0,9.0,,4.0,162.0,211.0,203.0,True,4,1,Technical support,30,1.5,1.3,4.0,Lloyd,Bergnaum,Team South,2.0,0.96,191,CL-103762,consumer,West,2025-02-25,13,Tuesday,1,1,0,1.0
+771,1,7,2025-02-27 11:45:00,answered,13.0,8.0,,25.0,149.0,104.0,110.0,False,1,1,Billing,30,0.6,0.7,25.0,Merritt,McGlynn,Team South,2.0,1.06,7,CL-669268,small_business,East,2025-02-27,11,Thursday,3,1,0,1.0
+772,3,200,2025-02-20 13:06:00,answered,5.0,6.0,,15.0,273.0,300.0,285.0,False,3,1,Sales,30,1.2,1.1,15.0,Elfrieda,Douglas-Romaguera,Team South,21.0,0.95,200,CL-861526,consumer,West,2025-02-20,13,Thursday,3,1,0,1.0
+773,1,129,2025-02-13 12:04:00,answered,12.0,7.0,,27.0,224.0,157.0,157.0,True,1,1,Billing,30,0.6,0.7,27.0,Michale,Grimes,Team East,82.0,1.0,129,CL-182564,consumer,East,2025-02-13,12,Thursday,3,1,0,1.0
+774,5,228,2025-02-15 14:55:00,abandoned,,,123.0,,,,,,5,1,Complaints,30,1.8,1.5,,,,,,,228,CL-661035,consumer,West,2025-02-15,14,Saturday,5,0,1,
+775,5,30,2025-02-20 15:42:00,answered,40.0,72.0,,12.0,349.0,524.0,508.0,True,5,1,Complaints,30,1.8,1.5,12.0,Valerie,Auer,Team North,58.0,0.97,30,CL-166681,consumer,West,2025-02-20,15,Thursday,3,1,0,0.0
+776,4,31,2025-02-03 14:51:00,answered,14.0,21.0,,1.0,303.0,394.0,398.0,True,4,1,Technical support,30,1.5,1.3,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,31,CL-089861,small_business,West,2025-02-03,14,Monday,0,1,0,1.0
+777,3,17,2025-02-12 16:17:00,answered,11.0,13.0,,25.0,149.0,164.0,174.0,True,3,1,Sales,30,1.2,1.1,25.0,Merritt,McGlynn,Team South,2.0,1.06,17,CL-788847,small_business,East,2025-02-12,16,Wednesday,2,1,0,1.0
+778,3,107,2025-02-04 17:15:00,answered,10.0,12.0,,28.0,269.0,296.0,275.0,False,3,1,Sales,30,1.2,1.1,28.0,Richard,Gislason,Team East,3.0,0.93,107,CL-912356,small_business,South,2025-02-04,17,Tuesday,1,1,0,1.0
+779,3,209,2025-02-20 12:59:00,answered,11.0,13.0,,28.0,222.0,244.0,227.0,False,3,1,Sales,30,1.2,1.1,28.0,Richard,Gislason,Team East,3.0,0.93,209,CL-741786,enterprise,South,2025-02-20,12,Thursday,3,1,0,1.0
+780,1,65,2025-02-11 15:39:00,answered,7.0,4.0,,18.0,211.0,148.0,155.0,True,1,1,Billing,30,0.6,0.7,18.0,Aaron,Tillman,Team South,65.0,1.05,65,CL-869624,consumer,South,2025-02-11,15,Tuesday,1,1,0,1.0
+781,1,9,2025-02-27 14:39:00,answered,39.0,23.0,,24.0,143.0,100.0,102.0,True,1,1,Billing,30,0.6,0.7,24.0,Graciela,Luettgen,Team South,2.0,1.02,9,CL-994954,consumer,East,2025-02-27,14,Thursday,3,1,0,1.0
+782,5,5,2025-02-09 16:53:00,answered,27.0,49.0,,26.0,195.0,293.0,322.0,True,5,1,Complaints,30,1.8,1.5,26.0,Brain,Dooley,Team East,73.0,1.1,5,CL-669474,small_business,South,2025-02-09,16,Sunday,6,1,0,0.0
+783,1,6,2025-02-05 13:24:00,answered,58.0,35.0,,14.0,253.0,177.0,186.0,True,1,1,Billing,30,0.6,0.7,14.0,Polly,Purdy,Team South,2.0,1.05,6,CL-907931,consumer,North,2025-02-05,13,Wednesday,2,1,0,0.0
+784,1,30,2025-02-26 12:41:00,answered,42.0,25.0,,14.0,115.0,81.0,85.0,True,1,1,Billing,30,0.6,0.7,14.0,Polly,Purdy,Team South,2.0,1.05,30,CL-166681,consumer,West,2025-02-26,12,Wednesday,2,1,0,1.0
+785,4,78,2025-02-04 20:20:00,answered,45.0,68.0,,26.0,222.0,289.0,318.0,True,4,1,Technical support,30,1.5,1.3,26.0,Brain,Dooley,Team East,73.0,1.1,78,CL-746742,consumer,South,2025-02-04,20,Tuesday,1,1,0,0.0
+786,2,140,2025-02-25 18:33:00,answered,31.0,28.0,,28.0,291.0,262.0,244.0,True,2,1,Account changes,30,0.9,0.9,28.0,Richard,Gislason,Team East,3.0,0.93,140,CL-437847,consumer,North,2025-02-25,18,Tuesday,1,1,0,1.0
+787,5,25,2025-02-05 11:40:00,answered,24.0,43.0,,22.0,250.0,375.0,386.0,True,5,1,Complaints,30,1.8,1.5,22.0,Dan,Heaney,Team East,45.0,1.03,25,CL-784169,consumer,North,2025-02-05,11,Wednesday,2,1,0,0.0
+788,1,22,2025-02-13 13:42:00,answered,9.0,5.0,,16.0,121.0,85.0,82.0,False,1,1,Billing,30,0.6,0.7,16.0,Dusty,Wunsch,Team South,19.0,0.97,22,CL-349477,consumer,West,2025-02-13,13,Thursday,3,1,0,1.0
+789,3,19,2025-02-04 13:26:00,answered,20.0,24.0,,6.0,168.0,185.0,204.0,True,3,1,Sales,30,1.2,1.1,6.0,Selmer,Marquardt,Team East,30.0,1.1,19,CL-830412,consumer,West,2025-02-04,13,Tuesday,1,1,0,1.0
+790,3,66,2025-02-25 11:26:00,answered,25.0,30.0,,29.0,112.0,123.0,113.0,True,3,1,Sales,30,1.2,1.1,29.0,Alexie,Lehner,Team North,70.0,0.92,66,CL-635948,enterprise,East,2025-02-25,11,Tuesday,1,1,0,1.0
+791,2,31,2025-02-26 13:04:00,answered,5.0,5.0,,9.0,235.0,212.0,220.0,True,2,1,Account changes,30,0.9,0.9,9.0,Abraham,Ortiz,Team South,88.0,1.04,31,CL-089861,small_business,West,2025-02-26,13,Wednesday,2,1,0,1.0
+792,2,1,2025-02-15 16:17:00,answered,50.0,45.0,,22.0,167.0,150.0,155.0,True,2,1,Account changes,30,0.9,0.9,22.0,Dan,Heaney,Team East,45.0,1.03,1,CL-696409,consumer,West,2025-02-15,16,Saturday,5,1,0,0.0
+793,4,208,2025-02-19 08:55:00,answered,9.0,14.0,,28.0,128.0,166.0,154.0,True,4,1,Technical support,30,1.5,1.3,28.0,Richard,Gislason,Team East,3.0,0.93,208,CL-637215,consumer,South,2025-02-19,8,Wednesday,2,1,0,1.0
+794,3,156,2025-02-10 13:48:00,answered,21.0,25.0,,6.0,161.0,177.0,195.0,False,3,1,Sales,30,1.2,1.1,6.0,Selmer,Marquardt,Team East,30.0,1.1,156,CL-278493,consumer,South,2025-02-10,13,Monday,0,1,0,1.0
+795,5,34,2025-02-04 17:13:00,answered,27.0,49.0,,24.0,245.0,368.0,375.0,True,5,1,Complaints,30,1.8,1.5,24.0,Graciela,Luettgen,Team South,2.0,1.02,34,CL-823869,consumer,North,2025-02-04,17,Tuesday,1,1,0,0.0
+796,1,13,2025-02-05 17:56:00,answered,38.0,23.0,,6.0,336.0,235.0,259.0,True,1,1,Billing,30,0.6,0.7,6.0,Selmer,Marquardt,Team East,30.0,1.1,13,CL-383450,consumer,North,2025-02-05,17,Wednesday,2,1,0,1.0
+797,5,2,2025-02-17 18:48:00,answered,22.0,40.0,,21.0,216.0,324.0,330.0,True,5,1,Complaints,30,1.8,1.5,21.0,Jake,Kihn-Blick,Team North,6.0,1.02,2,CL-330627,consumer,North,2025-02-17,18,Monday,0,1,0,0.0
+798,4,45,2025-02-18 14:38:00,answered,18.0,27.0,,12.0,163.0,212.0,206.0,True,4,1,Technical support,30,1.5,1.3,12.0,Valerie,Auer,Team North,58.0,0.97,45,CL-850392,consumer,West,2025-02-18,14,Tuesday,1,1,0,1.0
+799,2,37,2025-02-18 08:33:00,answered,39.0,35.0,,16.0,149.0,134.0,130.0,True,2,1,Account changes,30,0.9,0.9,16.0,Dusty,Wunsch,Team South,19.0,0.97,37,CL-968724,consumer,East,2025-02-18,8,Tuesday,1,1,0,0.0
+800,2,20,2025-02-09 10:47:00,answered,33.0,30.0,,1.0,311.0,280.0,283.0,True,2,1,Account changes,30,0.9,0.9,1.0,Cynthia,McLaughlin,Team North,62.0,1.01,20,CL-589392,consumer,West,2025-02-09,10,Sunday,6,1,0,1.0
